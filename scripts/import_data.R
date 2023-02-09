@@ -18,3 +18,7 @@ aim_data <- read_delim("./data/AIM_data.csv",
 
 refnis_postal <- read_delim("./data/refnis_postal.csv",
                             locale = locale(encoding = "UTF-8"))
+
+mg_survey <- read_delim("./data/MG_survey.csv")
+
+lgbt_survey <- read_delim("./data/LGBT_survey.csv")
