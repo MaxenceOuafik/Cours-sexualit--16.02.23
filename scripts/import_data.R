@@ -15,3 +15,6 @@ patients_data$province <- as.factor(patients_data$province)
 # Importation des données de l'AIM en précisant que les décimales sont marquées par une virgule 
 aim_data <- read_delim("./data/AIM_data.csv",
                        locale = locale(decimal_mark = ","))       
+
+refnis_postal <- read_delim("./data/refnis_postal.csv",
+                            locale = locale(encoding = "UTF-8"))
