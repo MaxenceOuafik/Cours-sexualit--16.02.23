@@ -1,4 +1,5 @@
-mg_likert_int <- mg_int |>
+mg_likert_int <- mg_survey |>
+    select(ends_with("_int")) |>
     rename("Accueil des patients" = accueil_int,
            "Les bloqueurs de puberté" = bloqueurs_int, 
            "ISTs" = IST_int,
@@ -35,7 +36,8 @@ mg_likert_int <- mg_int |>
           plot.title = element_text(hjust = 0.5, size = 16, face = "bold", family = "Lato")) +
     scale_y_reverse(labels = NULL)
 
-mg_likert_ais <- mg_ais |>
+mg_likert_ais <- mg_survey |>
+    select(ends_with("_ais")) |>
     rename("Accueil des patients" = accueil_ais,
            "Les bloqueurs de puberté" = bloqueurs_ais, 
            "ISTs" = IST_ais,
@@ -72,7 +74,8 @@ mg_likert_ais <- mg_ais |>
           plot.title = element_text(hjust = 0.5, size = 16, face = "bold", family = "Lato")) +
     scale_y_reverse(labels = NULL)
 
-lgbt_likert_int <- lgbt_int |>
+lgbt_likert_int <- lgbt_survey |>
+    select(1:10) |>
     rename("Accueil des patients" = accueil,
            "Les bloqueurs de puberté" = bloqueurs, 
            "ISTs" = IST,
@@ -81,13 +84,14 @@ lgbt_likert_int <- lgbt_int |>
            "Enjeux reproductifs des THAG" = repro,
            "Déterminants sociaux de la santé" = social,
            "THAG" = THAG, 
+           "TPE" = tpe,
            "Vieillir avec le VIH" = vieillir) |>
     pivot_longer(everything(), names_to = "themes", values_to = "reponse") |>
     group_by(themes, reponse) |>
     summarise(count = n()) |>
-    mutate(pct = round(count / nrow(lgbt_survey), digits = 2)) |>
+    mutate(pct = round(count / nrow(lgbt_survey), digits = 3)) |>
     select(-count) |>
-    pivot_wider(names_from = reponse, values_from = pct, values_fill = 0) |>
+    pivot_wider(names_from = reponse, values_from = pct, values_fill = 0) |>  
     mutate(score = (`Pas important du tout` * -2) + (`Peu important` * -1) + (Neutre * 0) + (Important) + (`Très important` * 2)) |>
     arrange(desc(score)) |>
     pivot_longer(cols = 2:6, names_to = "variable", values_to = "value") |>
@@ -96,7 +100,7 @@ lgbt_likert_int <- lgbt_int |>
     ggplot(aes(x = fct_reorder(themes, score), y = value, fill = variable)) +
     geom_bar(position = "stack", stat = "identity") +
     geom_text(aes(label = scales::percent(value, accuracy = 1)), color = "grey30", position = position_stack(vjust = 0.5)) +
-    geom_hline(yintercept = 0.5, linetype = "dotted", color = "grey50", linewidth = 0.75) +
+    geom_hline(yintercept = 0.8, linetype = "dotted", color = "grey50", linewidth = 0.75) +
     coord_flip() + 
     labs(title = "Il est important que les généralistes soient formés sur la question",
          fill = "Réponses",
