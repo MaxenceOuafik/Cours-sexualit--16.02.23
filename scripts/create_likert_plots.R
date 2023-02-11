@@ -1,5 +1,3 @@
-requireNamespace("HH")
-
 mg_likert_int <- mg_int |>
     rename("Accueil des patients" = accueil_int,
            "Les bloqueurs de puberté" = bloqueurs_int, 
@@ -17,19 +15,25 @@ mg_likert_int <- mg_int |>
     mutate(pct = round(count / nrow(mg_survey), digits = 2)) |>
     select(-count) |>
     pivot_wider(names_from = reponse, values_from = pct, values_fill = 0) |>
-    relocate(`Pas du tout`, .after = themes) |>
-    relocate(`Un peu`, .after = `Pas du tout`) |>
-    relocate(Moyennement, .after = `Un peu`) |>
-    relocate(Beaucoup, .after = `Moyennement`) |>
-    relocate(Enormément, .after = Beaucoup)
-
-mg_likert_int <- HH::likert(themes ~ .,
-                            mg_likert_int, 
-                            positive.order = TRUE, 
-                            as.percent = TRUE,
-                            main = "Le sujet m'intéresse",
-                            xlab = "Pourcentages",
-                            ylab = "Thèmes")
+    mutate(score = (`Pas du tout` * -2) + (`Un peu` * -1) + (Moyennement * 0) + (Beaucoup) + (Enormément * 2)) |>
+    arrange(desc(score)) |>
+    pivot_longer(cols = 2:6, names_to = "variable", values_to = "value") |>
+    mutate(variable = factor(variable, levels = c("Pas du tout", "Un peu", "Moyennement", "Beaucoup", "Enormément"))) |>
+    filter(value != 0) |>
+    ggplot(aes(x = fct_reorder(themes, score), y = value, fill = variable)) +
+    geom_bar(position = "stack", stat = "identity") +
+    geom_text(aes(label = scales::percent(value)), color = "grey30", position = position_stack(vjust = 0.5)) +
+    geom_hline(yintercept = 0.5, linetype = "dotted", color = "grey50", linewidth = 0.75) +
+    coord_flip() + 
+    labs(title = "Le sujet m'intéresse",
+         fill = "Réponses",
+         x = NULL,
+         y = NULL) +
+    scale_fill_manual(values = c("#e64747", "#f28752", "#ffe0b4", "#75abb8", "#138b9e")) + 
+    theme_minimal() + 
+    theme(legend.position = "bottom",
+          plot.title = element_text(hjust = 0.5, size = 16, face = "bold", family = "Lato")) +
+    scale_y_reverse(labels = NULL)
 
 mg_likert_ais <- mg_ais |>
     rename("Accueil des patients" = accueil_ais,
@@ -48,21 +52,27 @@ mg_likert_ais <- mg_ais |>
     mutate(pct = round(count / nrow(mg_survey), digits = 2)) |>
     select(-count) |>
     pivot_wider(names_from = reponse, values_from = pct, values_fill = 0) |>
-    relocate(`Pas du tout`, .after = themes) |>
-    relocate(`Un peu`, .after = `Pas du tout`) |>
-    relocate(Moyennement, .after = `Un peu`) |>
-    relocate(Beaucoup, .after = `Moyennement`) |>
-    relocate(Enormément, .after = Beaucoup)
+    mutate(score = (`Pas du tout` * -2) + (`Un peu` * -1) + (Moyennement * 0) + (Beaucoup) + (Enormément * 2)) |>
+    arrange(desc(score)) |>
+    pivot_longer(cols = 2:6, names_to = "variable", values_to = "value") |>
+    mutate(variable = factor(variable, levels = c("Pas du tout", "Un peu", "Moyennement", "Beaucoup", "Enormément"))) |>
+    filter(value != 0) |>
+    ggplot(aes(x = fct_reorder(themes, score), y = value, fill = variable)) +
+    geom_bar(position = "stack", stat = "identity") +
+    geom_text(aes(label = scales::percent(value)), color = "grey30", position = position_stack(vjust = 0.5)) +
+    geom_hline(yintercept = 0.5, linetype = "dotted", color = "grey50", linewidth = 0.75) +
+    coord_flip() + 
+    labs(title = "Je me sens à l'aise",
+         fill = "Réponses",
+         x = NULL,
+         y = NULL) +
+    scale_fill_manual(values = c("#e64747", "#f28752", "#ffe0b4", "#75abb8", "#138b9e")) + 
+    theme_minimal() + 
+    theme(legend.position = "bottom",
+          plot.title = element_text(hjust = 0.5, size = 16, face = "bold", family = "Lato")) +
+    scale_y_reverse(labels = NULL)
 
-mg_likert_ais <- HH::likert(themes ~ .,
-                            mg_likert_ais, 
-                            positive.order = TRUE, 
-                            as.percent = TRUE,
-                            main = "Je me sens à l'aise",
-                            xlab = "Pourcentages",
-                            ylab = "Thèmes")
-
-lgbt_likert <- lgbt_int |>
+lgbt_likert_int <- lgbt_int |>
     rename("Accueil des patients" = accueil,
            "Les bloqueurs de puberté" = bloqueurs, 
            "ISTs" = IST,
@@ -70,8 +80,7 @@ lgbt_likert <- lgbt_int |>
            "PrEP" = prep,
            "Enjeux reproductifs des THAG" = repro,
            "Déterminants sociaux de la santé" = social,
-           "THAG" = THAG,
-           "TPE" = TPE, 
+           "THAG" = THAG, 
            "Vieillir avec le VIH" = vieillir) |>
     pivot_longer(everything(), names_to = "themes", values_to = "reponse") |>
     group_by(themes, reponse) |>
@@ -79,16 +88,22 @@ lgbt_likert <- lgbt_int |>
     mutate(pct = round(count / nrow(lgbt_survey), digits = 2)) |>
     select(-count) |>
     pivot_wider(names_from = reponse, values_from = pct, values_fill = 0) |>
-    relocate(`Pas important du tout`, .after = themes) |>
-    relocate(`Peu important`, .after = `Pas important du tout`) |>
-    relocate(Neutre, .after = `Peu important`) |>
-    relocate(Important, .after = `Neutre`) |>
-    relocate(`Très important`, .after = Important)
-
-lgbt_likert <- HH::likert(themes ~ .,
-                            lgbt_likert, 
-                            positive.order = TRUE, 
-                            as.percent = TRUE,
-                            main = "Il est important que les MG soient formés sur ces questions",
-                            xlab = "Pourcentages",
-                            ylab = "Thèmes")
+    mutate(score = (`Pas important du tout` * -2) + (`Peu important` * -1) + (Neutre * 0) + (Important) + (`Très important` * 2)) |>
+    arrange(desc(score)) |>
+    pivot_longer(cols = 2:6, names_to = "variable", values_to = "value") |>
+    mutate(variable = factor(variable, levels = c("Pas important du tout", "Peu important", "Neutre", "Important", "Très important"))) |>
+    filter(value != 0) |>
+    ggplot(aes(x = fct_reorder(themes, score), y = value, fill = variable)) +
+    geom_bar(position = "stack", stat = "identity") +
+    geom_text(aes(label = scales::percent(value, accuracy = 1)), color = "grey30", position = position_stack(vjust = 0.5)) +
+    geom_hline(yintercept = 0.5, linetype = "dotted", color = "grey50", linewidth = 0.75) +
+    coord_flip() + 
+    labs(title = "Il est important que les généralistes soient formés sur la question",
+         fill = "Réponses",
+         x = NULL,
+         y = NULL) +
+    scale_fill_manual(values = c("#e64747", "#f28752", "#ffe0b4", "#75abb8", "#138b9e")) + 
+    theme_minimal() + 
+    theme(legend.position = "bottom",
+          plot.title = element_text(hjust = 0.5, size = 16, face = "bold", family = "Lato")) +
+    scale_y_reverse(labels = NULL)
