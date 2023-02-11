@@ -1,5 +1,3 @@
-library(tidyverse)
-
 # Par souci de clarté, les fonctions personnalisées se trouvent dans leurs propres scripts afin de ne pas encombrer celui-ci. 
 source("./scripts/functions.R", encoding = "UTF-8")
 
@@ -15,7 +13,8 @@ mg_int <- as.data.frame(unclass(mg_int),
                             stringsAsFactors = TRUE)
 
 mg_ais <- mg_survey |>
-    select(ends_with("_ais"))
+    select(ends_with("_ais"))|>
+    rename_with(~str_remove(., "_ais"))
 
 mg_ais <- as.data.frame(unclass(mg_ais), 
                             stringsAsFactors = TRUE)
@@ -57,4 +56,5 @@ for (i in 1:10){
 }
 
 common_variables <- list()
-common_variables[["60%"]] <- variable_int_mg[["60%"]][variable_int_mg[["60%"]] %in% variable_int_lgbt[["80%"]]]
+common_variables[["int"]] <- variable_int_mg[["60%"]][variable_int_mg[["60%"]] %in% variable_int_lgbt[["80%"]]]
+common_variables[["ais"]] <- variable_ais_mg[["80%"]][variable_ais_mg[["80%"]] %in% variable_int_lgbt[["80%"]]]
