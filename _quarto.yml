@@ -1,5 +1,5 @@
 project:
   title: "Cours sexualité 16.02.23"
-
-
-
+  output-dir: "docs"
+  post-render: 
+    - ./scripts/move_presentation.R

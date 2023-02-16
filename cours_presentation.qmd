@@ -1,8 +1,521 @@
 ---
-title: "Cours sexualité 16.02.23"
+title: "La santé des minorités sexuelles et de genre"
+subtitle: "Module uro-génital MS2/MS3"
+date: 16 02 23
+date-format: "DD/MM/YYYY"
+author: "Dr Maxence Ouafik"
+institute: "Département de Médecine Générale"
+editor:
+  render-on-save: true
+format:
+  revealjs:
+    number-sections: false
+    incremental: true
+    slide-level: 3
+    slide-number: c/t
+    smaller: true
+    show-slide-number: all
+    center-title-slide: true
+    footer: "La santé des minorités sexuelles et de genre"
+    multiplex: true
+    transition: slide
+    progress: true
+    history: false
+    hide-inactive-cursor: true
+    execute:
+      echo: false
+      warning: false
+    fig-align: center
+    fig-responsive: false
+    fig-format: svg
+    reference-location: margin
+    bibliography: bibliography.bib
+    csl: bmj.csl
+    show-notes: false
+    background-interactive: true
+    link-external-newwindow: true
+    theme: cours.scss
+    title-slide-attributes:
+      data-background-image: /files/background-title.svg
 ---
+
+# {background-iframe="https://app.wooclap.com/events/MHYAOX/questions/63ed5538777685cca85ac4e3"}
+
+# Préambule {background-image="/files/background.svg"}
 
 ```{r}
 library(languageserver)
 library(httpgd)
+library(here)
 ```
+
+## De qui parle-t-on ? 
+## {background-iframe="https://app.wooclap.com/events/MHYAOX/questions/63ed5654e8b2f562112dcb69"}
+
+### Sexes, genres et sexualités
+
+![Distinction entre sexes, genres et sexualités](/files/sexe_genre_sexualite.png){#fig-sgs width="60%"}
+
+::: {.notes}
+Insister sur la diversité au sein de chaque catégorie ainsi que sur les multiples croisements qui existent.
+Ne rien préjuger
+:::
+
+### Un focus sur les pratiques 
+* Les minorités sexuelles et de genre (**MSG**) représentent un ensemble divers d'identités, de positionnements sociaux et de pratiques
+* Dans le cadre de ce cours, nous ne nous intéresserons pas aux **identités** en tant que telles *(gays, bisexuel·le·s, lesbiennes...),* mais bien aux pratiques, car ce sont elles qui importent pour les points qui seront abordés. 
+* 2 termes sont utiles dans ce contexte médico-épidémiologique
+  * **HSH** : Hommes ayant des relations sexuelles avec d'autres hommes
+  * **FSF** : Femmes ayant des relations sexuelles avec d'autres femmes
+
+::: {.notes}
+* Expliquer que ce qui nous intéresse ici, ce n'est pas les questions liées à savoir si la personne est gay ou pas, mais bien la question de savoir avec qui elle couche et comment. 
+* Rappeler néanmoins que les catégories FSF et HSH n'ont pas beaucoup de sens dans un contexte d'analyse sociale. 
+* Rappeler également qu'il n'y a pas que les pratiques qui comptent, mais que ça fait sens vu les sujets qui seront abordés
+:::
+
+## Pourquoi parler de ce sujet ? 
+
+Parce qu'il s'agit d'une nécessité déontologique
+
+::: {.fragment}
+![Avis ordinal sur la nécessité d'une prise en charge adéquate des MSG](/files/ordomedic.png){#fig-ordomedic width="55%"}
+:::
+
+## Quels sujets aborder ?
+### Résultats des questionnaires MG
+
+```{r likert_data}
+source(here::here("scripts/import_data.R"), encoding = "UTF-8")
+source(here::here("scripts/create_likert_plots.R"), encoding = "UTF-8")
+```
+
+
+
+```{r likert_plot_ais}
+#| label: fig-likert-ais
+#| fig-cap: "Aisance des médecins généralistes"
+
+mg_likert_ais_plot
+```
+
+--- 
+
+```{r likert_plot_ais}
+#| label: fig-likert-int
+#| fig-cap: "Intérêt des médecins généralistes"
+
+mg_likert_int_plot
+```
+
+::: {.notes}
+* `r nrow(mg_survey)` assistant·e·s ont participé à la petite enquête en ligne
+* Plus de 80% des assistant·e·s sondé·e·s ne sont pas à l'aise avec les thématiques de santé concernant les personnes transgenres
+* Pourtant, moins de la moitié des sondé·e·s sont intéréssé·e·s à l'idée de se former sur ces questions
+:::
+
+### Résultats des questionnaires communautaires
+
+```{r likert_plot_lgbt}
+#| label: fig-likert-lgbt
+#| fig-cap: "Priorités des MSG sur la formation des MG"
+
+lgbt_likert_plot
+```
+
+### Comparaison entre intérêt des MG et priorités communautaires
+
+```{r}
+#| layout-ncol: 2
+mg_likert_int_plot
+lgbt_likert_plot
+```
+
+### Comparaison entre aisance des MG et priorités communautaires
+
+```{r}
+#| layout-ncol: 2
+mg_likert_ais_plot
+lgbt_likert_plot
+
+```
+
+### Sélections des thématiques
+* Les **ISTs**, **la PrEP**, et **le TPE** sont des thématiques qui intéressent plus de la moitié des assistant·e·s sondé·e·s et qui sont jugées prioritaires par plus de 80% des MSG sondées 
+* Le vieillissement avec le VIH intéressait également une majorité des assistant·e·s sondé·e·s
+* Le traitement hormonal d'affirmation de genre (**THAG**) est le sujet qui est à la fois considéré comme prioritaire par plus de 80% des MSG et mal maîtrisé par plus de 80% des assistant·e·s 
+
+
+:::{.notes}
+- Points communs entre les attentes des personnes LGBT et les attentes des MG, mais divergences notables. Principalement, vis-à-vis des questions liées aux transidentités, il y a un gros manque de formation, mais pas d'envie de le combler. Mon hypothèse est qu'ils ne sont pas assez confrontés à leur ignorance que pour qu'elle soit gênante pour eux ou qu'ils la conscientisent comme un problème. Référer paraît alors plus facile que se former.
+- Cela traduit également une certaine forme d'altérisation des personnes transgenres
+- Globalement, les MG ne sont pas à l’aise avec ces thématiques, ce qui montre l’importance de cette journée 
+- L’accueil n’est pas fort priorisé par les MG ; surestimation de leurs compétences ?
+- Gap important entre la demande, le niveau de formation, et, de manière plus préoccupante, l'envie de se former. Du coup, stratégie : donner envie de se former
+:::
+
+# L'enjeu de l'accès au soin des personnes transgenres {background-image="/files/background.svg"}
+## Contexte 
+* Un passé de pathologisation encore présent
+* L'habitude d'être déçu·e
+* La discrimination dans les soins
+
+::: {.notes}
+- L’homosexualité n’a été retirée de la liste des troubles mentaux de l’OMS que le 17 mai 1990 ; nos maîtres de stage ont tous appris à une époque où l’homosexualité était officiellement une maladie mentale  IDAHOT
+- La transidentité n’a été retirée par l’OMS que le 27 mai 2019 ! Parler des conditions de changement d’état civil avant la loi de 2018 
+- Le manque de formation ==> l’habitude de ne pas être bien accueilli, que les besoins et spécificités ne soient pas connues ; l’infectiologue et le TFE sur les FSF 
+- La curiosité malsaine sur l’anatomie ou les pratiques
+- Exemple de H. B. avec son psychiatre, de X. avec son gynécologue, du stage de dermatologie
+:::
+
+## En pratique
+* Plus grande tendance à reporter les soins ou à peiner pour trouver un·e professionnel·le [@ayhan2020; @dahlhamer2016]
+* Expérience de refus de soins, de violence verbale et physique (durant l’examen) [@ayhan2020]
+* Une tendance à prioriser les soins transspécifiques en négligeant les autres [@uhrig2019]
+* Des facteurs individuels et structurels (précarité, instabilité de logement, violence) [@uhrig2019]
+* Un manque de formation criant [@korpaisarn2018; @uhrig2019; @korpaisarn2018; @irwig2016]
+
+::: {.notes}
+* 40% des personnes transgenres ont déjà subi des comportement discriminatoire de la part de leur médecin traitant
+* 24% des personnes transgenres se sont déjà senties humiliées à cause de leur transidentité en se rendant aux urgences
+* 29% des femmes transgenres ont déjà été rejetées des services d’aide aux victimes à cause de leur transidentité
+
+* Même les endocrinologues ne sont pas formés ; exemple des surrénales
+
+**Notre manque de connaissance empêche des gens de se faire soigner et risque de renforcer la fracture avec le monde médical**
+:::
+
+## Une question d'organisation des soins
+* En Belgique, les soins trans-spécifiques sont officiellement centralisés au sein d'équipes pluridisciplinaires 
+* Il y en a **deux** sur tout le territoire
+- Cette faiblesse de l'offre entraîne des temps d’attente souvent excessifs, la nécessité de parcourir des distances parfois importantes pour accéder à un·e médecin, et une monopolisation de l’offre de soin [@koehler2021]
+* Cette hyperspécialisation des soins trans-spécifiques, relayés à la troisième ligne, renforce intrinsèquement une altérisation des personnes transgenres, les faisant passer pour des individus aux besoins exceptionnels ne pouvant être gérés que par des équipes ultra-spécialisées [@ker2021]
+* Elle concourre aussi à dépossèder les deux premières lignes des capacités nécessaires pour soigner correctement les personnes transgenres
+
+:::{.notes}
+* Parler des listes d'attente 
+* Parler de la difficulté géographique (mobiliser l'exemple de J.)
+* Insister sur les concepts d'altérisation et de dépossession des compétences
+:::
+
+## L'envie et la nécessité d'une première ligne compétente
+* L'hôpital peut être perçu comme un endroit anxiogène, au sein duquel on est envoyé contre son gré, plutôt qu'un lieu de soin que l'on décide librement de fréquenter [@ker2021]
+* L'hôpital constitue également un lieu où les disparités de pouvoir sont renforcées [@ker2021]
+* Les personnes transgenres sont désireuses d'avoir plus de service de soins **particulièrement en première ligne** [@lee2022]
+* Une prise en charge trans-spécifique décentralisée en première ligne permet de favoriser l'accès au soin, le libre choix des médecins et des traitements, ainsi qu'une meilleure implication des médecins au sein de la communauté [@koehler2021]
+
+---
+
+![Le carré de White](/files/white.jpg){#fig-white}
+
+## Illustration issue de ma pratique
+
+```{r}
+#| include: false
+source(here::here("./scripts/patients_plots.R"), encoding = "UTF-8")
+source(here::here("./scripts/create_patients_map.R"), encoding = "UTF-8")
+```
+
+```{r}
+#| layout-ncol: 2
+#| label: fig-demog
+#| fig-cap: "Analyse démographique des patient·e·s transgenres vu·e·s depuis un an (N = 115)"
+#| fig-subcap: 
+#|  - "Statut BIM"
+#|  - "DMG ouvert" 
+
+bim_plot
+dmg_plot
+```
+
+---
+
+```{r}
+#| label: fig-map
+#| fig-cap: "Mobilité géographique des patient·e·s transgenres vu·e·s depuis un an (N = 111) "
+
+patients_map
+```
+
+# Dépistage et prise en charge des ISTs {background-image="/files/background.svg"}
+
+## {background-iframe="https://app.wooclap.com/events/MHYAOX/questions/63ed785e69ded651a50e89ea"}
+
+## VIH
++--------------------------------------------------------------------------+-------------------------------------------------------+----------------------------------------------------------------------------------+
+| Dépistage                                                                | Traitement                                            | Suivi                                                                            |
++==========================================================================+=======================================================+==================================================================================+
+| * Période fenêtre de **15-20 jours** pour les ELISA de 4ème génération ; | Référer                                               | Référer                                                                          +
+|**95% de sensibilité après 3 semaines** ;                                 |                                                       |                                                                                  +
+|sensibilité maximale après **6 semaines**                                 |                                                       |                                                                                  +
+| * Intérêt du TROD pour les HSH                                           |                                                       |                                                                                  +      
++--------------------------------------------------------------------------+-------------------------------------------------------+----------------------------------------------------------------------------------+
+: Dépistage du VIH {#tbl-vih}
+
+::: {.notes}
+* 33% de VPP chez le tout-venant (prévalence de 0,17%) ==> VPP de 98% chez les HSH pour les TROD
+* 50% de VPP pour la population générale ==> test de confirmation ! 
+:::
+
+## Chlamydia et gonorrhée
+
++-----------------------------------------------------------+-------------------------------------------------------+----------------------------------------------------------------------------------+
+| Dépistage                                                 | Traitement                                            | Suivi                                                                            |
++===========================================================+=======================================================+==================================================================================+
+| * PCR                                                     | - Gonorrhée : Rocéphine 500mg IM                      | - Test of cure : uniquement si persistance de symptômes ou doute sur l'adhérence |
+| * Urines 1er jet + frottis de gorge + frottis rectal      | - Chlamydia : Doxycycline 100mg 2x/J pendant 7 J      | - Attendre 4 semaines avant de retester.                                          |
+| * Période fenêtre : **14 jours**                          |                                                       |                                                                                  |   
++-----------------------------------------------------------+-------------------------------------------------------+----------------------------------------------------------------------------------+
+
+: Dépistage et prise en charge de la gonorrhée et de la chlamydia [@workowski2021] {#tbl-ngct}
+
+
+* Jusqu'à 70% de cas manqués si échantillon uro-génital unique (HSH) [@workowski2021] 
+* La doxycycline a une efficacité supérieure à l'azithromycine, a fortiori pour les sites extragénitaux [@workowski2021]
+
+### À titre de réflexion
+* Certains éléments indiquent que la gonorrhée peut se transmettre par la salive (anulingus, baisers, fellation) [@Chow2019]
+- Des études (anciennes) ont montré que la salive avait un effet inhibiteur sur Chlamydia [@Chow2019]
+- Des doutes subsistent sur une migration de Chlamydia oropharyngé vers la zone anale par translocation le long du tractus gastro-intestinal [@Chow2019]
+- Le screening de gonorrhée chez les HSH asymptomatiques a probablement peu d'impact sur la prévalence tout en exposant à des risques majeurs d'antibiorésistance [@Buyze2018; @Tsoumanis2018]
+
+::: {.notes}
+Parler du fait que certaines souches de NG deviennent résistantes à presque tous les ATB et que d'ici quelques années, elle risque de devenir intraitable
+:::
+
+## Syphilis 
+### Interprétation de la sérologie 
+
+::: {.nonincremental}
+* Les tests tréponémiques (**TPHA**) ont tendance à rester positifs à vie
+* Les tests non tréponémiques (**VDRL**) décroissent lentement, mais peuvent parfois rester positifs à vie
+:::
+
+| TPHA    | VDRL    | Interprétation                                                    |
+|---------|---------|-------------------------------------------------------------------|
+| Positif | Positif | Syphilis active                                                   |
+| Positif | Négatif | Syphilis traitée ou latente très précoce ; anamnèse + retester    |
+| Négatif | Positif | Faux positif ; retester                                           |
+: Interprétation des résultats sérologiques de la syphilis {#tbl-sero}
+
+::: {.notes}
+20-30% de FN lors du chancre ; répéter 2-4 semaines plus tard
+:::
+
+### Traitement et suivi
+* Syphilis **précoce** (primaire, secondaire ou latente précoce) : 2 ampoules de Penadur IM ou doxycycline 100mg 2x/J pendant 14J si allergie
+* Syphilis **tardive** : Penadur IM 2 ampoules 1x/semaine pendant 3 semaines ; référer si allergie
+* Neurosyphilis, symptômes cardiaques ou gommes syphilitiques : référer
+* Sérologie à 3, 6 mois et 12 mois [et 24 mois] (ou plus tôt si réapparition des symptômes) ; une chute de 4x le titre équivaut à une guérison
+
+::: {.notes}
+Parler du remboursement
+:::
+
+## Mycoplasma genitalium 
+* Préoccupant au vu de sa capacité majeure à développer des résistances [@Pinto-Sander2019]
+* Retrouvé dans **15-25%** des urétrites non-gonococciques et **10-13%** des PID [@Pinto-Sander2019]
+* **Généralement asymptomatique** [@Pinto-Sander2019]
+* Lorsque des symptômes sont présents, il donne généralement des urétrites ou des cervicites avec saignements post-coïtaux [@Pinto-Sander2019]
+* Impact sur la fertilité méconnu ; données préliminaires sur une association avec la prématurité et les fausses couches [@Pinto-Sander2019]
+* Vu la forte antibiorésistance et le peu d'expression clinique **il ne faut pas le rechercher, sauf si urétrite de cause inconnue**
+* Si besoin d'un traitement : Doxycycline 100mg 2x/J pendant 7 jours suivi par Azithromycine 1g en prise unique + 500mg par jour pendant 3 jours de plus [@workowski2021]
+* Si résistance aux macrolides : Doxycycline 100mg 2x/J pendant 7 jours suivi par Moxifloxacine 400mg 1x/J pendant 7 jours
+
+::: {.notes}
+* Plus petite bactérie connue
+:::
+## Hépatites [@workowski2021]
+- L'hépatite A peut se transmettre par anulingus 
+- L'hépatite B se transmet par les fluides sexuels et le sang
+- L'hépatite C peut se transmettre par voie sexuelle entre hommes
+- La vaccination est recommandée pour les HSH
+
+## HPV
+* Pas de guidelines de dépistage pour les hommes cisgenres, même si les HSH sont à haut risque [@workowski2021]
+* Dépistage tous les trois ans dès 25 ans si col de l'utérus
+* Grosse sous-utilisation du dépistage chez les FSF [@Knight2017] et les hommes transgenres 
+* Vaccination recommandée jusqu'à 26 ans pour les HSH, mais peu de données en situation réelle sur l'efficacité [@goodman2022]
+- La vaccination nonavalente a le potentiel de prévenir **90%** des cancers cervicaux, **79%** des cancers anaux, **61%** des cancers vaginaux, **25%** des cancers du pénis, **23%** des cancers vulvaires, et **21%** des cancers oropharyngés !
+
+::: {.notes}
+Dépistage recommandé en cas de PrEP par un proctologue, par anuscopie (Dr Van Kemseke) 
+:::
+
+## Vaginose bactérienne [@workowski2021]
+## {background-iframe="https://app.wooclap.com/events/MHYAOX/questions/63ed901e7bf35a80d157048a"}
+
+
+### Définition et diagnostic
+* La vaginose bactérienne est une **dysbiose** résultant du remplacement des *Lactobacilles* par des bactéries anaérobiques telles que *G. Vaginalis*, *Prevotella*, et *Mobiluncus* 
+* La contraception hormonale (progestative et œstroprogestative) apporte une certaine protection 
+* Portage concomitant très fréquent entre FSF et les données épidémiologiques démontrent clairement une transmission sexuelle dans cette population 
+* Provoque des décharges généralement malodorantes 
+* Augmente le risque d'IST et de complications durant la grossesse 
+* Méthode de diagnostic de référence : score de Nugent sur frottis vaginal. Il s'agit de la concentration relative entre lactobacilles et bactéries associées à une vaginose. 
+  * 0-3 : flore normale
+  * 4-6 : flore intermédiaire déséquilibrée
+  * 7-10 : vaginose
+
+::: {.notes}
+Parler des mecs trans
+:::
+
+### Traitement
+* Traitement : Métronidazole 500mg 2x/J pendant 7 jours ou en application topique une fois par jour pendant 5 jours 
+  * Alternative : Clindamycine topique une fois par jour, avant d'aller coucher, pendant 7 jours 
+* Récurrences fréquentes ; utiliser le même traitement ou une alternative 
+  * Possibilité de traitement suppressif : application topique 2x/semaine pendant plus de trois mois ; bénéfices ne perdurant pas à l'arrêt du traitement 
+* Pas de preuve scientifique d'un intérêt de traiter les partenaires
+
+## Trichomonas vaginalis [@workowski2021]
+* IST non virale la plus fréquente dans le monde 
+* Pas de dépistage asymptomatique ; rechercher en cas de perte vaginale anormale (malodorante, jaunâtre/verdâtre), accompagnée ou non d'irritation vulvaire 
+* Peut également donner des urétrites, épididymites, et prostatites 
+* Diagnostic : PCR ; Trichomonas arrête de bouger très rapidement et la sensibilité de l'évaluation microscopique chute à 20% après une heure post-collection
+* Traitement : Métronidazole 500mg 2x/J pendant 7 jours si infection vaginale ; 2g en prise unique si prostatite/urétrite/épididymite ou traitement d'un partenaire 
+* Différemment à la vaginose, **le traitement des partenaires est indispensable pour espérer une guérison**
+* Si récurrence, on a peu d'options... Métronidazole 2g pendant 7J en l'absence de réexposition ou répéter le traitement, si réexposition
+
+## Quelques mots sur les FSF
+* Gros manque de recherche scientifique sur ce sujet [@obon-azuara2022] 
+* Sous-utilisation des services de prévention et de gynécologie et gros manque de connaissance sur la santé sexuelle [@Knight2017] 
+* Principalement exposées aux **vaginoses bactériennes**, aux **trichomonas**, au **HPV** et à l'**HSV**. [@workowski2021]
+* Transmission possible de Chlamydia et Gonorrhée [@workowski2021]
+* Case reports de transmission de VIH et de syphilis. [@workowski2021]
+* Digue dentaire, doigtiers et nettoyage des sex toys
+
+## Quelques mots sur les personnes transgenres
+* Presque aucune étude sur le sujet ; extrapolation à partir des pratiques et de l'anatomie [@workowski2021]
+* Attention à s'adapter au langage employé et à ne pas se montrer intrusif
+* Peu de données sur les néovagins ; HSV/HPV/Chlamydia/Gonorrhée décrites. [@workowski2021]
+* Si métaoïodioplastie avec élongation urétrale sans vaginectomie, un frottis cervical est nécessaire, car l'échantillon urinaire ne sera pas performant
+
+::: {.notes}
+Parler un peu d'histoire de la recherche et d'androcentrisme
+Parler de Go To Gyneco
+Parler de l'infectio du TFE
+:::
+
+# La PrEP {background-image="/files/background.svg"}
+## Intérêt et prescription
+* Bithérapie consistant en une association de **Tenofovir** et d'**Emtricitabine** visant à empêcher la contamination au VIH *avant* un rapport sexuel
+* Prescription via un centre de référence VIH
+* Remboursement si dépistage tous les trois mois et avis de l'infectiologue
+* Permet une protection quasi complète contre le VIH, si prise correctement, mais n'offre aucune protection contre les autres ISTs
+
+## Schéma de prise
+::: {.nonincremental}
+* 1 comprimé pr jour ; peut être pris à la demande chez les HSH
+:::
+
+![Schéma de prise à la demande de la PrEP](/files/prep.png){#fig-prep}
+
+## Précautions et effets indésirables
+* Précautions particulières si patient avec un HBV chronique (risque théorique de flambée mais pas de CI) 
+* Entraîne une diminution de la densité osseuse (non-pathologique) et une diminution de la clairance de créatinine (non-pathologique également) ; les deux sont réversibles à l'arrêt du traitement
+
+# Le TPE [@libois2018] {background-image="/files/background.svg"}
+## Indication
+* Recommandé si risque de transmission significatif du VIH (**> 1/1000**)
+* À discuter si risque intermédiaire (**entre 1/10 000 et 1/10 000**)
+* Non recommandé en dessous
+* Doit être initié idéalement **dans les 24h,** mais peut être proposé **jusqu'à 72h**
+* Durée du traitement : **28 jours**
+* Effets indésirables : asthénie et gastro-intestinaux
+
+## Calcul du risque
+
+* Le risque est calculé en mesurant le risque que la personne à l'origine de l'exposition ait le VIH (@tbl-prev), multiplié par le risque par exposition (@tbl-act) 
+* Certaines situations augmentent ce risque : lésions muqueuses, charge virale élevée (primo-infection), menstruations, présence d'une IST, non-circoncision, éjaculation
+
+---
+
+::: {#tbl-nonopep layout-ncol=2}
+|Groupe                                     |Prévalence|
+|-------------------------------------------|----------|
+|HSH (Flandre)                              | 5%       |
+|HSH (Bruxelles)                            | 9%       |
+|HSH (cruising)                             | 14.5%    |
+|Travailleurs du sexe                       | 14%      |
+|Travailleuses du sexe (Europe occidentale) | < 1%     |
+|Travailleuses du sexe (Europe de l'Est)    | 2,5 à 8% |
+|Migrants d'Afrique subsaharienne           | 4.2%     |
+|Migrantes d'Afrique subsaharienne          | 5.9%     |
+: Prévalence du VIH dans différents groupes en Belgique {#tbl-prev}
+
+
+|Pratique                            | Risque de transmission par acte | 
+|------------------------------------|---------------------------------|
+|Sexe anal réceptif avec éjaculation | 1/65                            |
+|Sexe anal réceptif                  | 1/90                            |
+|Partage de matériel d'injection     | 1/149                           |
+|Sexe anal insertif (non circoncis)  | 1/161                           |
+|Sexe anal réceptif sans éjaculation | 1/170                           |
+|Sexe anal insertif                  | 1/666                           |
+|Sexe anal insertif (circoncis)      | 1/909                           |
+|Sexe vaginal réceptif               | 1/1000                          |
+|Sexe vaginal insertif               | 1/1219                          |
+|Fellation                           | < 1/10 000                      |
+: Risque de transmission par acte sexuel {#tbl-act}
+
+Calcul du risque de tranmission du VIH
+:::
+
+## En pratique 
+* Recommandé dans tous les cas si sexe anal
+* À envisager si sexe vaginal
+* Non-recommandé si sexe oral, sauf si primo-infection VIH + lésions muqueuses orales
+
+::: {.notes}
+Parler du cas de figure du viol
+:::
+
+# Vieillir avec le VIH {background-image="/files/background.svg"}
+
+## Contexte
+* Avec le développement de traitements antirétroviraux efficaces, la population de PVVIH [^Personnes vivant avec le VIH] s'est agrandie avec le temps
+* Les PVVIH de plus de 50 ans représentent désormais 50% des PVVIH aux USA et atteindront 70% d'ici 2030 [@fukui2018]
+* Toutefois, malgré l'efficacité des ARV, une différence persiste au niveau des années de vie en bonne santé, suggérant un vieillissement prématuré des PVVIH [@rodes2022]
+
+## VIH et fragilité [@fukui2018]
+* La fragilité est un état de vulnérabilité accrue chez les personnes âgées augmentant les risques de survenue d'évènements cliniques défavorables (hospitalisation, institutionalisation, et décès)
+* La fragilité est la conséquence d'une perturbation des fonctions homéostatiques et d'un déclin dans les réserves physiologiques
+* L'inflammation chronique semble jouer un rôle prépondérant dans la survenue d'un phénotype fragile et le vieillissement constitue en lui-même un état d'inflammation chronique
+* Cet état de fait est amplifié chez les PVVIH qui, même lorsque leur charge virale est indétectable, conservent un état d'activation immunitaire et d'inflammation
+
+::: {.notes}
+Le phénotype de fragilité évalue la vulnérabilité des personnes âgées à travers cinq dimensions : l’amaigrissement, la faiblesse, la fatigue, la lenteur de marche et le faible niveau d’activité physique. Ces domaines caractérisent différents stades de la maladie et conditions médicales. Sur la base du score de fragilité, les personnes sont classées en trois catégories : robustes, pré-fragiles et fragiles.
+:::
+
+## Une question complexe [@rodes2022]
+* La question demeure de savoir si le VIH accélère le vieillissement (c'est-à-dire qu'il entraîne des évènements plus précocément que dans la population générale) ou s'il l'accentue (c'est-à-dire que les évènements surviennent au même âge, mais plus fréquemment)
+* En outre, l'effet sur le long terme des ARV, les aspects comportementaux, ainsi que les co-infections contribuent à complexifier le problème 
+* Les ARV peuvent entraîner : 
+  * Dysfonction mitochondriale, toxicité rénale et osseuse (Tenofovir)
+  * Résistance à l'insuline, dyslipidémie, sénéscence des cellules endothéliales artérielles (inhibiteurs de la protéase)
+  * Prise de poids et symptômes neuropsychiatriques (inhibiteurs de l'intégrase)
+
+---
+
+![Vieillissement et VIH (tiré de [@rodes2022])](/files/ageing.png){#fig-ageing}
+
+## Rôles du médecin généraliste [@thompson2021]
+### Santé cardio-vasculaire
+* Risque accru de morbidité cardiovasculaire, a fortiori si d'autres facteurs de risque sont présents
+* Reconnu comme facteur de risque athérosclérotique dans les guidelines maéricaines sur la prise en charge du cholestérol 
+* Tous les PVVIH devraient être évalués pour leur risque cardio-vasculaire et ceux à risque élevé ou avec des LDL-C trop élevées devraient être pris en charge selon les recommandations en vigueur
+* Attention aux interactions sérieuses entre statines, inhibteurs de la protéase et inhibiteurs nucléosidiques de la transcriptase inverse
+
+### Diabète
+* Impact des ARV sur l'HbA1c ; ne pas s'en servir pour diagnostiquer et se baser sur la glycémie à jeun
+
+### Santé osseuse
+* Ostéodensitométrie conseillée après 50 ans chez tout le monde
+* Supplémentation vitamino-calcique conseillée si ostéopénie avec contrôle à un an
+* Ostéodensitométrie à partir de 65 ans chez les personnes transgenres sous THAG ; commencer à 50 ans si gonadectomie + interruption de traitement de 5 ans
+
+### Déficit neurocognitif
+* Plus fréquents que dans la population générale, mais pas de recommandation de screening, car peu d'option en cas de déficit modéré
+
+# Bibliographie

@@ -1,0 +1,25 @@
+/*-- scss:defaults --*/
+  // colors
+   $custom-h1: #FFE0B4;
+   $custom-h2: #138b9e;
+   $custom-h3: #75abb8;
+
+   // fonts
+$font-family-sans-serif: "Lato Light" !default;
+$presentation-heading-font:	"Lato Regular" !default;
+  
+.reveal section h1 {
+  color: $custom-h1;
+}
+
+  .reveal section h2 {
+    color: $custom-h2;
+  }
+
+  .reveal section h3 {
+    color: $custom-h3;
+  }
+
+  b, strong   {
+    color: #5fa3b0;
+}
