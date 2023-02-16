@@ -36,8 +36,10 @@ format:
     link-external-newwindow: true
     theme: cours.scss
     title-slide-attributes:
-      data-background-image: /files/background-title.svg
+      data-background-image: /docs/files/background-title.svg
 ---
+
+# https://t.ly/pR-4
 
 # {background-iframe="https://app.wooclap.com/events/MHYAOX/questions/63ed5538777685cca85ac4e3"}
 
