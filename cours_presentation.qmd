@@ -39,11 +39,11 @@ format:
       data-background-image: ./files/background-title.svg
 ---
 
-# https://t.ly/pR-4
+## https://t.ly/pR-4
 
 # {background-iframe="https://app.wooclap.com/events/MHYAOX/questions/63ed5538777685cca85ac4e3"}
 
-# Préambule {background-image="/files/background.svg"}
+# Préambule {background-image="./files/background.svg"}
 
 ```{r}
 library(languageserver)
@@ -156,7 +156,7 @@ lgbt_likert_plot
 - Gap important entre la demande, le niveau de formation, et, de manière plus préoccupante, l'envie de se former. Du coup, stratégie : donner envie de se former
 :::
 
-# L'enjeu de l'accès au soin des personnes transgenres {background-image="/files/background.svg"}
+# L'enjeu de l'accès au soin des personnes transgenres {background-image="./files/background.svg"}
 ## Contexte 
 * Un passé de pathologisation encore présent
 * L'habitude d'être déçu·e
@@ -239,7 +239,7 @@ dmg_plot
 patients_map
 ```
 
-# Dépistage et prise en charge des ISTs {background-image="/files/background.svg"}
+# Dépistage et prise en charge des ISTs {background-image="./files/background.svg"}
 
 ## {background-iframe="https://app.wooclap.com/events/MHYAOX/questions/63ed785e69ded651a50e89ea"}
 
@@ -399,7 +399,7 @@ Parler de Go To Gyneco
 Parler de l'infectio du TFE
 :::
 
-# La PrEP {background-image="/files/background.svg"}
+# La PrEP {background-image="./files/background.svg"}
 ## Intérêt et prescription
 * Bithérapie consistant en une association de **Tenofovir** et d'**Emtricitabine** visant à empêcher la contamination au VIH *avant* un rapport sexuel
 * Prescription via un centre de référence VIH
@@ -473,7 +473,7 @@ Calcul du risque de tranmission du VIH
 Parler du cas de figure du viol
 :::
 
-# Vieillir avec le VIH {background-image="/files/background.svg"}
+# Vieillir avec le VIH {background-image="./files/background.svg"}
 
 ## Contexte
 * Avec le développement de traitements antirétroviraux efficaces, la population de PVVIH [^Personnes vivant avec le VIH] s'est agrandie avec le temps
