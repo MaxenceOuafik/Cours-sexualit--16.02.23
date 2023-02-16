@@ -36,7 +36,7 @@ format:
     link-external-newwindow: true
     theme: cours.scss
     title-slide-attributes:
-      data-background-image: /docs/files/background-title.svg
+      data-background-image: .t ba/files/background-title.svg
 ---
 
 # https://t.ly/pR-4
