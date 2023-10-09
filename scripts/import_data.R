@@ -22,3 +22,10 @@ refnis_postal <- read_delim(here::here("data/refnis_postal.csv"),
 mg_survey <- read_delim(here::here("data/MG_survey.csv"))
 
 lgbt_survey <- read_delim(here::here("data/LGBT_survey.csv"))
+
+cities_geocoded <- read_delim("data/belgian-cities-geocoded.csv") |>
+    distinct(postal, .keep_all = TRUE) |>
+    select(postal, lat, lng)
+patients_geocoded <- left_join(patients_data, cities_geocoded, by = "postal") |>
+    filter(!is.na(lat)) |>
+    unite("coord", lat, lng, sep = "+")
