@@ -5,9 +5,10 @@
 <script src="cours_presentation_files/libs/quarto-html/popper.min.js"></script>
 <script src="cours_presentation_files/libs/quarto-html/tippy.umd.min.js"></script>
 <link href="cours_presentation_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="cours_presentation_files/libs/quarto-html/light-border.css" rel="stylesheet">
 <link href="cours_presentation_files/libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
 <link href="cours_presentation_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.2.313">
+  <meta name="generator" content="quarto-1.3.450">
 
   <meta name="author" content="Dr Maxence Ouafik">
   <title>La santé des minorités sexuelles et de genre</title>
@@ -25,14 +26,15 @@
     ul.task-list{list-style: none;}
     ul.task-list li input[type="checkbox"] {
       width: 0.8em;
-      margin: 0 0.8em 0.2em -1.6em;
+      margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
+    /* CSS for citations */
     div.csl-bib-body { }
     div.csl-entry {
       clear: both;
     }
-    .hanging div.csl-entry {
+    .hanging-indent div.csl-entry {
       margin-left:2em;
       text-indent:-2em;
     }
@@ -46,9 +48,8 @@
     }
     div.csl-indent {
       margin-left: 2em;
-    }
-  </style>
-  <link rel="stylesheet" href="cours_presentation_files/libs/revealjs/dist/theme/quarto.css" id="theme">
+    }  </style>
+  <link rel="stylesheet" href="cours_presentation_files/libs/revealjs/dist/theme/quarto.css">
   <link href="cours_presentation_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="cours_presentation_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="cours_presentation_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -91,44 +92,44 @@
     font-weight: 400;
   }
 
-  .callout.callout-captioned.callout-style-simple .callout-body {
+  .callout.callout-titled.callout-style-simple .callout-body {
     margin-top: 0.2em;
   }
 
-  .callout:not(.callout-captioned) .callout-body {
+  .callout:not(.callout-titled) .callout-body {
       display: flex;
   }
 
-  .callout:not(.no-icon).callout-captioned.callout-style-simple .callout-content {
+  .callout:not(.no-icon).callout-titled.callout-style-simple .callout-content {
     padding-left: 1.6em;
   }
 
-  .callout.callout-captioned .callout-header {
+  .callout.callout-titled .callout-header {
     padding-top: 0.2em;
     margin-bottom: -0.2em;
   }
 
-  .callout.callout-captioned .callout-caption  p {
+  .callout.callout-titled .callout-title  p {
     margin-top: 0.5em;
     margin-bottom: 0.5em;
   }
     
-  .callout.callout-captioned.callout-style-simple .callout-content  p {
+  .callout.callout-titled.callout-style-simple .callout-content  p {
     margin-top: 0;
   }
 
-  .callout.callout-captioned.callout-style-default .callout-content  p {
+  .callout.callout-titled.callout-style-default .callout-content  p {
     margin-top: 0.7em;
   }
 
-  .callout.callout-style-simple div.callout-caption {
+  .callout.callout-style-simple div.callout-title {
     border-bottom: none;
     font-size: .9rem;
     font-weight: 600;
     opacity: 75%;
   }
 
-  .callout.callout-style-default  div.callout-caption {
+  .callout.callout-style-default  div.callout-title {
     border-bottom: none;
     font-weight: 600;
     opacity: 85%;
@@ -160,7 +161,7 @@
     background-size: 0.9rem 0.9rem;
   }
 
-  .callout-caption {
+  .callout-title {
     display: flex
   }
     
@@ -173,16 +174,16 @@
     display: none !important;
   }
 
-  .callout.callout-captioned .callout-body > .callout-content > :last-child {
+  .callout.callout-titled .callout-body > .callout-content > :last-child {
     margin-bottom: 0.5rem;
   }
 
-  .callout.callout-captioned .callout-icon::before {
+  .callout.callout-titled .callout-icon::before {
     margin-top: .5rem;
     padding-right: .5rem;
   }
 
-  .callout:not(.callout-captioned) .callout-icon::before {
+  .callout:not(.callout-titled) .callout-icon::before {
     margin-top: 1rem;
     padding-right: .5rem;
   }
@@ -197,7 +198,7 @@
     background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAAEU0lEQVRYCcVXTWhcVRQ+586kSUMMxkyaElstCto2SIhitS5Ek8xUKV2poatCcVHtUlFQk8mbaaziwpWgglJwVaquitBOfhQXFlqlzSJpFSpIYyXNjBNiTCck7x2/8/LeNDOZxDuEkgOXe++553zfefee+/OYLOXFk3+1LLrRdiO81yNqZ6K9cG0P3MeFaMIQjXssE8Z1JzLO9ls20MBZX7oG8w9GxB0goaPrW5aNMp1yOZIa7Wv6o2ykpLtmAPs/vrG14Z+6d4jpbSKuhdcSyq9wGMPXjonwmESXrriLzFGOdDBLB8Y6MNYBu0dRokSygMA/mrun8MGFN3behm6VVAwg4WR3i6FvYK1T7MHo9BK7ydH+1uurECoouk5MPRyVSBrBHMYwVobG2aOXM07sWrn5qgB60rc6mcwIDJtQrnrEr44kmy+UO9r0u9O5/YbkS9juQckLed3DyW2XV/qWBBB3ptvI8EUY3I9p/67OW+g967TNr3Sotn3IuVlfMLVnsBwH4fsnebJvyGm5GeIUA3jljERmrv49SizPYuq+z7c2H/jlGC+Ghhupn/hcapqmcudB9jwJ/3jvnvu6vu5lVzF1fXyZuZZ7U8nRmVzytvT+H3kilYvH09mLWrQdwFSsFEsxFVs5fK7A0g8gMZjbif4ACpKbjv7gNGaD8bUrlk8x+KRflttr22JEMRUbTUwwDQScyzPgedQHZT0xnx7ujw2jfVfExwYHwOsDTjLdJ2ebmeQIlJ7neo41s/DrsL3kl+W2lWvAga0tR3zueGr6GL78M3ifH0rGXrBC2aAR8uYcIA5gwV8zIE8onoh8u0Fca/ciF7j1uOzEnqcIm59sEXoGc0+z6+H45V1CvAvHcD7THztu669cnp+L0okAeIc6zjbM/24LgGM1gZk7jnRu1aQWoU9sfUOuhrmtaPIO3YY1KLLWZaEO5TKUbMY5zx8W9UJ6elpLwKXbsaZ4EFl7B4bMtDv0iRipKoDQT2sNQI9b1utXFdYisi+wzZ/ri/1m7QfDgEuvgUUEIJPq3DhX/5DWNqIXDOweC2wvIR90Oq3lDpdMIgD2r0dXvGdsEW5H6x6HLRJYU7C69VefO1x8Gde1ZFSJLfWS1jbCnhtOPxmpfv2LXOA2Xk2tvnwKKPFuZ/oRmwBwqRQDcKNeVQkYcOjtWVBuM/JuYw5b6isojIkYxyYAFn5K7ZBF10fea52y8QltAg6jnMqNHFBmGkQ1j+U43HMi2xMar1Nv0zGsf1s8nUsmUtPOOrbFIR8bHFDMB5zL13Gmr/kGlCkUzedTzzmzsaJXhYawnA3UmARpiYj5ooJZiUoxFRtK3X6pgNPv+IZVPcnwbOl6f+aBaO1CNvPW9n9LmCp01nuSaTRF2YxHqZ8DYQT6WsXT+RD6eUztwYLZ8rM+rcPxamv1VQzFUkzFXvkiVrySGQgJNvXHJAxiU3/NwiC03rSf05VBaPtu/Z7/B8Yn/w7eguloAAAAAElFTkSuQmCC');
   }
 
-  div.callout-note.callout-style-default .callout-caption {
+  div.callout-note.callout-style-default .callout-title {
     background-color: #dae6fb
   }
 
@@ -209,7 +210,7 @@
     background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAAEKklEQVRYCcVXTWhcVRS+575MJym48A+hSRFr00ySRQhURRfd2HYjk2SSTokuBCkU2o0LoSKKraKIBTcuFCoidGFD08nkBzdREbpQ1EDNIv8qSGMFUboImMSZd4/f9zJv8ibJMC8xJQfO3HPPPef7zrvvvnvviIkpC9nsw0UttFunbUhpFzFtarSd6WJkStVMw5xyVqYTvkwfzuf/5FgtkVoB0729j1rjXwThS7Vio+Mo6DNnvLfahoZ+i/o32lULuJ3NNiz7q6+pyAUkJaFF6JwaM2lUJlV0MlnQn5aTRbEu0SEqHUa0A4AdiGuB1kFXRfVyg5d87+Dg4DL6m2TLAub60ilj7A1Ec4odSAc8X95sHh7+ZRPCFo6Fnp7HfU/fBng/hi10CjCnWnJjsxvDNxWw0NfV6Rv5GgP3I3jGWXumdTD/3cbEOP2ZbOZp69yniG3FQ9z1jD7bnBu9Fc2tKGC2q+uAJOQHBDRiZX1x36o7fWBs7J9ownbtO+n0/qWkvW7UPIfc37WgT6ZGR++EOJyeQDSb9UB+DZ1G6DdLDzyS+b/kBCYGsYgJbSQHuThGKRcw5xdeQf8YdNHsc6ePXrlSYMBuSIAFTGAtQo+VuALo4BX83N190NWZWbynBjhOHsmNfFWLeL6v+ynsA58zDvvAC8j5PkbOcXCMg2PZFk3q8MjI7WAG/Dp9AwP7jdGBOOQkAvlFUB+irtm16I1Zw9YBcpGTGXYmk3kQIC/Cds55l+iMI3jqhjAuaoe+am2Jw5GT3Nbz3CkE12NavmzN5+erJW7046n/CH1RO/RVa8lBLozXk9uqykkGAyRXLWlLv5jyp4RFsG5vGVzpDLnIjTWgnRy2Rr+tDKvRc7Y8AyZq10jj8DqXdnIRNtFZb+t/ZRtXcDiVnzpqx8mPcDWxgARUqx0W1QB9MeUZiNrV4qP+Ehc+BpNgATsTX8ozYKL2NtFYAHc84fG7ndxUPr+AR/iQSns7uSUufAymwDOb2+NjK27lEFocm/EE2WpyIy/Hi66MWuMKJn8RvxIcj87IM5Vh9663ziW36kR0HNenXuxmfaD8JC7tfKbrhFr7LiZCrMjrzTeGx+PmkosrkNzW94ObzwocJ7A1HokLolY+AvkTiD/q1H0cN48c5EL8Crkttsa/AXQVDmutfyku0E7jShx49XqV3MFK8IryDhYVbj7Sj2P2eBxwcXoe8T8idsKKPRcnZw1b+slFTubwUwhktrfnAt7J++jwQtLZcm3sr9LQrjRzz6cfMv9aLvgmnAGvpoaGLxM4mAEaLV7iAzQ3oU0IvD5x9ix3yF2RAAuYAOO2f7PEFWCXZ4C9Pb2UsgDeVnFSpbFK7/IWu7TPTvBqzbGdCHOJQSxiEjt6IyZmxQyEJHv6xyQsYk//moVFsN2zP6fRImjfq7/n/wFDguUQFNEwugAAAABJRU5ErkJggg==');
   }
 
-  div.callout-important.callout-style-default .callout-caption {
+  div.callout-important.callout-style-default .callout-title {
     background-color: #f7dddc
   }
 
@@ -221,7 +222,7 @@
     background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAAETklEQVRYCeVWW2gcVRg+58yaTUnizqbipZeX4uWhBEniBaoUX1Ioze52t7sRq6APio9V9MEaoWlVsFasRq0gltaAPuxms8lu0gcviE/FFOstVbSIxgcv6SU7EZqmdc7v9+9mJtNks51NTUH84ed889/PP+cmxP+d5FIbMJmNbpREu4WUkiTtCicKny0l1pIKmBzovF2S+hIJHX8iEu3hZJ5lNZGqyRrGSIQpq15AzF28jgpeY6yk6GVdrfFqdrD6Iw+QlB8g0YS2g7dyQmXM/IDhBhT0UCiRf59lfqmmDvzRt6kByV/m4JjtzuaujMUM2c5Z2d6JdKrRb3K2q6mA+oYVz8JnDdKPmmNthzkAk/lN63sYPgevrguc72aZX/L9C6x09GYyxBgCX4NlvyGUHOKELlm5rXeR1kchuChJt4SSwyddZRXgvwMGvYo4QSlk3/zkHD8UHxwVJA6zjZZqP8v8kK8OWLnIZtLyCAJagYC4rTGW/9Pqj92N/c+LUaAj27movwbi19tk/whRCIE7Q9vyI6yvRpftAKVTdUjOW40X3h5OXsKCdmFcx0xlLJoSuQngnrJe7Kcjm4OMq9FlC7CMmScQANuNvjfP3PjGXDBaUQmbp296S5L4DrpbrHN1T87ZVEZVCzg1FF0Ft+dKrlLukI+/c9ENo+TvlTDbYFvuKPtQ9+l052rXrgKoWkDAFnvh0wTOmYn8R5f4k/jN/fZiCM1tQx9jQQ4ANhqG4hiL0qIFTGViG9DKB7GYzgubnpofgYRwO+DFjh0Zin2m4b/97EDkXkc+f6xYAPX0KK2I/7fUQuwzuwo/L3AkcjugPNixC8cHf0FyPjWlItmLxWw4Ou9YsQCr5fijMGoD/zpdRy95HRysyXA74MWOnscpO4j2y3HAVisw85hX5+AFBRSHt4ShfLFkIMXTqyKFc46xdzQM6XbAi702a7sy04J0+feReMFKp5q9esYLCqAZYw/k14E/xcLLsFElaornTuJB0svMuJINy8xkIYuL+xPAlWRceH6+HX7THJ0djLUom46zREu7tTkxwmf/FdOZ/sh6Q8qvEAiHpm4PJ4a/doJe0gH1t+aHRgCzOvBvJedEK5OFE5jpm4AGP2a8Dxe3gGJ/pAutug9Gp6he92CsSsWBaEcxGx0FHytmIpuqGkOpldqNYQK8cSoXvd+xLxXADw0kf6UkJNFtdo5MOgaLjiQOQHcn+A6h5NuL2s0qsC2LOM75PcF3yr5STuBSAcGG+meA14K/CI21HcS4LBT6tv0QAh8Dr5l93AhZzG5ZJ4VxAqdZUEl9z7WJ4aN+svMvwHHL21UKTd1mqvChH7/Za5xzXBBKrUcB0TQ+Ulgkfbi/H/YT5EptrGzsEK7tR1B7ln9BBwckYfMiuSqklSznIuoIIOM42MQO+QnduCoFCI0bpkzjCjddHPN/F+2Yu+sd9bKNpVwHhbS3LluK/0zgfwD0xYI5dXuzlQAAAABJRU5ErkJggg==');
   }
 
-  div.callout-warning.callout-style-default .callout-caption {
+  div.callout-warning.callout-style-default .callout-title {
     background-color: #fcefdc
   }
 
@@ -233,7 +234,7 @@
     background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAADr0lEQVRYCe1XTWgTQRj9ZjZV8a9SPIkKgj8I1bMHsUWrqYLVg4Ue6v9BwZOxSYsIerFao7UiUryIqJcqgtpimhbBXoSCVxUFe9CTiogUrUp2Pt+3aUI2u5vdNh4dmMzOzHvvezuz8xNFM0mjnbXaNu1MvFWRXkXEyE6aYOYJpdW4IXuA4r0fo8qqSMDBU0v1HJUgVieAXxzCsdE/YJTdFcVIZQNMyhruOMJKXYFoLfIfIvVIMWdsrd+Rpd86ZmyzzjJmLStqRn0v8lzkb4rVIXvnpScOJuAn2ACC65FkPzEdEy4TPWRLJ2h7z4cArXzzaOdKlbOvKKX25Wl00jSnrwVxAg3o4dRxhO13RBSdNvH0xSARv3adTXbBdTf64IWO2vH0LT+cv4GR1DJt+DUItaQogeBX/chhbTBxEiZ6gftlDNXTrvT7co4ub5A6gp9HIcHvzTa46OS5fBeP87Qm0fQkr4FsYgVQ7Qg+ZayaDg9jhg1GkWj8RG6lkeSacrrHgDaxdoBiZPg+NXV/KifMuB6//JmYH4CntVEHy/keA6x4h4CU5oFy8GzrBS18cLJMXcljAKB6INjWsRcuZBWVaS3GDrqB7rdapVIeA+isQ57Eev9eCqzqOa81CY05VLd6SamW2wA2H3SiTbnbSxmzfp7WtKZkqy4mdyAlGx7ennghYf8voqp9cLSgKdqNfa6RdRsAAkPwRuJZNbpByn+RrJi1RXTwdi8RQF6ymDwGMAtZ6TVE+4uoKh+MYkcLsT0Hk8eAienbiGdjJHZTpmNjlbFJNKDVAp2fJlYju6IreQxQ08UJDNYdoLSl6AadO+fFuCQqVMB1NJwPm69T04Wv5WhfcWyfXQB+wXRs1pt+nCknRa0LVzSA/2B+a9+zQJadb7IyyV24YAxKp2Jqs3emZTuNnKxsah+uabKbMk7CbTgJx/zIgQYErIeTKRQ9yD9wxVof5YolPHqaWo7TD6tJlh7jQnK5z2n3+fGdggIOx2kaa2YI9QWarc5Ce1ipNWMKeSG4DysFF52KBmTNMmn5HqCFkwy34rDg05gDwgH3bBi+sgFhN/e8QvRn8kbamCOhgrZ9GJhFDgfcMHzFb6BAtjKpFhzTjwv1KCVuxHvCbsSiEz4CANnj84cwHdFXAbAOJ4LTSAawGWFn5tDhLMYz6nWeU2wJfIhmIJBefcd/A5FWQWGgrWzyORZ3Q6HuV+Jf0Bj+BTX69fm1zWgK7By1YTXchFDORywnfQ7GpzOo6S+qECrsx2ifVQAAAABJRU5ErkJggg==');
   }
 
-  div.callout-tip.callout-style-default .callout-caption {
+  div.callout-tip.callout-style-default .callout-title {
     background-color: #ccf1e3
   }
 
@@ -245,7 +246,7 @@
     background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAACV0lEQVRYCdVWzWoUQRCuqp2ICBLJXgITZL1EfQDBW/bkzUMUD7klD+ATSHBEfAIfQO+iXsWDxJsHL96EHAwhgzlkg8nBg25XWb0zIb0zs9muYYWkoKeru+vn664fBqElyZNuyh167NXJ8Ut8McjbmEraKHkd7uAnAFku+VWdb3reSmRV8PKSLfZ0Gjn3a6Xlcq9YGb6tADjn+lUfTXtVmaZ1KwBIvFI11rRXlWlatwIAAv2asaa9mlB9wwygiDX26qaw1yYPzFXg2N1GgG0FMF8Oj+VIx7E/03lHx8UhvYyNZLN7BwSPgekXXLribw7w5/c8EF+DBK5idvDVYtEEwMeYefjjLAdEyQ3M9nfOkgnPTEkYU+sxMq0BxNR6jExrAI31H1rzvLEfRIdgcv1XEdj6QTQAS2wtstEALLG1yEZ3QhH6oDX7ExBSFEkFINXH98NTrme5IOaaA7kIfiu2L8A3qhH9zRbukdCqdsA98TdElyeMe5BI8Rs2xHRIsoTSSVFfCFCWGPn9XHb4cdobRIWABNf0add9jakDjQJpJ1bTXOJXnnRXHRf+dNL1ZV1MBRCXhMbaHqGI1JkKIL7+i8uffuP6wVQAzO7+qVEbF6NbS0LJureYcWXUUhH66nLR5rYmva+2tjRFtojkM2aD76HEGAD3tPtKM309FJg5j/K682ywcWJ3PASCcycH/22u+Bh7Aa0ehM2Fu4z0SAE81HF9RkB21c5bEn4Dzw+/qNOyXr3DCTQDMBOdhi4nAgiFDGCinIa2owCEChUwD8qzd03PG+qdW/4fDzjUMcE1ZpIAAAAASUVORK5CYII=');
   }
 
-  div.callout-caution.callout-style-default .callout-caption {
+  div.callout-caution.callout-style-default .callout-title {
     background-color: #ffe5d0
   }
 
@@ -372,9 +373,7 @@ Dr Maxence Ouafik
 <section>
 <section id="préambule" class="title-slide slide level1 center" data-background-image="./files/background.svg">
 <h1>Préambule</h1>
-<div class="cell">
 
-</div>
 </section>
 <section id="de-qui-parle-t-on" class="title-slide slide level2 center">
 <h2>De qui parle-t-on ?</h2>
@@ -439,7 +438,7 @@ Dr Maxence Ouafik
 <div id="fig-ordomedic" class="quarto-figure quarto-figure-center">
 <figure>
 <p><img data-src=".\files/ordomedic.png" style="width:55.0%"></p>
-<p></p><figcaption>Figure&nbsp;2: Avis ordinal sur la nécessité d’une prise en charge adéquate des MSG</figcaption><p></p>
+<figcaption>Figure&nbsp;2: Avis ordinal sur la nécessité d’une prise en charge adéquate des MSG</figcaption>
 </figure>
 </div>
 </div>
@@ -451,9 +450,6 @@ Dr Maxence Ouafik
 </section>
 <section id="résultats-des-questionnaires-mg" class="slide level3">
 <h3>Résultats des questionnaires MG</h3>
-<div class="cell">
-
-</div>
 
 <img data-src="cours_presentation_files/figure-revealjs/fig-likert-ais-1.svg" class="r-stretch quarto-figure-center"><p class="caption">Figure&nbsp;3: Aisance des médecins généralistes</p></section>
 <section class="slide level3">
@@ -649,7 +645,7 @@ Dr Maxence Ouafik
 <div id="fig-demog-1" class="quarto-figure quarto-figure-center">
 <figure>
 <p><img data-src="cours_presentation_files/figure-revealjs/fig-demog-1.svg" data-ref-parent="fig-demog"></p>
-<p></p><figcaption>(a) Statut BIM</figcaption><p></p>
+<figcaption>(a) Statut BIM</figcaption>
 </figure>
 </div>
 </div>
@@ -657,7 +653,7 @@ Dr Maxence Ouafik
 <div id="fig-demog-2" class="quarto-figure quarto-figure-center">
 <figure>
 <p><img data-src="cours_presentation_files/figure-revealjs/fig-demog-2.svg" data-ref-parent="fig-demog"></p>
-<p></p><figcaption>(b) DMG ouvert</figcaption><p></p>
+<figcaption>(b) DMG ouvert</figcaption>
 </figure>
 </div>
 </div>
@@ -1331,65 +1327,65 @@ Dr Maxence Ouafik
 <div class="footer footer-default">
 <p>La santé des minorités sexuelles et de genre</p>
 </div>
-<div id="refs" class="references csl-bib-body" role="doc-bibliography">
-<div id="ref-ayhan2020" class="csl-entry" role="doc-biblioentry">
+<div id="refs" class="references csl-bib-body" role="list">
+<div id="ref-ayhan2020" class="csl-entry" role="listitem">
 <div class="csl-left-margin">1 </div><div class="csl-right-inline">Ayhan CHB, Bilgin H, Uluman OT, <em>et al.</em> A <span>Systematic Review</span> of the <span>Discrimination Against Sexual</span> and <span>Gender Minority</span> in <span>Health Care Settings</span>. <em>International Journal of Health Services</em> 2020;<strong>50</strong>:44–61. doi:<a href="https://doi.org/10.1177/0020731419885093">10.1177/0020731419885093</a></div>
 </div>
-<div id="ref-dahlhamer2016" class="csl-entry" role="doc-biblioentry">
+<div id="ref-dahlhamer2016" class="csl-entry" role="listitem">
 <div class="csl-left-margin">2 </div><div class="csl-right-inline">Dahlhamer JM, Galinsky AM, Joestl SS, <em>et al.</em> Barriers to <span>Health Care Among Adults Identifying</span> as <span>Sexual Minorities</span>: <span>A US National Study</span>. <em>American Journal of Public Health</em> 2016;<strong>106</strong>:1116–22. doi:<a href="https://doi.org/10.2105/AJPH.2016.303049">10.2105/AJPH.2016.303049</a></div>
 </div>
-<div id="ref-uhrig2019" class="csl-entry" role="doc-biblioentry">
+<div id="ref-uhrig2019" class="csl-entry" role="listitem">
 <div class="csl-left-margin">3 </div><div class="csl-right-inline">Uhrig JD, Stryker JE, Bresee S, <em>et al.</em> <span>HIV</span> information needs of transgender people and their healthcare providers. <em>AIDS Care</em> 2019;<strong>31</strong>:357–63. doi:<a href="https://doi.org/10.1080/09540121.2018.1499862">10.1080/09540121.2018.1499862</a></div>
 </div>
-<div id="ref-korpaisarn2018" class="csl-entry" role="doc-biblioentry">
+<div id="ref-korpaisarn2018" class="csl-entry" role="listitem">
 <div class="csl-left-margin">4 </div><div class="csl-right-inline">Korpaisarn S, Safer JD. Gaps in transgender medical education among healthcare providers: <span>A</span> major barrier to care for transgender persons. <em>Reviews in Endocrine and Metabolic Disorders</em> 2018;<strong>19</strong>:271–5. doi:<a href="https://doi.org/10.1007/s11154-018-9452-5">10.1007/s11154-018-9452-5</a></div>
 </div>
-<div id="ref-irwig2016" class="csl-entry" role="doc-biblioentry">
+<div id="ref-irwig2016" class="csl-entry" role="listitem">
 <div class="csl-left-margin">5 </div><div class="csl-right-inline">Irwig MS. Transgender <span>Care</span> by <span>Endocrinologists</span> in the <span>United States</span>. <em>Endocrine Practice</em> 2016;<strong>22</strong>:832–6. doi:<a href="https://doi.org/10.4158/EP151185.OR">10.4158/EP151185.OR</a></div>
 </div>
-<div id="ref-koehler2021" class="csl-entry" role="doc-biblioentry">
+<div id="ref-koehler2021" class="csl-entry" role="listitem">
 <div class="csl-left-margin">6 </div><div class="csl-right-inline">Koehler A, Strauss B, Briken P, <em>et al.</em> Centralized and <span>Decentralized Delivery</span> of <span>Transgender Health Care Services</span>: <span>A Systematic Review</span> and a <span>Global Expert Survey</span> in 39 <span>Countries</span>. <em>Frontiers in Endocrinology</em> 2021;<strong>12</strong>.</div>
 </div>
-<div id="ref-ker2021" class="csl-entry" role="doc-biblioentry">
+<div id="ref-ker2021" class="csl-entry" role="listitem">
 <div class="csl-left-margin">7 </div><div class="csl-right-inline">Ker A, Fraser G, Fleming T, <em>et al.</em> <span>“<span>A</span> little bubble of utopia”</span>: Constructions of a primary care-based pilot clinic providing gender affirming hormone therapy. <em>Health Sociology Review</em> 2021;<strong>30</strong>:25–40. doi:<a href="https://doi.org/10.1080/14461242.2020.1855999">10.1080/14461242.2020.1855999</a></div>
 </div>
-<div id="ref-lee2022" class="csl-entry" role="doc-biblioentry">
+<div id="ref-lee2022" class="csl-entry" role="listitem">
 <div class="csl-left-margin">8 </div><div class="csl-right-inline">Lee JL, Huffman M, Rattray NA, <em>et al.</em> <span>“<span>I Don</span>’t <span>Want</span> to <span>Spend</span> the <span>Rest</span> of my <span>Life Only Going</span> to a <span>Gender Wellness Clinic</span>”</span>: <span>Healthcare Experiences</span> of <span>Patients</span> of a <span>Comprehensive Transgender Clinic</span>. <em>Journal of General Internal Medicine</em> Published Online First: 2022. doi:<a href="https://doi.org/10.1007/s11606-022-07408-5">10.1007/s11606-022-07408-5</a></div>
 </div>
-<div id="ref-workowski2021" class="csl-entry" role="doc-biblioentry">
+<div id="ref-workowski2021" class="csl-entry" role="listitem">
 <div class="csl-left-margin">9 </div><div class="csl-right-inline">Workowski KA, Bachmann LH, Chan PA, <em>et al.</em> Sexually <span>Transmitted Infections Treatment Guidelines</span>, 2021. 2021;<strong>70</strong>.</div>
 </div>
-<div id="ref-Chow2019" class="csl-entry" role="doc-biblioentry">
+<div id="ref-Chow2019" class="csl-entry" role="listitem">
 <div class="csl-left-margin">10 </div><div class="csl-right-inline">Chow EP, Fairley CK. The role of saliva in gonorrhoea and chlamydia transmission to extragenital sites among men who have sex with men: New insights into transmission. <em>Journal of the International AIDS Society</em> 2019;<strong>22</strong>:e25354. doi:<a href="https://doi.org/10.1002/jia2.25354">10.1002/jia2.25354</a></div>
 </div>
-<div id="ref-Buyze2018" class="csl-entry" role="doc-biblioentry">
+<div id="ref-Buyze2018" class="csl-entry" role="listitem">
 <div class="csl-left-margin">11 </div><div class="csl-right-inline">Buyze J, Vanden Berghe W, Hens N, <em>et al.</em> Current levels of gonorrhoea screening in <span>MSM</span> in <span>Belgium</span> may have little effect on prevalence: <span>A</span> modelling study. <em>Epidemiology and Infection</em> 2018;<strong>146</strong>:333–8. doi:<a href="https://doi.org/10.1017/S0950268818000092">10.1017/S0950268818000092</a></div>
 </div>
-<div id="ref-Tsoumanis2018" class="csl-entry" role="doc-biblioentry">
+<div id="ref-Tsoumanis2018" class="csl-entry" role="listitem">
 <div class="csl-left-margin">12 </div><div class="csl-right-inline">Tsoumanis A, Hens N, Kenyon CR. Is <span>Screening</span> for <span>Chlamydia</span> and <span>Gonorrhea</span> in <span>Men Who Have Sex</span> with <span>Men Associated</span> with <span>Reduction</span> of the <span>Prevalence</span> of these <span>Infections</span>? <span>A Systematic Review</span> of <span>Observational Studies</span>. <em>Sexually Transmitted Diseases</em> 2018;<strong>45</strong>:615–22. doi:<a href="https://doi.org/10.1097/OLQ.0000000000000824">10.1097/OLQ.0000000000000824</a></div>
 </div>
-<div id="ref-Pinto-Sander2019" class="csl-entry" role="doc-biblioentry">
+<div id="ref-Pinto-Sander2019" class="csl-entry" role="listitem">
 <div class="csl-left-margin">13 </div><div class="csl-right-inline">Pinto-Sander N, Soni S. Mycoplasma genitalium infection. <em>BMJ</em> 2019;l5820. doi:<a href="https://doi.org/10.1136/bmj.l5820">10.1136/bmj.l5820</a></div>
 </div>
-<div id="ref-Knight2017" class="csl-entry" role="doc-biblioentry">
+<div id="ref-Knight2017" class="csl-entry" role="listitem">
 <div class="csl-left-margin">14 </div><div class="csl-right-inline">Knight DA, Jarrett D. Preventive <span>Health Care</span> for <span>Women Who Have Sex</span> with <span>Women</span>. 2017. </div>
 </div>
-<div id="ref-goodman2022" class="csl-entry" role="doc-biblioentry">
+<div id="ref-goodman2022" class="csl-entry" role="listitem">
 <div class="csl-left-margin">15 </div><div class="csl-right-inline">Goodman E, Reuschenbach M, Kaminski A, <em>et al.</em> Human <span>Papillomavirus Vaccine Impact</span> and <span>Effectiveness</span> in <span>Six High-Risk Populations</span>: <span>A Systematic Literature Review</span>. <em>Vaccines</em> 2022;<strong>10</strong>:1543. doi:<a href="https://doi.org/10.3390/vaccines10091543">10.3390/vaccines10091543</a></div>
 </div>
-<div id="ref-obon-azuara2022" class="csl-entry" role="doc-biblioentry">
+<div id="ref-obon-azuara2022" class="csl-entry" role="listitem">
 <div class="csl-left-margin">16 </div><div class="csl-right-inline">Obón-Azuara B, Vergara-Maldonado C, Gutiérrez-Cía I, <em>et al.</em> Gaps in sexual health research about women who have sex with women. <span>A</span> scoping review. <em>Gaceta Sanitaria</em> 2022;<strong>36</strong>:439–45. doi:<a href="https://doi.org/10.1016/j.gaceta.2022.01.008">10.1016/j.gaceta.2022.01.008</a></div>
 </div>
-<div id="ref-libois2018" class="csl-entry" role="doc-biblioentry">
+<div id="ref-libois2018" class="csl-entry" role="listitem">
 <div class="csl-left-margin">17 </div><div class="csl-right-inline">Libois A, Florence E, Derdelinckx I, <em>et al.</em> Belgian guidelines for non-occupational <span>HIV</span> post-exposure prophylaxis 2017. <em>Acta Clinica Belgica</em> 2018;<strong>73</strong>:275–80. doi:<a href="https://doi.org/10.1080/17843286.2018.1428506">10.1080/17843286.2018.1428506</a></div>
 </div>
-<div id="ref-fukui2018" class="csl-entry" role="doc-biblioentry">
+<div id="ref-fukui2018" class="csl-entry" role="listitem">
 <div class="csl-left-margin">18 </div><div class="csl-right-inline">Fukui SM, Piggott DA, Erlandson KM. Inflammation <span>Strikes Again</span>: <span>Frailty</span> and <span>HIV</span>. <em>Current HIV/AIDS Reports</em> 2018;<strong>15</strong>:20–9. doi:<a href="https://doi.org/10.1007/s11904-018-0372-5">10.1007/s11904-018-0372-5</a></div>
 </div>
-<div id="ref-rodes2022" class="csl-entry" role="doc-biblioentry">
+<div id="ref-rodes2022" class="csl-entry" role="listitem">
 <div class="csl-left-margin">19 </div><div class="csl-right-inline">Rodés B, Cadiñanos J, Esteban-Cantos A, <em>et al.</em> Ageing with <span>HIV</span>: <span>Challenges</span> and biomarkers. <em>eBioMedicine</em> 2022;<strong>77</strong>:103896. doi:<a href="https://doi.org/10.1016/j.ebiom.2022.103896">10.1016/j.ebiom.2022.103896</a></div>
 </div>
-<div id="ref-thompson2021" class="csl-entry" role="doc-biblioentry">
+<div id="ref-thompson2021" class="csl-entry" role="listitem">
 <div class="csl-left-margin">20 </div><div class="csl-right-inline">Thompson MA, Horberg MA, Agwu AL, <em>et al.</em> Primary <span>Care Guidance</span> for <span>Persons With Human Immunodeficiency Virus</span>: 2020 <span>Update</span> by the <span>HIV Medicine Association</span> of the <span>Infectious Diseases Society</span> of <span>America</span>. <em>Clinical Infectious Diseases</em> 2021;<strong>73</strong>:e3572–605. doi:<a href="https://doi.org/10.1093/cid/ciaa1391">10.1093/cid/ciaa1391</a></div>
 </div>
 </div>
@@ -1427,8 +1423,8 @@ Dr Maxence Ouafik
 'autoAnimateEasing': "ease",
 'autoAnimateDuration': 1,
 'autoAnimateUnmatched': true,
-'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
-'multiplex': {"secret":null,"id":"7350a59ba7d85d53","url":"https://reveal-multiplex.glitch.me/"},
+'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
+'multiplex': {"secret":null,"id":"bc9fa951229f785a","url":"https://reveal-multiplex.glitch.me/"},
 'smaller': true,
  
         // Display controls in the bottom right corner
@@ -1670,9 +1666,23 @@ Dr Maxence Ouafik
       tabsets.forEach(function(tabset) {
         const tabby = new Tabby('#' + tabset.id);
       });
+      const isCodeAnnotation = (el) => {
+        for (const clz of el.classList) {
+          if (clz.startsWith('code-annotation-')) {                     
+            return true;
+          }
+        }
+        return false;
+      }
       const clipboard = new window.ClipboardJS('.code-copy-button', {
-        target: function(trigger) {
-          return trigger.previousElementSibling;
+        text: function(trigger) {
+          const codeEl = trigger.previousElementSibling.cloneNode(true);
+          for (const childEl of codeEl.children) {
+            if (isCodeAnnotation(childEl)) {
+              childEl.remove();
+            }
+          }
+          return codeEl.innerText;
         }
       });
       clipboard.on('success', function(e) {
@@ -1720,7 +1730,7 @@ Dr Maxence Ouafik
           },
           interactive: true,
           interactiveBorder: 10,
-          theme: 'quarto-reveal',
+          theme: 'light-border',
           placement: 'bottom-start'
         };
           config['offset'] = [0,0];
@@ -1782,7 +1792,7 @@ Dr Maxence Ouafik
             return filterRegex.test(href) || localhostRegex.test(href);
         }
         // Inspect non-navigation links and adorn them if external
-        var links = window.document.querySelectorAll('a:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item)');
+     	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item)');
         for (var i=0; i<links.length; i++) {
           const link = links[i];
           if (!isInternal(link.href)) {
