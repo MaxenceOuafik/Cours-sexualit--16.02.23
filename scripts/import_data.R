@@ -19,7 +19,9 @@ aim_data <- read_delim(here::here("data/AIM_data.csv"),
 refnis_postal <- read_delim(here::here("data/refnis_postal.csv"),
                             locale = locale(encoding = "UTF-8"))
 
-mg_survey <- read_delim(here::here("data/MG_survey.csv"))
+mg_survey_2023 <- read_delim(here::here("2023/data/MG_survey.csv"))
+
+mg_survey_2024 <- read_delim(here::here("2024/data/MG_survey.csv"))
 
 lgbt_survey <- read_delim(here::here("data/LGBT_survey.csv"))
 
