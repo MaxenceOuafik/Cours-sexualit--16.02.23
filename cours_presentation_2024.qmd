@@ -286,6 +286,11 @@ Parler du fait que certaines souches de NG deviennent résistantes à presque to
 :::
 
 ## Syphilis 
+
+### Cas clinique
+
+![Cas clinique](/files/vignette_clinique.png){#fig-vignette}
+
 ### Interprétation de la sérologie 
 
 ::: {.nonincremental}
@@ -296,7 +301,7 @@ Parler du fait que certaines souches de NG deviennent résistantes à presque to
 | TPHA    | VDRL    | Interprétation                                                    |
 |---------|---------|-------------------------------------------------------------------|
 | Positif | Positif | Syphilis active                                                   |
-| Positif | Négatif | Syphilis traitée ou latente très précoce ; anamnèse + retester    |
+| Positif | Négatif | Syphilis traitée, latente ou très précoce ; anamnèse + retester    |
 | Négatif | Positif | Faux positif ; retester                                           |
 : Interprétation des résultats sérologiques de la syphilis {#tbl-sero}
 
