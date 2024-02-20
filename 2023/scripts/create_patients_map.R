@@ -2,7 +2,7 @@ library(sf)
 library(ggthemes)
 
 # On commence par importer les données de la carte des communes belges grâce au package sf
-be_map <- st_read(dsn = "./data/communes_L08.shp")
+be_map <- st_read(dsn = "./2023/data/communes_L08.shp")
 
 # Afin de pouvoir faire le lien entre les données de la carte et celles de la patientèle, il est nécessaire d'opérer deux jointures
 # La première jointure a pour vocation d'associer un code NSI à chaque observation en fonction de son code postal 

@@ -1,0 +1,1808 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<script src="cours_presentation_2024_files/libs/clipboard/clipboard.min.js"></script>
+<script src="cours_presentation_2024_files/libs/quarto-html/tabby.min.js"></script>
+<script src="cours_presentation_2024_files/libs/quarto-html/popper.min.js"></script>
+<script src="cours_presentation_2024_files/libs/quarto-html/tippy.umd.min.js"></script>
+<link href="cours_presentation_2024_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="cours_presentation_2024_files/libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="cours_presentation_2024_files/libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
+<link href="cours_presentation_2024_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.3.450">
+
+  <meta name="author" content="Dr Maxence Ouafik">
+  <meta name="dcterms.date" content="2025-02-10">
+  <title>La santé des minorités sexuelles et de genre</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="cours_presentation_2024_files/libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="cours_presentation_2024_files/libs/revealjs/dist/reveal.css">
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+      vertical-align: middle;
+    }
+    /* CSS for citations */
+    div.csl-bib-body { }
+    div.csl-entry {
+      clear: both;
+    }
+    .hanging-indent div.csl-entry {
+      margin-left:2em;
+      text-indent:-2em;
+    }
+    div.csl-left-margin {
+      min-width:2em;
+      float:left;
+    }
+    div.csl-right-inline {
+      margin-left:2em;
+      padding-left:1em;
+    }
+    div.csl-indent {
+      margin-left: 2em;
+    }  </style>
+  <link rel="stylesheet" href="cours_presentation_2024_files/libs/revealjs/dist/theme/quarto.css">
+  <link href="cours_presentation_2024_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="cours_presentation_2024_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="cours_presentation_2024_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="cours_presentation_2024_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <style type="text/css">
+
+  .callout {
+    margin-top: 1em;
+    margin-bottom: 1em;  
+    border-radius: .25rem;
+  }
+
+  .callout.callout-style-simple { 
+    padding: 0em 0.5em;
+    border-left: solid #acacac .3rem;
+    border-right: solid 1px silver;
+    border-top: solid 1px silver;
+    border-bottom: solid 1px silver;
+    display: flex;
+  }
+
+  .callout.callout-style-default {
+    border-left: solid #acacac .3rem;
+    border-right: solid 1px silver;
+    border-top: solid 1px silver;
+    border-bottom: solid 1px silver;
+  }
+
+  .callout .callout-body-container {
+    flex-grow: 1;
+  }
+
+  .callout.callout-style-simple .callout-body {
+    font-size: 1rem;
+    font-weight: 400;
+  }
+
+  .callout.callout-style-default .callout-body {
+    font-size: 0.9rem;
+    font-weight: 400;
+  }
+
+  .callout.callout-titled.callout-style-simple .callout-body {
+    margin-top: 0.2em;
+  }
+
+  .callout:not(.callout-titled) .callout-body {
+      display: flex;
+  }
+
+  .callout:not(.no-icon).callout-titled.callout-style-simple .callout-content {
+    padding-left: 1.6em;
+  }
+
+  .callout.callout-titled .callout-header {
+    padding-top: 0.2em;
+    margin-bottom: -0.2em;
+  }
+
+  .callout.callout-titled .callout-title  p {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+  }
+    
+  .callout.callout-titled.callout-style-simple .callout-content  p {
+    margin-top: 0;
+  }
+
+  .callout.callout-titled.callout-style-default .callout-content  p {
+    margin-top: 0.7em;
+  }
+
+  .callout.callout-style-simple div.callout-title {
+    border-bottom: none;
+    font-size: .9rem;
+    font-weight: 600;
+    opacity: 75%;
+  }
+
+  .callout.callout-style-default  div.callout-title {
+    border-bottom: none;
+    font-weight: 600;
+    opacity: 85%;
+    font-size: 0.9rem;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+  }
+
+  .callout.callout-style-default div.callout-content {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+  }
+
+  .callout.callout-style-simple .callout-icon::before {
+    height: 1rem;
+    width: 1rem;
+    display: inline-block;
+    content: "";
+    background-repeat: no-repeat;
+    background-size: 1rem 1rem;
+  }
+
+  .callout.callout-style-default .callout-icon::before {
+    height: 0.9rem;
+    width: 0.9rem;
+    display: inline-block;
+    content: "";
+    background-repeat: no-repeat;
+    background-size: 0.9rem 0.9rem;
+  }
+
+  .callout-title {
+    display: flex
+  }
+    
+  .callout-icon::before {
+    margin-top: 1rem;
+    padding-right: .5rem;
+  }
+
+  .callout.no-icon::before {
+    display: none !important;
+  }
+
+  .callout.callout-titled .callout-body > .callout-content > :last-child {
+    margin-bottom: 0.5rem;
+  }
+
+  .callout.callout-titled .callout-icon::before {
+    margin-top: .5rem;
+    padding-right: .5rem;
+  }
+
+  .callout:not(.callout-titled) .callout-icon::before {
+    margin-top: 1rem;
+    padding-right: .5rem;
+  }
+
+  /* Callout Types */
+
+  div.callout-note {
+    border-left-color: #4582ec !important;
+  }
+
+  div.callout-note .callout-icon::before {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAAEU0lEQVRYCcVXTWhcVRQ+586kSUMMxkyaElstCto2SIhitS5Ek8xUKV2poatCcVHtUlFQk8mbaaziwpWgglJwVaquitBOfhQXFlqlzSJpFSpIYyXNjBNiTCck7x2/8/LeNDOZxDuEkgOXe++553zfefee+/OYLOXFk3+1LLrRdiO81yNqZ6K9cG0P3MeFaMIQjXssE8Z1JzLO9ls20MBZX7oG8w9GxB0goaPrW5aNMp1yOZIa7Wv6o2ykpLtmAPs/vrG14Z+6d4jpbSKuhdcSyq9wGMPXjonwmESXrriLzFGOdDBLB8Y6MNYBu0dRokSygMA/mrun8MGFN3behm6VVAwg4WR3i6FvYK1T7MHo9BK7ydH+1uurECoouk5MPRyVSBrBHMYwVobG2aOXM07sWrn5qgB60rc6mcwIDJtQrnrEr44kmy+UO9r0u9O5/YbkS9juQckLed3DyW2XV/qWBBB3ptvI8EUY3I9p/67OW+g967TNr3Sotn3IuVlfMLVnsBwH4fsnebJvyGm5GeIUA3jljERmrv49SizPYuq+z7c2H/jlGC+Ghhupn/hcapqmcudB9jwJ/3jvnvu6vu5lVzF1fXyZuZZ7U8nRmVzytvT+H3kilYvH09mLWrQdwFSsFEsxFVs5fK7A0g8gMZjbif4ACpKbjv7gNGaD8bUrlk8x+KRflttr22JEMRUbTUwwDQScyzPgedQHZT0xnx7ujw2jfVfExwYHwOsDTjLdJ2ebmeQIlJ7neo41s/DrsL3kl+W2lWvAga0tR3zueGr6GL78M3ifH0rGXrBC2aAR8uYcIA5gwV8zIE8onoh8u0Fca/ciF7j1uOzEnqcIm59sEXoGc0+z6+H45V1CvAvHcD7THztu669cnp+L0okAeIc6zjbM/24LgGM1gZk7jnRu1aQWoU9sfUOuhrmtaPIO3YY1KLLWZaEO5TKUbMY5zx8W9UJ6elpLwKXbsaZ4EFl7B4bMtDv0iRipKoDQT2sNQI9b1utXFdYisi+wzZ/ri/1m7QfDgEuvgUUEIJPq3DhX/5DWNqIXDOweC2wvIR90Oq3lDpdMIgD2r0dXvGdsEW5H6x6HLRJYU7C69VefO1x8Gde1ZFSJLfWS1jbCnhtOPxmpfv2LXOA2Xk2tvnwKKPFuZ/oRmwBwqRQDcKNeVQkYcOjtWVBuM/JuYw5b6isojIkYxyYAFn5K7ZBF10fea52y8QltAg6jnMqNHFBmGkQ1j+U43HMi2xMar1Nv0zGsf1s8nUsmUtPOOrbFIR8bHFDMB5zL13Gmr/kGlCkUzedTzzmzsaJXhYawnA3UmARpiYj5ooJZiUoxFRtK3X6pgNPv+IZVPcnwbOl6f+aBaO1CNvPW9n9LmCp01nuSaTRF2YxHqZ8DYQT6WsXT+RD6eUztwYLZ8rM+rcPxamv1VQzFUkzFXvkiVrySGQgJNvXHJAxiU3/NwiC03rSf05VBaPtu/Z7/B8Yn/w7eguloAAAAAElFTkSuQmCC');
+  }
+
+  div.callout-note.callout-style-default .callout-title {
+    background-color: #dae6fb
+  }
+
+  div.callout-important {
+    border-left-color: #d9534f !important;
+  }
+
+  div.callout-important .callout-icon::before {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAAEKklEQVRYCcVXTWhcVRS+575MJym48A+hSRFr00ySRQhURRfd2HYjk2SSTokuBCkU2o0LoSKKraKIBTcuFCoidGFD08nkBzdREbpQ1EDNIv8qSGMFUboImMSZd4/f9zJv8ibJMC8xJQfO3HPPPef7zrvvvnvviIkpC9nsw0UttFunbUhpFzFtarSd6WJkStVMw5xyVqYTvkwfzuf/5FgtkVoB0729j1rjXwThS7Vio+Mo6DNnvLfahoZ+i/o32lULuJ3NNiz7q6+pyAUkJaFF6JwaM2lUJlV0MlnQn5aTRbEu0SEqHUa0A4AdiGuB1kFXRfVyg5d87+Dg4DL6m2TLAub60ilj7A1Ec4odSAc8X95sHh7+ZRPCFo6Fnp7HfU/fBng/hi10CjCnWnJjsxvDNxWw0NfV6Rv5GgP3I3jGWXumdTD/3cbEOP2ZbOZp69yniG3FQ9z1jD7bnBu9Fc2tKGC2q+uAJOQHBDRiZX1x36o7fWBs7J9ownbtO+n0/qWkvW7UPIfc37WgT6ZGR++EOJyeQDSb9UB+DZ1G6DdLDzyS+b/kBCYGsYgJbSQHuThGKRcw5xdeQf8YdNHsc6ePXrlSYMBuSIAFTGAtQo+VuALo4BX83N190NWZWbynBjhOHsmNfFWLeL6v+ynsA58zDvvAC8j5PkbOcXCMg2PZFk3q8MjI7WAG/Dp9AwP7jdGBOOQkAvlFUB+irtm16I1Zw9YBcpGTGXYmk3kQIC/Cds55l+iMI3jqhjAuaoe+am2Jw5GT3Nbz3CkE12NavmzN5+erJW7046n/CH1RO/RVa8lBLozXk9uqykkGAyRXLWlLv5jyp4RFsG5vGVzpDLnIjTWgnRy2Rr+tDKvRc7Y8AyZq10jj8DqXdnIRNtFZb+t/ZRtXcDiVnzpqx8mPcDWxgARUqx0W1QB9MeUZiNrV4qP+Ehc+BpNgATsTX8ozYKL2NtFYAHc84fG7ndxUPr+AR/iQSns7uSUufAymwDOb2+NjK27lEFocm/EE2WpyIy/Hi66MWuMKJn8RvxIcj87IM5Vh9663ziW36kR0HNenXuxmfaD8JC7tfKbrhFr7LiZCrMjrzTeGx+PmkosrkNzW94ObzwocJ7A1HokLolY+AvkTiD/q1H0cN48c5EL8Crkttsa/AXQVDmutfyku0E7jShx49XqV3MFK8IryDhYVbj7Sj2P2eBxwcXoe8T8idsKKPRcnZw1b+slFTubwUwhktrfnAt7J++jwQtLZcm3sr9LQrjRzz6cfMv9aLvgmnAGvpoaGLxM4mAEaLV7iAzQ3oU0IvD5x9ix3yF2RAAuYAOO2f7PEFWCXZ4C9Pb2UsgDeVnFSpbFK7/IWu7TPTvBqzbGdCHOJQSxiEjt6IyZmxQyEJHv6xyQsYk//moVFsN2zP6fRImjfq7/n/wFDguUQFNEwugAAAABJRU5ErkJggg==');
+  }
+
+  div.callout-important.callout-style-default .callout-title {
+    background-color: #f7dddc
+  }
+
+  div.callout-warning {
+    border-left-color: #f0ad4e !important;
+  }
+
+  div.callout-warning .callout-icon::before {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAAETklEQVRYCeVWW2gcVRg+58yaTUnizqbipZeX4uWhBEniBaoUX1Ioze52t7sRq6APio9V9MEaoWlVsFasRq0gltaAPuxms8lu0gcviE/FFOstVbSIxgcv6SU7EZqmdc7v9+9mJtNks51NTUH84ed889/PP+cmxP+d5FIbMJmNbpREu4WUkiTtCicKny0l1pIKmBzovF2S+hIJHX8iEu3hZJ5lNZGqyRrGSIQpq15AzF28jgpeY6yk6GVdrfFqdrD6Iw+QlB8g0YS2g7dyQmXM/IDhBhT0UCiRf59lfqmmDvzRt6kByV/m4JjtzuaujMUM2c5Z2d6JdKrRb3K2q6mA+oYVz8JnDdKPmmNthzkAk/lN63sYPgevrguc72aZX/L9C6x09GYyxBgCX4NlvyGUHOKELlm5rXeR1kchuChJt4SSwyddZRXgvwMGvYo4QSlk3/zkHD8UHxwVJA6zjZZqP8v8kK8OWLnIZtLyCAJagYC4rTGW/9Pqj92N/c+LUaAj27movwbi19tk/whRCIE7Q9vyI6yvRpftAKVTdUjOW40X3h5OXsKCdmFcx0xlLJoSuQngnrJe7Kcjm4OMq9FlC7CMmScQANuNvjfP3PjGXDBaUQmbp296S5L4DrpbrHN1T87ZVEZVCzg1FF0Ft+dKrlLukI+/c9ENo+TvlTDbYFvuKPtQ9+l052rXrgKoWkDAFnvh0wTOmYn8R5f4k/jN/fZiCM1tQx9jQQ4ANhqG4hiL0qIFTGViG9DKB7GYzgubnpofgYRwO+DFjh0Zin2m4b/97EDkXkc+f6xYAPX0KK2I/7fUQuwzuwo/L3AkcjugPNixC8cHf0FyPjWlItmLxWw4Ou9YsQCr5fijMGoD/zpdRy95HRysyXA74MWOnscpO4j2y3HAVisw85hX5+AFBRSHt4ShfLFkIMXTqyKFc46xdzQM6XbAi702a7sy04J0+feReMFKp5q9esYLCqAZYw/k14E/xcLLsFElaornTuJB0svMuJINy8xkIYuL+xPAlWRceH6+HX7THJ0djLUom46zREu7tTkxwmf/FdOZ/sh6Q8qvEAiHpm4PJ4a/doJe0gH1t+aHRgCzOvBvJedEK5OFE5jpm4AGP2a8Dxe3gGJ/pAutug9Gp6he92CsSsWBaEcxGx0FHytmIpuqGkOpldqNYQK8cSoXvd+xLxXADw0kf6UkJNFtdo5MOgaLjiQOQHcn+A6h5NuL2s0qsC2LOM75PcF3yr5STuBSAcGG+meA14K/CI21HcS4LBT6tv0QAh8Dr5l93AhZzG5ZJ4VxAqdZUEl9z7WJ4aN+svMvwHHL21UKTd1mqvChH7/Za5xzXBBKrUcB0TQ+Ulgkfbi/H/YT5EptrGzsEK7tR1B7ln9BBwckYfMiuSqklSznIuoIIOM42MQO+QnduCoFCI0bpkzjCjddHPN/F+2Yu+sd9bKNpVwHhbS3LluK/0zgfwD0xYI5dXuzlQAAAABJRU5ErkJggg==');
+  }
+
+  div.callout-warning.callout-style-default .callout-title {
+    background-color: #fcefdc
+  }
+
+  div.callout-tip {
+    border-left-color: #02b875 !important;
+  }
+
+  div.callout-tip .callout-icon::before {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAADr0lEQVRYCe1XTWgTQRj9ZjZV8a9SPIkKgj8I1bMHsUWrqYLVg4Ue6v9BwZOxSYsIerFao7UiUryIqJcqgtpimhbBXoSCVxUFe9CTiogUrUp2Pt+3aUI2u5vdNh4dmMzOzHvvezuz8xNFM0mjnbXaNu1MvFWRXkXEyE6aYOYJpdW4IXuA4r0fo8qqSMDBU0v1HJUgVieAXxzCsdE/YJTdFcVIZQNMyhruOMJKXYFoLfIfIvVIMWdsrd+Rpd86ZmyzzjJmLStqRn0v8lzkb4rVIXvnpScOJuAn2ACC65FkPzEdEy4TPWRLJ2h7z4cArXzzaOdKlbOvKKX25Wl00jSnrwVxAg3o4dRxhO13RBSdNvH0xSARv3adTXbBdTf64IWO2vH0LT+cv4GR1DJt+DUItaQogeBX/chhbTBxEiZ6gftlDNXTrvT7co4ub5A6gp9HIcHvzTa46OS5fBeP87Qm0fQkr4FsYgVQ7Qg+ZayaDg9jhg1GkWj8RG6lkeSacrrHgDaxdoBiZPg+NXV/KifMuB6//JmYH4CntVEHy/keA6x4h4CU5oFy8GzrBS18cLJMXcljAKB6INjWsRcuZBWVaS3GDrqB7rdapVIeA+isQ57Eev9eCqzqOa81CY05VLd6SamW2wA2H3SiTbnbSxmzfp7WtKZkqy4mdyAlGx7ennghYf8voqp9cLSgKdqNfa6RdRsAAkPwRuJZNbpByn+RrJi1RXTwdi8RQF6ymDwGMAtZ6TVE+4uoKh+MYkcLsT0Hk8eAienbiGdjJHZTpmNjlbFJNKDVAp2fJlYju6IreQxQ08UJDNYdoLSl6AadO+fFuCQqVMB1NJwPm69T04Wv5WhfcWyfXQB+wXRs1pt+nCknRa0LVzSA/2B+a9+zQJadb7IyyV24YAxKp2Jqs3emZTuNnKxsah+uabKbMk7CbTgJx/zIgQYErIeTKRQ9yD9wxVof5YolPHqaWo7TD6tJlh7jQnK5z2n3+fGdggIOx2kaa2YI9QWarc5Ce1ipNWMKeSG4DysFF52KBmTNMmn5HqCFkwy34rDg05gDwgH3bBi+sgFhN/e8QvRn8kbamCOhgrZ9GJhFDgfcMHzFb6BAtjKpFhzTjwv1KCVuxHvCbsSiEz4CANnj84cwHdFXAbAOJ4LTSAawGWFn5tDhLMYz6nWeU2wJfIhmIJBefcd/A5FWQWGgrWzyORZ3Q6HuV+Jf0Bj+BTX69fm1zWgK7By1YTXchFDORywnfQ7GpzOo6S+qECrsx2ifVQAAAABJRU5ErkJggg==');
+  }
+
+  div.callout-tip.callout-style-default .callout-title {
+    background-color: #ccf1e3
+  }
+
+  div.callout-caution {
+    border-left-color: #fd7e14 !important;
+  }
+
+  div.callout-caution .callout-icon::before {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAACV0lEQVRYCdVWzWoUQRCuqp2ICBLJXgITZL1EfQDBW/bkzUMUD7klD+ATSHBEfAIfQO+iXsWDxJsHL96EHAwhgzlkg8nBg25XWb0zIb0zs9muYYWkoKeru+vn664fBqElyZNuyh167NXJ8Ut8McjbmEraKHkd7uAnAFku+VWdb3reSmRV8PKSLfZ0Gjn3a6Xlcq9YGb6tADjn+lUfTXtVmaZ1KwBIvFI11rRXlWlatwIAAv2asaa9mlB9wwygiDX26qaw1yYPzFXg2N1GgG0FMF8Oj+VIx7E/03lHx8UhvYyNZLN7BwSPgekXXLribw7w5/c8EF+DBK5idvDVYtEEwMeYefjjLAdEyQ3M9nfOkgnPTEkYU+sxMq0BxNR6jExrAI31H1rzvLEfRIdgcv1XEdj6QTQAS2wtstEALLG1yEZ3QhH6oDX7ExBSFEkFINXH98NTrme5IOaaA7kIfiu2L8A3qhH9zRbukdCqdsA98TdElyeMe5BI8Rs2xHRIsoTSSVFfCFCWGPn9XHb4cdobRIWABNf0add9jakDjQJpJ1bTXOJXnnRXHRf+dNL1ZV1MBRCXhMbaHqGI1JkKIL7+i8uffuP6wVQAzO7+qVEbF6NbS0LJureYcWXUUhH66nLR5rYmva+2tjRFtojkM2aD76HEGAD3tPtKM309FJg5j/K682ywcWJ3PASCcycH/22u+Bh7Aa0ehM2Fu4z0SAE81HF9RkB21c5bEn4Dzw+/qNOyXr3DCTQDMBOdhi4nAgiFDGCinIa2owCEChUwD8qzd03PG+qdW/4fDzjUMcE1ZpIAAAAASUVORK5CYII=');
+  }
+
+  div.callout-caution.callout-style-default .callout-title {
+    background-color: #ffe5d0
+  }
+
+  </style>
+  <style type="text/css">
+    .reveal div.sourceCode {
+      margin: 0;
+      overflow: auto;
+    }
+    .reveal div.hanging-indent {
+      margin-left: 1em;
+      text-indent: -1em;
+    }
+    .reveal .slide:not(.center) {
+      height: 100%;
+    }
+    .reveal .slide.scrollable {
+      overflow-y: auto;
+    }
+    .reveal .footnotes {
+      height: 100%;
+      overflow-y: auto;
+    }
+    .reveal .slide .absolute {
+      position: absolute;
+      display: block;
+    }
+    .reveal .footnotes ol {
+      counter-reset: ol;
+      list-style-type: none; 
+      margin-left: 0;
+    }
+    .reveal .footnotes ol li:before {
+      counter-increment: ol;
+      content: counter(ol) ". "; 
+    }
+    .reveal .footnotes ol li > p:first-child {
+      display: inline-block;
+    }
+    .reveal .slide ul,
+    .reveal .slide ol {
+      margin-bottom: 0.5em;
+    }
+    .reveal .slide ul li,
+    .reveal .slide ol li {
+      margin-top: 0.4em;
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide ul[role="tablist"] li {
+      margin-bottom: 0;
+    }
+    .reveal .slide ul li > *:first-child,
+    .reveal .slide ol li > *:first-child {
+      margin-block-start: 0;
+    }
+    .reveal .slide ul li > *:last-child,
+    .reveal .slide ol li > *:last-child {
+      margin-block-end: 0;
+    }
+    .reveal .slide .columns:nth-child(3) {
+      margin-block-start: 0.8em;
+    }
+    .reveal blockquote {
+      box-shadow: none;
+    }
+    .reveal .tippy-content>* {
+      margin-top: 0.2em;
+      margin-bottom: 0.7em;
+    }
+    .reveal .tippy-content>*:last-child {
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide > img.stretch.quarto-figure-center,
+    .reveal .slide > img.r-stretch.quarto-figure-center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-left,
+    .reveal .slide > img.r-stretch.quarto-figure-left  {
+      display: block;
+      margin-left: 0;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-right,
+    .reveal .slide > img.r-stretch.quarto-figure-right  {
+      display: block;
+      margin-left: auto;
+      margin-right: 0; 
+    }
+  </style>
+</head>
+<body class="quarto-light">
+  <div class="reveal">
+    <div class="slides">
+
+<section id="title-slide" data-background-image="./files/background-title.svg" class="quarto-title-block center">
+  <h1 class="title">La santé des minorités sexuelles et de genre</h1>
+  <p class="subtitle">Module uro-génital MS2/MS3</p>
+
+<div class="quarto-title-authors">
+<div class="quarto-title-author">
+<div class="quarto-title-author-name">
+Dr Maxence Ouafik 
+</div>
+        <p class="quarto-title-affiliation">
+            Département de Médecine Générale
+          </p>
+    </div>
+</div>
+
+  <p class="date">02/10/2025</p>
+</section>
+<section id="httpst.lypr-4" class="title-slide slide level2 center">
+<h2>https://t.ly/pR-4</h2>
+
+</section>
+
+<section id="section" class="title-slide slide level1 center" data-background-iframe="https://app.wooclap.com/events/MHYAOX/questions/63ed5538777685cca85ac4e3">
+<h1></h1>
+
+</section>
+
+<section>
+<section id="préambule" class="title-slide slide level1 center" data-background-image="./files/background.svg">
+<h1>Préambule</h1>
+
+</section>
+<section id="de-qui-parle-t-on" class="title-slide slide level2 center">
+<h2>De qui parle-t-on ?</h2>
+
+</section>
+
+<section id="section-1" class="title-slide slide level2 center" data-background-iframe="https://app.wooclap.com/events/MHYAOX/questions/63ed5654e8b2f562112dcb69">
+<h2></h2>
+
+</section>
+<section id="sexes-genres-et-sexualités" class="slide level3">
+<h3>Sexes, genres et sexualités</h3>
+
+<img data-src=".\files/sexe_genre_sexualite.png" style="width:60.0%" class="r-stretch quarto-figure-center"><p class="caption">Figure&nbsp;1: Distinction entre sexes, genres et sexualités</p><aside class="notes">
+<p>Insister sur la diversité au sein de chaque catégorie ainsi que sur les multiples croisements qui existent. Ne rien préjuger</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="un-focus-sur-les-pratiques" class="slide level3">
+<h3>Un focus sur les pratiques</h3>
+<ul>
+<li class="fragment">Les minorités sexuelles et de genre (<strong>MSG</strong>) représentent un ensemble divers d’identités, de positionnements sociaux et de pratiques</li>
+<li class="fragment">Dans le cadre de ce cours, nous ne nous intéresserons pas aux <strong>identités</strong> en tant que telles <em>(gays, bisexuel·le·s, lesbiennes…),</em> mais bien aux pratiques, car ce sont elles qui importent pour les points qui seront abordés.</li>
+<li class="fragment">2 termes sont utiles dans ce contexte médico-épidémiologique
+<ul>
+<li class="fragment"><strong>HSH</strong> : Hommes ayant des relations sexuelles avec d’autres hommes</li>
+<li class="fragment"><strong>FSF</strong> : Femmes ayant des relations sexuelles avec d’autres femmes</li>
+</ul></li>
+</ul>
+<aside class="notes">
+<ul>
+<li>Expliquer que ce qui nous intéresse ici, ce n’est pas les questions liées à savoir si la personne est gay ou pas, mais bien la question de savoir avec qui elle couche et comment.</li>
+<li>Rappeler néanmoins que les catégories FSF et HSH n’ont pas beaucoup de sens dans un contexte d’analyse sociale.</li>
+<li>Rappeler également qu’il n’y a pas que les pratiques qui comptent, mais que ça fait sens vu les sujets qui seront abordés</li>
+</ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+
+<section id="pourquoi-parler-de-ce-sujet" class="title-slide slide level2 center">
+<h2>Pourquoi parler de ce sujet ?</h2>
+<p>Parce qu’il s’agit d’une nécessité déontologique</p>
+<div class="fragment">
+<div id="fig-ordomedic" class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src=".\files/ordomedic.png" style="width:55.0%"></p>
+<figcaption>Figure&nbsp;2: Avis ordinal sur la nécessité d’une prise en charge adéquate des MSG</figcaption>
+</figure>
+</div>
+</div>
+</section>
+
+<section id="quels-sujets-aborder" class="title-slide slide level2 center">
+<h2>Quels sujets aborder ?</h2>
+
+</section>
+<section id="résultats-des-questionnaires-mg" class="slide level3">
+<h3>Résultats des questionnaires MG</h3>
+
+<img data-src="cours_presentation_2024_files/figure-revealjs/fig-likert-ais-1.svg" class="r-stretch quarto-figure-center"><p class="caption">Figure&nbsp;3: Aisance des médecins généralistes</p></section>
+<section class="slide level3">
+
+
+<img data-src="cours_presentation_2024_files/figure-revealjs/fig-likert-int-1.svg" class="r-stretch quarto-figure-center"><p class="caption">Figure&nbsp;4: Intérêt des médecins généralistes</p><aside class="notes">
+<ul>
+<li>30 assistant·e·s ont participé à la petite enquête en ligne</li>
+<li>Plus de 80% des assistant·e·s sondé·e·s ne sont pas à l’aise avec les thématiques de santé concernant les personnes transgenres</li>
+<li>Pourtant, moins de la moitié des sondé·e·s sont intéréssé·e·s à l’idée de se former sur ces questions</li>
+</ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="résultats-des-questionnaires-communautaires" class="slide level3">
+<h3>Résultats des questionnaires communautaires</h3>
+
+<img data-src="cours_presentation_2024_files/figure-revealjs/fig-likert-lgbt-1.svg" class="r-stretch quarto-figure-center"><p class="caption">Figure&nbsp;5: Priorités des MSG sur la formation des MG</p></section>
+<section id="comparaison-entre-intérêt-des-mg-et-priorités-communautaires" class="slide level3">
+<h3>Comparaison entre intérêt des MG et priorités communautaires</h3>
+<div class="cell quarto-layout-panel">
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="cell-output-display quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><img data-src="cours_presentation_2024_files/figure-revealjs/unnamed-chunk-2-1.svg"></p>
+</div>
+<div class="cell-output-display quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><img data-src="cours_presentation_2024_files/figure-revealjs/unnamed-chunk-2-2.svg"></p>
+</div>
+</div>
+</div>
+</section>
+<section id="comparaison-entre-aisance-des-mg-et-priorités-communautaires" class="slide level3">
+<h3>Comparaison entre aisance des MG et priorités communautaires</h3>
+<div class="cell quarto-layout-panel">
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="cell-output-display quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><img data-src="cours_presentation_2024_files/figure-revealjs/unnamed-chunk-3-1.svg"></p>
+</div>
+<div class="cell-output-display quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><img data-src="cours_presentation_2024_files/figure-revealjs/unnamed-chunk-3-2.svg"></p>
+</div>
+</div>
+</div>
+</section>
+<section id="sélections-des-thématiques" class="slide level3">
+<h3>Sélections des thématiques</h3>
+<ul>
+<li class="fragment">Les <strong>ISTs</strong>, <strong>la PrEP</strong>, et <strong>le TPE</strong> sont des thématiques qui intéressent plus de la moitié des assistant·e·s sondé·e·s et qui sont jugées prioritaires par plus de 80% des MSG sondées</li>
+<li class="fragment">Le vieillissement avec le VIH intéressait également une majorité des assistant·e·s sondé·e·s</li>
+<li class="fragment">Le traitement hormonal d’affirmation de genre (<strong>THAG</strong>) est le sujet qui est à la fois considéré comme prioritaire par plus de 80% des MSG et mal maîtrisé par plus de 80% des assistant·e·s</li>
+</ul>
+<aside class="notes">
+<ul>
+<li>Points communs entre les attentes des personnes LGBT et les attentes des MG, mais divergences notables. Principalement, vis-à-vis des questions liées aux transidentités, il y a un gros manque de formation, mais pas d’envie de le combler. Mon hypothèse est qu’ils ne sont pas assez confrontés à leur ignorance que pour qu’elle soit gênante pour eux ou qu’ils la conscientisent comme un problème. Référer paraît alors plus facile que se former.</li>
+<li>Cela traduit également une certaine forme d’altérisation des personnes transgenres</li>
+<li>Globalement, les MG ne sont pas à l’aise avec ces thématiques, ce qui montre l’importance de cette journée</li>
+<li>L’accueil n’est pas fort priorisé par les MG ; surestimation de leurs compétences ?</li>
+<li>Gap important entre la demande, le niveau de formation, et, de manière plus préoccupante, l’envie de se former. Du coup, stratégie : donner envie de se former</li>
+</ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+</section>
+<section>
+<section id="lenjeu-de-laccès-au-soin-des-personnes-transgenres" class="title-slide slide level1 center" data-background-image="./files/background.svg">
+<h1>L’enjeu de l’accès au soin des personnes transgenres</h1>
+
+</section>
+<section id="contexte" class="title-slide slide level2 center">
+<h2>Contexte</h2>
+<ul>
+<li class="fragment">Un passé de pathologisation encore présent</li>
+<li class="fragment">L’habitude d’être déçu·e</li>
+<li class="fragment">La discrimination dans les soins</li>
+</ul>
+<aside class="notes">
+<ul>
+<li>L’homosexualité n’a été retirée de la liste des troubles mentaux de l’OMS que le 17 mai 1990 ; nos maîtres de stage ont tous appris à une époque où l’homosexualité était officiellement une maladie mentale  IDAHOT</li>
+<li>La transidentité n’a été retirée par l’OMS que le 27 mai 2019 ! Parler des conditions de changement d’état civil avant la loi de 2018</li>
+<li>Le manque de formation ==&gt; l’habitude de ne pas être bien accueilli, que les besoins et spécificités ne soient pas connues ; l’infectiologue et le TFE sur les FSF</li>
+<li>La curiosité malsaine sur l’anatomie ou les pratiques</li>
+<li>Exemple de H. B. avec son psychiatre, de X. avec son gynécologue, du stage de dermatologie</li>
+</ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+
+<section id="en-pratique" class="title-slide slide level2 center">
+<h2>En pratique</h2>
+<ul>
+<li class="fragment">Plus grande tendance à reporter les soins ou à peiner pour trouver un·e professionnel·le <span class="citation" data-cites="ayhan2020 dahlhamer2016">[<a href="#/bibliographie" role="doc-biblioref" onclick="">1</a>,<a href="#/bibliographie" role="doc-biblioref" onclick="">2</a>]</span></li>
+<li class="fragment">Expérience de refus de soins, de violence verbale et physique (durant l’examen) <span class="citation" data-cites="ayhan2020">[<a href="#/bibliographie" role="doc-biblioref" onclick="">1</a>]</span></li>
+<li class="fragment">Une tendance à prioriser les soins transspécifiques en négligeant les autres <span class="citation" data-cites="uhrig2019">[<a href="#/bibliographie" role="doc-biblioref" onclick="">3</a>]</span></li>
+<li class="fragment">Des facteurs individuels et structurels (précarité, instabilité de logement, violence) <span class="citation" data-cites="uhrig2019">[<a href="#/bibliographie" role="doc-biblioref" onclick="">3</a>]</span></li>
+<li class="fragment">Un manque de formation criant <span class="citation" data-cites="korpaisarn2018 uhrig2019 korpaisarn2018 irwig2016">[<a href="#/bibliographie" role="doc-biblioref" onclick="">3</a>,<a href="#/bibliographie" role="doc-biblioref" onclick="">4</a>,<a href="#/bibliographie" role="doc-biblioref" onclick="">4</a>,<a href="#/bibliographie" role="doc-biblioref" onclick="">5</a>]</span></li>
+</ul>
+<aside class="notes">
+<ul>
+<li><p>40% des personnes transgenres ont déjà subi des comportement discriminatoire de la part de leur médecin traitant</p></li>
+<li><p>24% des personnes transgenres se sont déjà senties humiliées à cause de leur transidentité en se rendant aux urgences</p></li>
+<li><p>29% des femmes transgenres ont déjà été rejetées des services d’aide aux victimes à cause de leur transidentité</p></li>
+<li><p>Même les endocrinologues ne sont pas formés ; exemple des surrénales</p></li>
+</ul>
+<p><strong>Notre manque de connaissance empêche des gens de se faire soigner et risque de renforcer la fracture avec le monde médical</strong></p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+
+<section id="une-question-dorganisation-des-soins" class="title-slide slide level2 center">
+<h2>Une question d’organisation des soins</h2>
+<ul>
+<li class="fragment">En Belgique, les soins trans-spécifiques sont officiellement centralisés au sein d’équipes pluridisciplinaires</li>
+<li class="fragment">Il y en a <strong>deux</strong> sur tout le territoire</li>
+<li class="fragment">Cette faiblesse de l’offre entraîne des temps d’attente souvent excessifs, la nécessité de parcourir des distances parfois importantes pour accéder à un·e médecin, et une monopolisation de l’offre de soin <span class="citation" data-cites="koehler2021">[<a href="#/bibliographie" role="doc-biblioref" onclick="">6</a>]</span></li>
+<li class="fragment">Cette hyperspécialisation des soins trans-spécifiques, relayés à la troisième ligne, renforce intrinsèquement une altérisation des personnes transgenres, les faisant passer pour des individus aux besoins exceptionnels ne pouvant être gérés que par des équipes ultra-spécialisées <span class="citation" data-cites="ker2021">[<a href="#/bibliographie" role="doc-biblioref" onclick="">7</a>]</span></li>
+<li class="fragment">Elle concourre aussi à dépossèder les deux premières lignes des capacités nécessaires pour soigner correctement les personnes transgenres</li>
+</ul>
+<aside class="notes">
+<ul>
+<li>Parler des listes d’attente</li>
+<li>Parler de la difficulté géographique (mobiliser l’exemple de J.)</li>
+<li>Insister sur les concepts d’altérisation et de dépossession des compétences</li>
+</ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+
+<section id="lenvie-et-la-nécessité-dune-première-ligne-compétente" class="title-slide slide level2 center">
+<h2>L’envie et la nécessité d’une première ligne compétente</h2>
+<ul>
+<li class="fragment">L’hôpital peut être perçu comme un endroit anxiogène, au sein duquel on est envoyé contre son gré, plutôt qu’un lieu de soin que l’on décide librement de fréquenter <span class="citation" data-cites="ker2021">[<a href="#/bibliographie" role="doc-biblioref" onclick="">7</a>]</span></li>
+<li class="fragment">L’hôpital constitue également un lieu où les disparités de pouvoir sont renforcées <span class="citation" data-cites="ker2021">[<a href="#/bibliographie" role="doc-biblioref" onclick="">7</a>]</span></li>
+<li class="fragment">Les personnes transgenres sont désireuses d’avoir plus de service de soins <strong>particulièrement en première ligne</strong> <span class="citation" data-cites="lee2022">[<a href="#/bibliographie" role="doc-biblioref" onclick="">8</a>]</span></li>
+<li class="fragment">Une prise en charge trans-spécifique décentralisée en première ligne permet de favoriser l’accès au soin, le libre choix des médecins et des traitements, ainsi qu’une meilleure implication des médecins au sein de la communauté <span class="citation" data-cites="koehler2021">[<a href="#/bibliographie" role="doc-biblioref" onclick="">6</a>]</span></li>
+</ul>
+</section>
+<section class="slide level3">
+
+
+<img data-src=".\files/white.jpg" class="r-stretch quarto-figure-center"><p class="caption">Figure&nbsp;6: Le carré de White</p></section>
+
+<section id="illustration-issue-de-ma-pratique" class="title-slide slide level2 center">
+<h2>Illustration issue de ma pratique</h2>
+<div id="fig-demog" class="cell quarto-layout-panel">
+<figure>
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="cell-output-display quarto-layout-cell quarto-layout-cell-subref" style="flex-basis: 50.0%;justify-content: center;">
+<div id="fig-demog-1" class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="cours_presentation_2024_files/figure-revealjs/fig-demog-1.svg" data-ref-parent="fig-demog"></p>
+<figcaption>(a) Statut BIM</figcaption>
+</figure>
+</div>
+</div>
+<div class="cell-output-display quarto-layout-cell quarto-layout-cell-subref" style="flex-basis: 50.0%;justify-content: center;">
+<div id="fig-demog-2" class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="cours_presentation_2024_files/figure-revealjs/fig-demog-2.svg" data-ref-parent="fig-demog"></p>
+<figcaption>(b) DMG ouvert</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p></p><figcaption>Figure&nbsp;7: Analyse démographique des patient·e·s transgenres vu·e·s depuis un an (N = 115)</figcaption><p></p>
+</figure>
+</div>
+</section>
+<section class="slide level3">
+
+
+<img data-src="cours_presentation_2024_files/figure-revealjs/fig-map-1.svg" class="r-stretch quarto-figure-center"><p class="caption">Figure&nbsp;8: Mobilité géographique des patient·e·s transgenres vu·e·s depuis un an (N = 111)</p></section>
+</section>
+<section>
+<section id="dépistage-et-prise-en-charge-des-ists" class="title-slide slide level1 center" data-background-image="./files/background.svg">
+<h1>Dépistage et prise en charge des ISTs</h1>
+
+</section>
+<section id="section-2" class="title-slide slide level2 center" data-background-iframe="https://app.wooclap.com/events/MHYAOX/questions/63ed785e69ded651a50e89ea">
+<h2></h2>
+
+</section>
+
+<section id="vih" class="title-slide slide level2 center">
+<h2>VIH</h2>
+<div id="tbl-vih">
+<table style="width:100%;">
+<caption>Table&nbsp;1: Dépistage du VIH</caption>
+<colgroup>
+<col style="width: 34%">
+<col style="width: 26%">
+<col style="width: 38%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Dépistage</th>
+<th>Traitement</th>
+<th>Suivi</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td rowspan="5"><ul>
+<li class="fragment">Période fenêtre de <strong>15-20 jours</strong> pour les ELISA de 4ème génération ; <strong>95% de sensibilité après 3 semaines</strong> ; sensibilité maximale après <strong>6 semaines</strong></li>
+<li class="fragment">Intérêt du TROD pour les HSH</li>
+</ul></td>
+<td rowspan="5">Référer</td>
+<td rowspan="5">Référer</td>
+</tr>
+<tr class="even">
+</tr>
+<tr class="odd">
+</tr>
+<tr class="even">
+</tr>
+<tr class="odd">
+</tr>
+</tbody>
+</table>
+</div>
+<aside class="notes">
+<ul>
+<li>33% de VPP chez le tout-venant (prévalence de 0,17%) ==&gt; VPP de 98% chez les HSH pour les TROD</li>
+<li>50% de VPP pour la population générale ==&gt; test de confirmation !</li>
+</ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+
+<section id="chlamydia-et-gonorrhée" class="title-slide slide level2 center">
+<h2>Chlamydia et gonorrhée</h2>
+<div id="tbl-ngct">
+<table style="width:99%;">
+<caption>Table&nbsp;2: Dépistage et prise en charge de la gonorrhée et de la chlamydia <span class="citation" data-cites="workowski2021">[<a href="#/bibliographie" role="doc-biblioref" onclick="">9</a>]</span></caption>
+<colgroup>
+<col style="width: 29%">
+<col style="width: 27%">
+<col style="width: 41%">
+<col style="width: 0%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Dépistage</th>
+<th>Traitement</th>
+<th>Suivi</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><ul>
+<li class="fragment">PCR</li>
+<li class="fragment">Urines 1er jet + frottis de gorge + frottis rectal</li>
+<li class="fragment">Période fenêtre : <strong>14 jours</strong></li>
+</ul></td>
+<td><ul>
+<li class="fragment">Gonorrhée : Rocéphine 500mg IM</li>
+<li class="fragment">Chlamydia : Doxycycline 100mg 2x/J pendant 7 J</li>
+</ul></td>
+<td colspan="2"><ul>
+<li class="fragment">Test of cure : uniquement si persistance de symptômes ou doute sur l’adhérence |</li>
+<li class="fragment">Attendre 4 semaines avant de retester. |</li>
+</ul></td>
+</tr>
+</tbody>
+</table>
+</div>
+<ul>
+<li class="fragment">Jusqu’à 70% de cas manqués si échantillon uro-génital unique (HSH) <span class="citation" data-cites="workowski2021">[<a href="#/bibliographie" role="doc-biblioref" onclick="">9</a>]</span></li>
+<li class="fragment">La doxycycline a une efficacité supérieure à l’azithromycine, a fortiori pour les sites extragénitaux <span class="citation" data-cites="workowski2021">[<a href="#/bibliographie" role="doc-biblioref" onclick="">9</a>]</span></li>
+</ul>
+</section>
+<section id="à-titre-de-réflexion" class="slide level3">
+<h3>À titre de réflexion</h3>
+<ul>
+<li class="fragment">Certains éléments indiquent que la gonorrhée peut se transmettre par la salive (anulingus, baisers, fellation) <span class="citation" data-cites="Chow2019">[<a href="#/bibliographie" role="doc-biblioref" onclick="">10</a>]</span></li>
+<li class="fragment">Des études (anciennes) ont montré que la salive avait un effet inhibiteur sur Chlamydia <span class="citation" data-cites="Chow2019">[<a href="#/bibliographie" role="doc-biblioref" onclick="">10</a>]</span></li>
+<li class="fragment">Des doutes subsistent sur une migration de Chlamydia oropharyngé vers la zone anale par translocation le long du tractus gastro-intestinal <span class="citation" data-cites="Chow2019">[<a href="#/bibliographie" role="doc-biblioref" onclick="">10</a>]</span></li>
+<li class="fragment">Le screening de gonorrhée chez les HSH asymptomatiques a probablement peu d’impact sur la prévalence tout en exposant à des risques majeurs d’antibiorésistance <span class="citation" data-cites="Buyze2018 Tsoumanis2018">[<a href="#/bibliographie" role="doc-biblioref" onclick="">11</a>,<a href="#/bibliographie" role="doc-biblioref" onclick="">12</a>]</span></li>
+</ul>
+<aside class="notes">
+<p>Parler du fait que certaines souches de NG deviennent résistantes à presque tous les ATB et que d’ici quelques années, elle risque de devenir intraitable</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+
+<section id="syphilis" class="title-slide slide level2 center">
+<h2>Syphilis</h2>
+
+</section>
+<section id="interprétation-de-la-sérologie" class="slide level3">
+<h3>Interprétation de la sérologie</h3>
+<div>
+<ul>
+<li>Les tests tréponémiques (<strong>TPHA</strong>) ont tendance à rester positifs à vie</li>
+<li>Les tests non tréponémiques (<strong>VDRL</strong>) décroissent lentement, mais peuvent parfois rester positifs à vie</li>
+</ul>
+</div>
+<div id="tbl-sero">
+<table>
+<caption>Table&nbsp;3: Interprétation des résultats sérologiques de la syphilis</caption>
+<colgroup>
+<col style="width: 10%">
+<col style="width: 10%">
+<col style="width: 78%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>TPHA</th>
+<th>VDRL</th>
+<th>Interprétation</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Positif</td>
+<td>Positif</td>
+<td>Syphilis active</td>
+</tr>
+<tr class="even">
+<td>Positif</td>
+<td>Négatif</td>
+<td>Syphilis traitée ou latente très précoce ; anamnèse + retester</td>
+</tr>
+<tr class="odd">
+<td>Négatif</td>
+<td>Positif</td>
+<td>Faux positif ; retester</td>
+</tr>
+</tbody>
+</table>
+</div>
+<aside class="notes">
+<p>20-30% de FN lors du chancre ; répéter 2-4 semaines plus tard</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="traitement-et-suivi" class="slide level3">
+<h3>Traitement et suivi</h3>
+<ul>
+<li class="fragment">Syphilis <strong>précoce</strong> (primaire, secondaire ou latente précoce) : 2 ampoules de Penadur IM ou doxycycline 100mg 2x/J pendant 14J si allergie</li>
+<li class="fragment">Syphilis <strong>tardive</strong> : Penadur IM 2 ampoules 1x/semaine pendant 3 semaines ; référer si allergie</li>
+<li class="fragment">Neurosyphilis, symptômes cardiaques ou gommes syphilitiques : référer</li>
+<li class="fragment">Sérologie à 3, 6 mois et 12 mois [et 24 mois] (ou plus tôt si réapparition des symptômes) ; une chute de 4x le titre équivaut à une guérison</li>
+</ul>
+<aside class="notes">
+<p>Parler du remboursement</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+
+<section id="mycoplasma-genitalium" class="title-slide slide level2 center">
+<h2>Mycoplasma genitalium</h2>
+<ul>
+<li class="fragment">Préoccupant au vu de sa capacité majeure à développer des résistances <span class="citation" data-cites="Pinto-Sander2019">[<a href="#/bibliographie" role="doc-biblioref" onclick="">13</a>]</span></li>
+<li class="fragment">Retrouvé dans <strong>15-25%</strong> des urétrites non-gonococciques et <strong>10-13%</strong> des PID <span class="citation" data-cites="Pinto-Sander2019">[<a href="#/bibliographie" role="doc-biblioref" onclick="">13</a>]</span></li>
+<li class="fragment"><strong>Généralement asymptomatique</strong> <span class="citation" data-cites="Pinto-Sander2019">[<a href="#/bibliographie" role="doc-biblioref" onclick="">13</a>]</span></li>
+<li class="fragment">Lorsque des symptômes sont présents, il donne généralement des urétrites ou des cervicites avec saignements post-coïtaux <span class="citation" data-cites="Pinto-Sander2019">[<a href="#/bibliographie" role="doc-biblioref" onclick="">13</a>]</span></li>
+<li class="fragment">Impact sur la fertilité méconnu ; données préliminaires sur une association avec la prématurité et les fausses couches <span class="citation" data-cites="Pinto-Sander2019">[<a href="#/bibliographie" role="doc-biblioref" onclick="">13</a>]</span></li>
+<li class="fragment">Vu la forte antibiorésistance et le peu d’expression clinique <strong>il ne faut pas le rechercher, sauf si urétrite de cause inconnue</strong></li>
+<li class="fragment">Si besoin d’un traitement : Doxycycline 100mg 2x/J pendant 7 jours suivi par Azithromycine 1g en prise unique + 500mg par jour pendant 3 jours de plus <span class="citation" data-cites="workowski2021">[<a href="#/bibliographie" role="doc-biblioref" onclick="">9</a>]</span></li>
+<li class="fragment">Si résistance aux macrolides : Doxycycline 100mg 2x/J pendant 7 jours suivi par Moxifloxacine 400mg 1x/J pendant 7 jours</li>
+</ul>
+<aside class="notes">
+<ul>
+<li>Plus petite bactérie connue</li>
+</ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+
+<section id="hépatites-workowski2021" class="title-slide slide level2 center">
+<h2>Hépatites <span class="citation" data-cites="workowski2021">[<a href="#/bibliographie" role="doc-biblioref" onclick="">9</a>]</span></h2>
+<ul>
+<li class="fragment">L’hépatite A peut se transmettre par anulingus</li>
+<li class="fragment">L’hépatite B se transmet par les fluides sexuels et le sang</li>
+<li class="fragment">L’hépatite C peut se transmettre par voie sexuelle entre hommes</li>
+<li class="fragment">La vaccination est recommandée pour les HSH</li>
+</ul>
+</section>
+
+<section id="hpv" class="title-slide slide level2 center">
+<h2>HPV</h2>
+<ul>
+<li class="fragment">Pas de guidelines de dépistage pour les hommes cisgenres, même si les HSH sont à haut risque <span class="citation" data-cites="workowski2021">[<a href="#/bibliographie" role="doc-biblioref" onclick="">9</a>]</span></li>
+<li class="fragment">Dépistage tous les trois ans dès 25 ans si col de l’utérus</li>
+<li class="fragment">Grosse sous-utilisation du dépistage chez les FSF <span class="citation" data-cites="Knight2017">[<a href="#/bibliographie" role="doc-biblioref" onclick="">14</a>]</span> et les hommes transgenres</li>
+<li class="fragment">Vaccination recommandée jusqu’à 26 ans pour les HSH, mais peu de données en situation réelle sur l’efficacité <span class="citation" data-cites="goodman2022">[<a href="#/bibliographie" role="doc-biblioref" onclick="">15</a>]</span></li>
+<li class="fragment">La vaccination nonavalente a le potentiel de prévenir <strong>90%</strong> des cancers cervicaux, <strong>79%</strong> des cancers anaux, <strong>61%</strong> des cancers vaginaux, <strong>25%</strong> des cancers du pénis, <strong>23%</strong> des cancers vulvaires, et <strong>21%</strong> des cancers oropharyngés !</li>
+</ul>
+<aside class="notes">
+<p>Dépistage recommandé en cas de PrEP par un proctologue, par anuscopie (Dr Van Kemseke)</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+
+<section id="vaginose-bactérienne-workowski2021" class="title-slide slide level2 center">
+<h2>Vaginose bactérienne <span class="citation" data-cites="workowski2021">[<a href="#/bibliographie" role="doc-biblioref" onclick="">9</a>]</span></h2>
+
+</section>
+
+<section id="section-3" class="title-slide slide level2 center" data-background-iframe="https://app.wooclap.com/events/MHYAOX/questions/63ed901e7bf35a80d157048a">
+<h2></h2>
+
+</section>
+<section id="définition-et-diagnostic" class="slide level3">
+<h3>Définition et diagnostic</h3>
+<ul>
+<li class="fragment">La vaginose bactérienne est une <strong>dysbiose</strong> résultant du remplacement des <em>Lactobacilles</em> par des bactéries anaérobiques telles que <em>G. Vaginalis</em>, <em>Prevotella</em>, et <em>Mobiluncus</em></li>
+<li class="fragment">La contraception hormonale (progestative et œstroprogestative) apporte une certaine protection</li>
+<li class="fragment">Portage concomitant très fréquent entre FSF et les données épidémiologiques démontrent clairement une transmission sexuelle dans cette population</li>
+<li class="fragment">Provoque des décharges généralement malodorantes</li>
+<li class="fragment">Augmente le risque d’IST et de complications durant la grossesse</li>
+<li class="fragment">Méthode de diagnostic de référence : score de Nugent sur frottis vaginal. Il s’agit de la concentration relative entre lactobacilles et bactéries associées à une vaginose.
+<ul>
+<li class="fragment">0-3 : flore normale</li>
+<li class="fragment">4-6 : flore intermédiaire déséquilibrée</li>
+<li class="fragment">7-10 : vaginose</li>
+</ul></li>
+</ul>
+<aside class="notes">
+<p>Parler des mecs trans</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="traitement" class="slide level3">
+<h3>Traitement</h3>
+<ul>
+<li class="fragment">Traitement : Métronidazole 500mg 2x/J pendant 7 jours ou en application topique une fois par jour pendant 5 jours
+<ul>
+<li class="fragment">Alternative : Clindamycine topique une fois par jour, avant d’aller coucher, pendant 7 jours</li>
+</ul></li>
+<li class="fragment">Récurrences fréquentes ; utiliser le même traitement ou une alternative
+<ul>
+<li class="fragment">Possibilité de traitement suppressif : application topique 2x/semaine pendant plus de trois mois ; bénéfices ne perdurant pas à l’arrêt du traitement</li>
+</ul></li>
+<li class="fragment">Pas de preuve scientifique d’un intérêt de traiter les partenaires</li>
+</ul>
+</section>
+
+<section id="trichomonas-vaginalis-workowski2021" class="title-slide slide level2 center">
+<h2>Trichomonas vaginalis <span class="citation" data-cites="workowski2021">[<a href="#/bibliographie" role="doc-biblioref" onclick="">9</a>]</span></h2>
+<ul>
+<li class="fragment">IST non virale la plus fréquente dans le monde</li>
+<li class="fragment">Pas de dépistage asymptomatique ; rechercher en cas de perte vaginale anormale (malodorante, jaunâtre/verdâtre), accompagnée ou non d’irritation vulvaire</li>
+<li class="fragment">Peut également donner des urétrites, épididymites, et prostatites</li>
+<li class="fragment">Diagnostic : PCR ; Trichomonas arrête de bouger très rapidement et la sensibilité de l’évaluation microscopique chute à 20% après une heure post-collection</li>
+<li class="fragment">Traitement : Métronidazole 500mg 2x/J pendant 7 jours si infection vaginale ; 2g en prise unique si prostatite/urétrite/épididymite ou traitement d’un partenaire</li>
+<li class="fragment">Différemment à la vaginose, <strong>le traitement des partenaires est indispensable pour espérer une guérison</strong></li>
+<li class="fragment">Si récurrence, on a peu d’options… Métronidazole 2g pendant 7J en l’absence de réexposition ou répéter le traitement, si réexposition</li>
+</ul>
+</section>
+
+<section id="quelques-mots-sur-les-fsf" class="title-slide slide level2 center">
+<h2>Quelques mots sur les FSF</h2>
+<ul>
+<li class="fragment">Gros manque de recherche scientifique sur ce sujet <span class="citation" data-cites="obon-azuara2022">[<a href="#/bibliographie" role="doc-biblioref" onclick="">16</a>]</span></li>
+<li class="fragment">Sous-utilisation des services de prévention et de gynécologie et gros manque de connaissance sur la santé sexuelle <span class="citation" data-cites="Knight2017">[<a href="#/bibliographie" role="doc-biblioref" onclick="">14</a>]</span></li>
+<li class="fragment">Principalement exposées aux <strong>vaginoses bactériennes</strong>, aux <strong>trichomonas</strong>, au <strong>HPV</strong> et à l’<strong>HSV</strong>. <span class="citation" data-cites="workowski2021">[<a href="#/bibliographie" role="doc-biblioref" onclick="">9</a>]</span></li>
+<li class="fragment">Transmission possible de Chlamydia et Gonorrhée <span class="citation" data-cites="workowski2021">[<a href="#/bibliographie" role="doc-biblioref" onclick="">9</a>]</span></li>
+<li class="fragment">Case reports de transmission de VIH et de syphilis. <span class="citation" data-cites="workowski2021">[<a href="#/bibliographie" role="doc-biblioref" onclick="">9</a>]</span></li>
+<li class="fragment">Digue dentaire, doigtiers et nettoyage des sex toys</li>
+</ul>
+</section>
+
+<section id="quelques-mots-sur-les-personnes-transgenres" class="title-slide slide level2 center">
+<h2>Quelques mots sur les personnes transgenres</h2>
+<ul>
+<li class="fragment">Presque aucune étude sur le sujet ; extrapolation à partir des pratiques et de l’anatomie <span class="citation" data-cites="workowski2021">[<a href="#/bibliographie" role="doc-biblioref" onclick="">9</a>]</span></li>
+<li class="fragment">Attention à s’adapter au langage employé et à ne pas se montrer intrusif</li>
+<li class="fragment">Peu de données sur les néovagins ; HSV/HPV/Chlamydia/Gonorrhée décrites. <span class="citation" data-cites="workowski2021">[<a href="#/bibliographie" role="doc-biblioref" onclick="">9</a>]</span></li>
+<li class="fragment">Si métaoïodioplastie avec élongation urétrale sans vaginectomie, un frottis cervical est nécessaire, car l’échantillon urinaire ne sera pas performant</li>
+</ul>
+<aside class="notes">
+<p>Parler un peu d’histoire de la recherche et d’androcentrisme Parler de Go To Gyneco Parler de l’infectio du TFE</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+</section>
+<section>
+<section id="la-prep" class="title-slide slide level1 center" data-background-image="./files/background.svg">
+<h1>La PrEP</h1>
+
+</section>
+<section id="intérêt-et-prescription" class="title-slide slide level2 center">
+<h2>Intérêt et prescription</h2>
+<ul>
+<li class="fragment">Bithérapie consistant en une association de <strong>Tenofovir</strong> et d’<strong>Emtricitabine</strong> visant à empêcher la contamination au VIH <em>avant</em> un rapport sexuel</li>
+<li class="fragment">Prescription via un centre de référence VIH</li>
+<li class="fragment">Remboursement si dépistage tous les trois mois et avis de l’infectiologue</li>
+<li class="fragment">Permet une protection quasi complète contre le VIH, si prise correctement, mais n’offre aucune protection contre les autres ISTs</li>
+</ul>
+</section>
+
+<section id="schéma-de-prise" class="title-slide slide level2 center">
+<h2>Schéma de prise</h2>
+<div>
+<ul>
+<li>1 comprimé pr jour ; peut être pris à la demande chez les HSH</li>
+</ul>
+</div>
+
+<img data-src=".\files/prep.png" class="r-stretch quarto-figure-center"><p class="caption">Figure&nbsp;9: Schéma de prise à la demande de la PrEP</p></section>
+
+<section id="précautions-et-effets-indésirables" class="title-slide slide level2 center">
+<h2>Précautions et effets indésirables</h2>
+<ul>
+<li class="fragment">Précautions particulières si patient avec un HBV chronique (risque théorique de flambée mais pas de CI)</li>
+<li class="fragment">Entraîne une diminution de la densité osseuse (non-pathologique) et une diminution de la clairance de créatinine (non-pathologique également) ; les deux sont réversibles à l’arrêt du traitement</li>
+</ul>
+</section>
+</section>
+<section>
+<section id="le-tpe-libois2018" class="title-slide slide level1 center" data-background-image="/files/background.svg">
+<h1>Le TPE <span class="citation" data-cites="libois2018">[<a href="#/bibliographie" role="doc-biblioref" onclick="">17</a>]</span></h1>
+
+</section>
+<section id="indication" class="title-slide slide level2 center">
+<h2>Indication</h2>
+<ul>
+<li class="fragment">Recommandé si risque de transmission significatif du VIH (<strong>&gt; 1/1000</strong>)</li>
+<li class="fragment">À discuter si risque intermédiaire (<strong>entre 1/10 000 et 1/10 000</strong>)</li>
+<li class="fragment">Non recommandé en dessous</li>
+<li class="fragment">Doit être initié idéalement <strong>dans les 24h,</strong> mais peut être proposé <strong>jusqu’à 72h</strong></li>
+<li class="fragment">Durée du traitement : <strong>28 jours</strong></li>
+<li class="fragment">Effets indésirables : asthénie et gastro-intestinaux</li>
+</ul>
+</section>
+
+<section id="calcul-du-risque" class="title-slide slide level2 center">
+<h2>Calcul du risque</h2>
+<ul>
+<li class="fragment">Le risque est calculé en mesurant le risque que la personne à l’origine de l’exposition ait le VIH (<a href="#/tbl-prev">Table&nbsp;4 (a)</a>), multiplié par le risque par exposition (<a href="#/tbl-act">Table&nbsp;4 (b)</a>)</li>
+<li class="fragment">Certaines situations augmentent ce risque : lésions muqueuses, charge virale élevée (primo-infection), menstruations, présence d’une IST, non-circoncision, éjaculation</li>
+</ul>
+</section>
+<section class="slide level3">
+
+<div id="tbl-nonopep" class="tbl-parent quarto-layout-panel">
+<div class="panel-caption table-caption">
+<p>Table&nbsp;4: Calcul du risque de tranmission du VIH</p>
+</div>
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div id="tbl-prev" class="quarto-layout-cell quarto-layout-cell-subref" data-ref-parent="tbl-nonopep" style="flex-basis: 50.0%;justify-content: center;">
+<table>
+<caption>(a) Prévalence du VIH dans différents groupes en Belgique</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Groupe</th>
+<th style="text-align: left;">Prévalence</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">HSH (Flandre)</td>
+<td style="text-align: left;">5%</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">HSH (Bruxelles)</td>
+<td style="text-align: left;">9%</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">HSH (cruising)</td>
+<td style="text-align: left;">14.5%</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Travailleurs du sexe</td>
+<td style="text-align: left;">14%</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Travailleuses du sexe (Europe occidentale)</td>
+<td style="text-align: left;">&lt; 1%</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Travailleuses du sexe (Europe de l’Est)</td>
+<td style="text-align: left;">2,5 à 8%</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Migrants d’Afrique subsaharienne</td>
+<td style="text-align: left;">4.2%</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Migrantes d’Afrique subsaharienne</td>
+<td style="text-align: left;">5.9%</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="tbl-act" class="quarto-layout-cell quarto-layout-cell-subref" data-ref-parent="tbl-nonopep" style="flex-basis: 50.0%;justify-content: center;">
+<table>
+<caption>(b) Risque de transmission par acte sexuel</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Pratique</th>
+<th style="text-align: left;">Risque de transmission par acte</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Sexe anal réceptif avec éjaculation</td>
+<td style="text-align: left;">1/65</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Sexe anal réceptif</td>
+<td style="text-align: left;">1/90</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Partage de matériel d’injection</td>
+<td style="text-align: left;">1/149</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Sexe anal insertif (non circoncis)</td>
+<td style="text-align: left;">1/161</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Sexe anal réceptif sans éjaculation</td>
+<td style="text-align: left;">1/170</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Sexe anal insertif</td>
+<td style="text-align: left;">1/666</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Sexe anal insertif (circoncis)</td>
+<td style="text-align: left;">1/909</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Sexe vaginal réceptif</td>
+<td style="text-align: left;">1/1000</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Sexe vaginal insertif</td>
+<td style="text-align: left;">1/1219</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Fellation</td>
+<td style="text-align: left;">&lt; 1/10 000</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</section>
+
+<section id="en-pratique-1" class="title-slide slide level2 center">
+<h2>En pratique</h2>
+<ul>
+<li class="fragment">Recommandé dans tous les cas si sexe anal</li>
+<li class="fragment">À envisager si sexe vaginal</li>
+<li class="fragment">Non-recommandé si sexe oral, sauf si primo-infection VIH + lésions muqueuses orales</li>
+</ul>
+<aside class="notes">
+<p>Parler du cas de figure du viol</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+</section>
+<section>
+<section id="vieillir-avec-le-vih" class="title-slide slide level1 center" data-background-image="./files/background.svg">
+<h1>Vieillir avec le VIH</h1>
+
+</section>
+<section id="contexte-1" class="title-slide slide level2 center">
+<h2>Contexte</h2>
+<ul>
+<li class="fragment">Avec le développement de traitements antirétroviraux efficaces, la population de PVVIH [^Personnes vivant avec le VIH] s’est agrandie avec le temps</li>
+<li class="fragment">Les PVVIH de plus de 50 ans représentent désormais 50% des PVVIH aux USA et atteindront 70% d’ici 2030 <span class="citation" data-cites="fukui2018">[<a href="#/bibliographie" role="doc-biblioref" onclick="">18</a>]</span></li>
+<li class="fragment">Toutefois, malgré l’efficacité des ARV, une différence persiste au niveau des années de vie en bonne santé, suggérant un vieillissement prématuré des PVVIH <span class="citation" data-cites="rodes2022">[<a href="#/bibliographie" role="doc-biblioref" onclick="">19</a>]</span></li>
+</ul>
+</section>
+
+<section id="vih-et-fragilité-fukui2018" class="title-slide slide level2 center">
+<h2>VIH et fragilité <span class="citation" data-cites="fukui2018">[<a href="#/bibliographie" role="doc-biblioref" onclick="">18</a>]</span></h2>
+<ul>
+<li class="fragment">La fragilité est un état de vulnérabilité accrue chez les personnes âgées augmentant les risques de survenue d’évènements cliniques défavorables (hospitalisation, institutionalisation, et décès)</li>
+<li class="fragment">La fragilité est la conséquence d’une perturbation des fonctions homéostatiques et d’un déclin dans les réserves physiologiques</li>
+<li class="fragment">L’inflammation chronique semble jouer un rôle prépondérant dans la survenue d’un phénotype fragile et le vieillissement constitue en lui-même un état d’inflammation chronique</li>
+<li class="fragment">Cet état de fait est amplifié chez les PVVIH qui, même lorsque leur charge virale est indétectable, conservent un état d’activation immunitaire et d’inflammation</li>
+</ul>
+<aside class="notes">
+<p>Le phénotype de fragilité évalue la vulnérabilité des personnes âgées à travers cinq dimensions : l’amaigrissement, la faiblesse, la fatigue, la lenteur de marche et le faible niveau d’activité physique. Ces domaines caractérisent différents stades de la maladie et conditions médicales. Sur la base du score de fragilité, les personnes sont classées en trois catégories : robustes, pré-fragiles et fragiles.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+
+<section id="une-question-complexe-rodes2022" class="title-slide slide level2 center">
+<h2>Une question complexe <span class="citation" data-cites="rodes2022">[<a href="#/bibliographie" role="doc-biblioref" onclick="">19</a>]</span></h2>
+<ul>
+<li class="fragment">La question demeure de savoir si le VIH accélère le vieillissement (c’est-à-dire qu’il entraîne des évènements plus précocément que dans la population générale) ou s’il l’accentue (c’est-à-dire que les évènements surviennent au même âge, mais plus fréquemment)</li>
+<li class="fragment">En outre, l’effet sur le long terme des ARV, les aspects comportementaux, ainsi que les co-infections contribuent à complexifier le problème</li>
+<li class="fragment">Les ARV peuvent entraîner :
+<ul>
+<li class="fragment">Dysfonction mitochondriale, toxicité rénale et osseuse (Tenofovir)</li>
+<li class="fragment">Résistance à l’insuline, dyslipidémie, sénéscence des cellules endothéliales artérielles (inhibiteurs de la protéase)</li>
+<li class="fragment">Prise de poids et symptômes neuropsychiatriques (inhibiteurs de l’intégrase)</li>
+</ul></li>
+</ul>
+</section>
+<section class="slide level3">
+
+
+<img data-src=".\files/ageing.png" class="r-stretch quarto-figure-center"><p class="caption">Figure&nbsp;10: Vieillissement et VIH (tiré de <span class="citation" data-cites="rodes2022">[<a href="#/bibliographie" role="doc-biblioref" onclick="">19</a>]</span>)</p></section>
+
+<section id="rôles-du-médecin-généraliste-thompson2021" class="title-slide slide level2 center">
+<h2>Rôles du médecin généraliste <span class="citation" data-cites="thompson2021">[<a href="#/bibliographie" role="doc-biblioref" onclick="">20</a>]</span></h2>
+
+</section>
+<section id="santé-cardio-vasculaire" class="slide level3">
+<h3>Santé cardio-vasculaire</h3>
+<ul>
+<li class="fragment">Risque accru de morbidité cardiovasculaire, a fortiori si d’autres facteurs de risque sont présents</li>
+<li class="fragment">Reconnu comme facteur de risque athérosclérotique dans les guidelines maéricaines sur la prise en charge du cholestérol</li>
+<li class="fragment">Tous les PVVIH devraient être évalués pour leur risque cardio-vasculaire et ceux à risque élevé ou avec des LDL-C trop élevées devraient être pris en charge selon les recommandations en vigueur</li>
+<li class="fragment">Attention aux interactions sérieuses entre statines, inhibteurs de la protéase et inhibiteurs nucléosidiques de la transcriptase inverse</li>
+</ul>
+</section>
+<section id="diabète" class="slide level3">
+<h3>Diabète</h3>
+<ul>
+<li class="fragment">Impact des ARV sur l’HbA1c ; ne pas s’en servir pour diagnostiquer et se baser sur la glycémie à jeun</li>
+</ul>
+</section>
+<section id="santé-osseuse" class="slide level3">
+<h3>Santé osseuse</h3>
+<ul>
+<li class="fragment">Ostéodensitométrie conseillée après 50 ans chez tout le monde</li>
+<li class="fragment">Supplémentation vitamino-calcique conseillée si ostéopénie avec contrôle à un an</li>
+<li class="fragment">Ostéodensitométrie à partir de 65 ans chez les personnes transgenres sous THAG ; commencer à 50 ans si gonadectomie + interruption de traitement de 5 ans</li>
+</ul>
+</section>
+<section id="déficit-neurocognitif" class="slide level3">
+<h3>Déficit neurocognitif</h3>
+<ul>
+<li class="fragment">Plus fréquents que dans la population générale, mais pas de recommandation de screening, car peu d’option en cas de déficit modéré</li>
+</ul>
+</section>
+</section>
+<section id="bibliographie" class="title-slide slide level1 smaller scrollable">
+<h1>Bibliographie</h1>
+<div class="footer footer-default">
+<p>La santé des minorités sexuelles et de genre</p>
+</div>
+<div id="refs" class="references csl-bib-body" role="list">
+<div id="ref-ayhan2020" class="csl-entry" role="listitem">
+<div class="csl-left-margin">1 </div><div class="csl-right-inline">Ayhan CHB, Bilgin H, Uluman OT, <em>et al.</em> A <span>Systematic Review</span> of the <span>Discrimination Against Sexual</span> and <span>Gender Minority</span> in <span>Health Care Settings</span>. <em>International Journal of Health Services</em> 2020;<strong>50</strong>:44–61. doi:<a href="https://doi.org/10.1177/0020731419885093">10.1177/0020731419885093</a></div>
+</div>
+<div id="ref-dahlhamer2016" class="csl-entry" role="listitem">
+<div class="csl-left-margin">2 </div><div class="csl-right-inline">Dahlhamer JM, Galinsky AM, Joestl SS, <em>et al.</em> Barriers to <span>Health Care Among Adults Identifying</span> as <span>Sexual Minorities</span>: <span>A US National Study</span>. <em>American Journal of Public Health</em> 2016;<strong>106</strong>:1116–22. doi:<a href="https://doi.org/10.2105/AJPH.2016.303049">10.2105/AJPH.2016.303049</a></div>
+</div>
+<div id="ref-uhrig2019" class="csl-entry" role="listitem">
+<div class="csl-left-margin">3 </div><div class="csl-right-inline">Uhrig JD, Stryker JE, Bresee S, <em>et al.</em> <span>HIV</span> information needs of transgender people and their healthcare providers. <em>AIDS Care</em> 2019;<strong>31</strong>:357–63. doi:<a href="https://doi.org/10.1080/09540121.2018.1499862">10.1080/09540121.2018.1499862</a></div>
+</div>
+<div id="ref-korpaisarn2018" class="csl-entry" role="listitem">
+<div class="csl-left-margin">4 </div><div class="csl-right-inline">Korpaisarn S, Safer JD. Gaps in transgender medical education among healthcare providers: <span>A</span> major barrier to care for transgender persons. <em>Reviews in Endocrine and Metabolic Disorders</em> 2018;<strong>19</strong>:271–5. doi:<a href="https://doi.org/10.1007/s11154-018-9452-5">10.1007/s11154-018-9452-5</a></div>
+</div>
+<div id="ref-irwig2016" class="csl-entry" role="listitem">
+<div class="csl-left-margin">5 </div><div class="csl-right-inline">Irwig MS. Transgender <span>Care</span> by <span>Endocrinologists</span> in the <span>United States</span>. <em>Endocrine Practice</em> 2016;<strong>22</strong>:832–6. doi:<a href="https://doi.org/10.4158/EP151185.OR">10.4158/EP151185.OR</a></div>
+</div>
+<div id="ref-koehler2021" class="csl-entry" role="listitem">
+<div class="csl-left-margin">6 </div><div class="csl-right-inline">Koehler A, Strauss B, Briken P, <em>et al.</em> Centralized and <span>Decentralized Delivery</span> of <span>Transgender Health Care Services</span>: <span>A Systematic Review</span> and a <span>Global Expert Survey</span> in 39 <span>Countries</span>. <em>Frontiers in Endocrinology</em> 2021;<strong>12</strong>.</div>
+</div>
+<div id="ref-ker2021" class="csl-entry" role="listitem">
+<div class="csl-left-margin">7 </div><div class="csl-right-inline">Ker A, Fraser G, Fleming T, <em>et al.</em> <span>“<span>A</span> little bubble of utopia”</span>: Constructions of a primary care-based pilot clinic providing gender affirming hormone therapy. <em>Health Sociology Review</em> 2021;<strong>30</strong>:25–40. doi:<a href="https://doi.org/10.1080/14461242.2020.1855999">10.1080/14461242.2020.1855999</a></div>
+</div>
+<div id="ref-lee2022" class="csl-entry" role="listitem">
+<div class="csl-left-margin">8 </div><div class="csl-right-inline">Lee JL, Huffman M, Rattray NA, <em>et al.</em> <span>“<span>I Don</span>’t <span>Want</span> to <span>Spend</span> the <span>Rest</span> of my <span>Life Only Going</span> to a <span>Gender Wellness Clinic</span>”</span>: <span>Healthcare Experiences</span> of <span>Patients</span> of a <span>Comprehensive Transgender Clinic</span>. <em>Journal of General Internal Medicine</em> Published Online First: 2022. doi:<a href="https://doi.org/10.1007/s11606-022-07408-5">10.1007/s11606-022-07408-5</a></div>
+</div>
+<div id="ref-workowski2021" class="csl-entry" role="listitem">
+<div class="csl-left-margin">9 </div><div class="csl-right-inline">Workowski KA, Bachmann LH, Chan PA, <em>et al.</em> Sexually <span>Transmitted Infections Treatment Guidelines</span>, 2021. 2021;<strong>70</strong>.</div>
+</div>
+<div id="ref-Chow2019" class="csl-entry" role="listitem">
+<div class="csl-left-margin">10 </div><div class="csl-right-inline">Chow EP, Fairley CK. The role of saliva in gonorrhoea and chlamydia transmission to extragenital sites among men who have sex with men: New insights into transmission. <em>Journal of the International AIDS Society</em> 2019;<strong>22</strong>:e25354. doi:<a href="https://doi.org/10.1002/jia2.25354">10.1002/jia2.25354</a></div>
+</div>
+<div id="ref-Buyze2018" class="csl-entry" role="listitem">
+<div class="csl-left-margin">11 </div><div class="csl-right-inline">Buyze J, Vanden Berghe W, Hens N, <em>et al.</em> Current levels of gonorrhoea screening in <span>MSM</span> in <span>Belgium</span> may have little effect on prevalence: <span>A</span> modelling study. <em>Epidemiology and Infection</em> 2018;<strong>146</strong>:333–8. doi:<a href="https://doi.org/10.1017/S0950268818000092">10.1017/S0950268818000092</a></div>
+</div>
+<div id="ref-Tsoumanis2018" class="csl-entry" role="listitem">
+<div class="csl-left-margin">12 </div><div class="csl-right-inline">Tsoumanis A, Hens N, Kenyon CR. Is <span>Screening</span> for <span>Chlamydia</span> and <span>Gonorrhea</span> in <span>Men Who Have Sex</span> with <span>Men Associated</span> with <span>Reduction</span> of the <span>Prevalence</span> of these <span>Infections</span>? <span>A Systematic Review</span> of <span>Observational Studies</span>. <em>Sexually Transmitted Diseases</em> 2018;<strong>45</strong>:615–22. doi:<a href="https://doi.org/10.1097/OLQ.0000000000000824">10.1097/OLQ.0000000000000824</a></div>
+</div>
+<div id="ref-Pinto-Sander2019" class="csl-entry" role="listitem">
+<div class="csl-left-margin">13 </div><div class="csl-right-inline">Pinto-Sander N, Soni S. Mycoplasma genitalium infection. <em>BMJ</em> 2019;l5820. doi:<a href="https://doi.org/10.1136/bmj.l5820">10.1136/bmj.l5820</a></div>
+</div>
+<div id="ref-Knight2017" class="csl-entry" role="listitem">
+<div class="csl-left-margin">14 </div><div class="csl-right-inline">Knight DA, Jarrett D. Preventive <span>Health Care</span> for <span>Women Who Have Sex</span> with <span>Women</span>. 2017. </div>
+</div>
+<div id="ref-goodman2022" class="csl-entry" role="listitem">
+<div class="csl-left-margin">15 </div><div class="csl-right-inline">Goodman E, Reuschenbach M, Kaminski A, <em>et al.</em> Human <span>Papillomavirus Vaccine Impact</span> and <span>Effectiveness</span> in <span>Six High-Risk Populations</span>: <span>A Systematic Literature Review</span>. <em>Vaccines</em> 2022;<strong>10</strong>:1543. doi:<a href="https://doi.org/10.3390/vaccines10091543">10.3390/vaccines10091543</a></div>
+</div>
+<div id="ref-obon-azuara2022" class="csl-entry" role="listitem">
+<div class="csl-left-margin">16 </div><div class="csl-right-inline">Obón-Azuara B, Vergara-Maldonado C, Gutiérrez-Cía I, <em>et al.</em> Gaps in sexual health research about women who have sex with women. <span>A</span> scoping review. <em>Gaceta Sanitaria</em> 2022;<strong>36</strong>:439–45. doi:<a href="https://doi.org/10.1016/j.gaceta.2022.01.008">10.1016/j.gaceta.2022.01.008</a></div>
+</div>
+<div id="ref-libois2018" class="csl-entry" role="listitem">
+<div class="csl-left-margin">17 </div><div class="csl-right-inline">Libois A, Florence E, Derdelinckx I, <em>et al.</em> Belgian guidelines for non-occupational <span>HIV</span> post-exposure prophylaxis 2017. <em>Acta Clinica Belgica</em> 2018;<strong>73</strong>:275–80. doi:<a href="https://doi.org/10.1080/17843286.2018.1428506">10.1080/17843286.2018.1428506</a></div>
+</div>
+<div id="ref-fukui2018" class="csl-entry" role="listitem">
+<div class="csl-left-margin">18 </div><div class="csl-right-inline">Fukui SM, Piggott DA, Erlandson KM. Inflammation <span>Strikes Again</span>: <span>Frailty</span> and <span>HIV</span>. <em>Current HIV/AIDS Reports</em> 2018;<strong>15</strong>:20–9. doi:<a href="https://doi.org/10.1007/s11904-018-0372-5">10.1007/s11904-018-0372-5</a></div>
+</div>
+<div id="ref-rodes2022" class="csl-entry" role="listitem">
+<div class="csl-left-margin">19 </div><div class="csl-right-inline">Rodés B, Cadiñanos J, Esteban-Cantos A, <em>et al.</em> Ageing with <span>HIV</span>: <span>Challenges</span> and biomarkers. <em>eBioMedicine</em> 2022;<strong>77</strong>:103896. doi:<a href="https://doi.org/10.1016/j.ebiom.2022.103896">10.1016/j.ebiom.2022.103896</a></div>
+</div>
+<div id="ref-thompson2021" class="csl-entry" role="listitem">
+<div class="csl-left-margin">20 </div><div class="csl-right-inline">Thompson MA, Horberg MA, Agwu AL, <em>et al.</em> Primary <span>Care Guidance</span> for <span>Persons With Human Immunodeficiency Virus</span>: 2020 <span>Update</span> by the <span>HIV Medicine Association</span> of the <span>Infectious Diseases Society</span> of <span>America</span>. <em>Clinical Infectious Diseases</em> 2021;<strong>73</strong>:e3572–605. doi:<a href="https://doi.org/10.1093/cid/ciaa1391">10.1093/cid/ciaa1391</a></div>
+</div>
+</div>
+</section>
+    </div>
+  </div>
+
+  <script>window.backupDefine = window.define; window.define = undefined;</script>
+  <script src="cours_presentation_2024_files/libs/revealjs/dist/reveal.js"></script>
+  <!-- reveal.js plugins -->
+  <script src="cours_presentation_2024_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="cours_presentation_2024_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="cours_presentation_2024_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="cours_presentation_2024_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="cours_presentation_2024_files/libs/revealjs/plugin/multiplex/socket.io.js"></script>
+  <script src="cours_presentation_2024_files/libs/revealjs/plugin/multiplex/multiplex.js"></script>
+  <script src="cours_presentation_2024_files/libs/revealjs/plugin/quarto-support/support.js"></script>
+  
+
+  <script src="cours_presentation_2024_files/libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="cours_presentation_2024_files/libs/revealjs/plugin/search/search.js"></script>
+  <script src="cours_presentation_2024_files/libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="cours_presentation_2024_files/libs/revealjs/plugin/math/math.js"></script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({
+'controlsAuto': true,
+'previewLinksAuto': false,
+'smaller': true,
+'pdfSeparateFragments': false,
+'autoAnimateEasing': "ease",
+'autoAnimateDuration': 1,
+'autoAnimateUnmatched': true,
+'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
+'multiplex': {"secret":null,"id":"954deeb66e763cfc","url":"https://reveal-multiplex.glitch.me/"},
+'smaller': true,
+ 
+        // Display controls in the bottom right corner
+        controls: false,
+
+        // Help the user learn the controls by providing hints, for example by
+        // bouncing the down arrow when they first encounter a vertical slide
+        controlsTutorial: false,
+
+        // Determines where controls appear, "edges" or "bottom-right"
+        controlsLayout: 'edges',
+
+        // Visibility rule for backwards navigation arrows; "faded", "hidden"
+        // or "visible"
+        controlsBackArrows: 'faded',
+
+        // Display a presentation progress bar
+        progress: true,
+
+        // Display the page number of the current slide
+        slideNumber: 'c/t',
+
+        // 'all', 'print', or 'speaker'
+        showSlideNumber: 'all',
+
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: true,
+
+        // Start with 1 for the hash rather than 0
+        hashOneBasedIndex: false,
+
+        // Flags if we should monitor the hash and change slides accordingly
+        respondToHashChanges: true,
+
+        // Push each slide change to the browser history
+        history: false,
+
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+
+        // Enable the slide overview mode
+        overview: true,
+
+        // Disables the default reveal.js slide layout (scaling and centering)
+        // so that you can use custom CSS layout
+        disableLayout: false,
+
+        // Vertical centering of slides
+        center: false,
+
+        // Enables touch navigation on devices with touch input
+        touch: true,
+
+        // Loop the presentation
+        loop: false,
+
+        // Change the presentation direction to be RTL
+        rtl: false,
+
+        // see https://revealjs.com/vertical-slides/#navigation-mode
+        navigationMode: 'linear',
+
+        // Randomizes the order of slides each time the presentation loads
+        shuffle: false,
+
+        // Turns fragments on and off globally
+        fragments: true,
+
+        // Flags whether to include the current fragment in the URL,
+        // so that reloading brings you to the same fragment position
+        fragmentInURL: false,
+
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+
+        // Flags if it should be possible to pause the presentation (blackout)
+        pause: true,
+
+        // Flags if speaker notes should be visible to all viewers
+        showNotes: false,
+
+        // Global override for autoplaying embedded media (null/true/false)
+        autoPlayMedia: null,
+
+        // Global override for preloading lazy-loaded iframes (null/true/false)
+        preloadIframes: null,
+
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+
+        // Use this method for navigation when auto-sliding
+        autoSlideMethod: null,
+
+        // Specify the average time in seconds that you think you will spend
+        // presenting each slide. This is used to show a pacing timer in the
+        // speaker view
+        defaultTiming: null,
+
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+
+        // The display mode that will be used to show slides
+        display: 'block',
+
+        // Hide cursor if inactive
+        hideInactiveCursor: true,
+
+        // Time before the cursor is hidden (in ms)
+        hideCursorTime: 5000,
+
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
+
+        // Transition style (none/fade/slide/convex/concave/zoom)
+        transition: 'slide',
+
+        // Transition speed (default/fast/slow)
+        transitionSpeed: 'default',
+
+        // Transition style for full page slide backgrounds
+        // (none/fade/slide/convex/concave/zoom)
+        backgroundTransition: 'none',
+
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        // Number of slides away from the current that are visible on mobile
+        // devices. It is advisable to set this to a lower number than
+        // viewDistance in order to save resources.
+        mobileViewDistance: 2,
+
+        // The "normal" size of the presentation, aspect ratio will be preserved
+        // when the presentation is scaled to fit different resolutions. Can be
+        // specified using percentage units.
+        width: 1050,
+
+        height: 700,
+
+        // Factor of the display size that should remain empty around the content
+        margin: 0.1,
+
+        math: {
+          mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js',
+          config: 'TeX-AMS_HTML-full',
+          tex2jax: {
+            inlineMath: [['\\(','\\)']],
+            displayMath: [['\\[','\\]']],
+            balanceBraces: true,
+            processEscapes: false,
+            processRefs: true,
+            processEnvironments: true,
+            preview: 'TeX',
+            skipTags: ['script','noscript','style','textarea','pre','code'],
+            ignoreClass: 'tex2jax_ignore',
+            processClass: 'tex2jax_process'
+          },
+        },
+
+        // reveal.js plugins
+        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, QuartoSupport,
+
+          RevealMath,
+          
+          RevealSearch,
+          RevealZoom
+        ]
+      });
+    </script>
+    
+    <script>
+      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
+      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
+      // slide changes (different for each slide format).
+      (function () {
+        // dispatch for htmlwidgets
+        function fireSlideEnter() {
+          const event = window.document.createEvent("Event");
+          event.initEvent("slideenter", true, true);
+          window.document.dispatchEvent(event);
+        }
+
+        function fireSlideChanged(previousSlide, currentSlide) {
+          fireSlideEnter();
+
+          // dispatch for shiny
+          if (window.jQuery) {
+            if (previousSlide) {
+              window.jQuery(previousSlide).trigger("hidden");
+            }
+            if (currentSlide) {
+              window.jQuery(currentSlide).trigger("shown");
+            }
+          }
+        }
+
+        // hookup for slidy
+        if (window.w3c_slidy) {
+          window.w3c_slidy.add_observer(function (slide_num) {
+            // slide_num starts at position 1
+            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
+          });
+        }
+
+      })();
+    </script>
+
+    <script id="quarto-html-after-body" type="application/javascript">
+    window.document.addEventListener("DOMContentLoaded", function (event) {
+      const toggleBodyColorMode = (bsSheetEl) => {
+        const mode = bsSheetEl.getAttribute("data-mode");
+        const bodyEl = window.document.querySelector("body");
+        if (mode === "dark") {
+          bodyEl.classList.add("quarto-dark");
+          bodyEl.classList.remove("quarto-light");
+        } else {
+          bodyEl.classList.add("quarto-light");
+          bodyEl.classList.remove("quarto-dark");
+        }
+      }
+      const toggleBodyColorPrimary = () => {
+        const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+        if (bsSheetEl) {
+          toggleBodyColorMode(bsSheetEl);
+        }
+      }
+      toggleBodyColorPrimary();  
+      const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+      tabsets.forEach(function(tabset) {
+        const tabby = new Tabby('#' + tabset.id);
+      });
+      const isCodeAnnotation = (el) => {
+        for (const clz of el.classList) {
+          if (clz.startsWith('code-annotation-')) {                     
+            return true;
+          }
+        }
+        return false;
+      }
+      const clipboard = new window.ClipboardJS('.code-copy-button', {
+        text: function(trigger) {
+          const codeEl = trigger.previousElementSibling.cloneNode(true);
+          for (const childEl of codeEl.children) {
+            if (isCodeAnnotation(childEl)) {
+              childEl.remove();
+            }
+          }
+          return codeEl.innerText;
+        }
+      });
+      clipboard.on('success', function(e) {
+        // button target
+        const button = e.trigger;
+        // don't keep focus
+        button.blur();
+        // flash "checked"
+        button.classList.add('code-copy-button-checked');
+        var currentTitle = button.getAttribute("title");
+        button.setAttribute("title", "Copied!");
+        let tooltip;
+        if (window.bootstrap) {
+          button.setAttribute("data-bs-toggle", "tooltip");
+          button.setAttribute("data-bs-placement", "left");
+          button.setAttribute("data-bs-title", "Copied!");
+          tooltip = new bootstrap.Tooltip(button, 
+            { trigger: "manual", 
+              customClass: "code-copy-button-tooltip",
+              offset: [0, -8]});
+          tooltip.show();    
+        }
+        setTimeout(function() {
+          if (tooltip) {
+            tooltip.hide();
+            button.removeAttribute("data-bs-title");
+            button.removeAttribute("data-bs-toggle");
+            button.removeAttribute("data-bs-placement");
+          }
+          button.setAttribute("title", currentTitle);
+          button.classList.remove('code-copy-button-checked');
+        }, 1000);
+        // clear code selection
+        e.clearSelection();
+      });
+      function tippyHover(el, contentFn) {
+        const config = {
+          allowHTML: true,
+          content: contentFn,
+          maxWidth: 500,
+          delay: 100,
+          arrow: false,
+          appendTo: function(el) {
+              return el.closest('section.slide') || el.parentElement;
+          },
+          interactive: true,
+          interactiveBorder: 10,
+          theme: 'light-border',
+          placement: 'bottom-start'
+        };
+          config['offset'] = [0,0];
+          config['maxWidth'] = 700;
+        window.tippy(el, config); 
+      }
+      const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+      for (var i=0; i<noterefs.length; i++) {
+        const ref = noterefs[i];
+        tippyHover(ref, function() {
+          // use id or data attribute instead here
+          let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+          try { href = new URL(href).hash; } catch {}
+          const id = href.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          return note.innerHTML;
+        });
+      }
+      const findCites = (el) => {
+        const parentEl = el.parentElement;
+        if (parentEl) {
+          const cites = parentEl.dataset.cites;
+          if (cites) {
+            return {
+              el,
+              cites: cites.split(' ')
+            };
+          } else {
+            return findCites(el.parentElement)
+          }
+        } else {
+          return undefined;
+        }
+      };
+      var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+      for (var i=0; i<bibliorefs.length; i++) {
+        const ref = bibliorefs[i];
+        const citeInfo = findCites(ref);
+        if (citeInfo) {
+          tippyHover(citeInfo.el, function() {
+            var popup = window.document.createElement('div');
+            citeInfo.cites.forEach(function(cite) {
+              var citeDiv = window.document.createElement('div');
+              citeDiv.classList.add('hanging-indent');
+              citeDiv.classList.add('csl-entry');
+              var biblioDiv = window.document.getElementById('ref-' + cite);
+              if (biblioDiv) {
+                citeDiv.innerHTML = biblioDiv.innerHTML;
+              }
+              popup.appendChild(citeDiv);
+            });
+            return popup.innerHTML;
+          });
+        }
+      }
+        var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+          var filterRegex = new RegExp('/' + window.location.host + '/');
+        var isInternal = (href) => {
+            return filterRegex.test(href) || localhostRegex.test(href);
+        }
+        // Inspect non-navigation links and adorn them if external
+     	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item)');
+        for (var i=0; i<links.length; i++) {
+          const link = links[i];
+          if (!isInternal(link.href)) {
+              // target, if specified
+              link.setAttribute("target", "_blank");
+          }
+        }
+    });
+    </script>
+    
+
+</body></html>

@@ -1,4 +1,4 @@
-source("./scripts/patients_data_manipulation.R", encoding = "UTF-8")
+source("./2023/scripts/patients_data_manipulation.R", encoding = "UTF-8")
 
 bim_plot <- ggplot() +
     geom_bar(data = aim_summary, 
