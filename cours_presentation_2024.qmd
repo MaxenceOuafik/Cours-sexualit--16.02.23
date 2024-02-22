@@ -253,6 +253,10 @@ dmg_plot
 patients_map
 ```
 
+---
+
+![Distance parcourue par ma patientèle transgenre pour se rendre à ma consultation](files/duration_plot.png)
+
 ## De l'ignorance maintenue à l'ignorance aimante
 - L'ignorance aimante (*loving ignorance*) est une une position d’humilité face à la différence qui consiste à reconnaître sa propre ignorance, les inégalités de pouvoir et les dégâts qu’ils produisent ainsi que sa propre position épistémique privilégiée. [@mikulak2021whom]
 - Commencez par reconnaître votre ignorance, interrogez ses origines et ses conséquences et cherchez à la surpasser de manière éthique, c'est-à-dire en apprenant de vos patient·e·s sans leur faire peser la charge de vous éduquer
