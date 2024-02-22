@@ -40,8 +40,6 @@ format:
       data-background-image: ./files/background.jpg
 ---
 
-# {background-iframe="https://app.wooclap.com/events/DEBZMR/questions/65d6883da396c6f28d28e7a3"}
-
 # Préambule
 
 ```{r}
@@ -51,7 +49,6 @@ library(here)
 ```
 
 ## De qui parle-t-on ? 
-## {background-iframe="https://app.wooclap.com/events/DEBZMR/questions/65d6883da396c6f28d28e7cd"}
 
 ### Sexes, genres et sexualités
 
@@ -260,8 +257,6 @@ patients_map
 
 # Dépistage et prise en charge des ISTs
 
-## {background-iframe="https://app.wooclap.com/events/DEBZMR/questions/65d6883da396c6f28d28e7ce"}
-
 ## VIH
 +--------------------------------------------------------------------------+-------------------------------------------------------+----------------------------------------------------------------------------------+
 | Dépistage                                                                | Traitement                                            | Suivi                                                                            |
@@ -330,8 +325,6 @@ En résumé, face à cette situation délicate :
 2.	S’il s’est fait tester dans les 12 derniers mois, essaye de retrouver ces résultats (réseau de santé wallon, coups de fil dans des laboratoires ou centres de dépistage où il serait allé). Si tu trouves un résultat négatif de syphilis dans les 12 derniers mois, bingo, c’est une latente précoce.  
 3.	Si tu n’as aucun résultat < 12 mois et que c’est une syphilis latente, il faut la traiter comme une latente tardive, dans le doute, parce que juste deux ampoules ne suffiraient pas sinon. C’est pénible pour le patient (mais au moins remboursé), mais c’est mieux que de laisser avec une syphilis qui pourrait évoluer sur plusieurs années et tourner en neurosyphilis ou autre forme de syphilis tertiaire. 
 :::
-
-### {background-iframe="https://app.wooclap.com/events/DEBZMR/questions/65d695888163107223f0a576"}
 
 ### Interprétation de la sérologie 
 
