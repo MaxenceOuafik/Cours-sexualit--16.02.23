@@ -1,0 +1,56 @@
+/*-- scss:defaults --*/
+  // colors
+   $custom-h1: #264653;
+   $custom-h2: #2a9d8f;
+   $custom-h3: #e9c46a;
+   $custom-h4: #f4a261;
+
+   // fonts
+$font-family-sans-serif: "Lato Light" !default;
+$presentation-heading-font:	"Lato Regular" !default;
+$presentation-font-size-root: 30px;
+
+.reveal .quarto-title-block {
+  background-color: rgba(250,250,250,.92);
+}
+
+.reveal .subtitle {
+  color: #2a9d8f;
+  font-size: 1.5ch;
+}
+
+.reveal .quarto-title-author-name {
+  color: #7b7977;
+  font-size: 1ch;
+}
+
+.reveal .quarto-title-affiliation {
+  color: #7b7977;
+  font-size: 0.7ch;
+}
+
+.reveal .title {
+  color: #264653;
+}
+
+.reveal section h1 {
+  color: $custom-h1;
+  text-align: center;
+  font-size: 2ch ;
+}
+
+.reveal section h2 {
+  color: $custom-h2;
+}
+
+.reveal section h3 {
+  color: $custom-h3;
+}
+
+.reveal section h3 {
+  color: $custom-h4;
+}
+
+b, strong   {
+  color:#264653;
+}

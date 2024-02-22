@@ -1,7 +1,7 @@
 ---
 title: "La santé des minorités sexuelles et de genre"
 subtitle: "Module uro-génital MS2/MS3"
-date: "22/02/2024"
+date: 02-22-2024
 date-format: "DD/MM/YYYY"
 author: "Dr Maxence Ouafik"
 institute: "Département de Médecine Générale"
@@ -25,6 +25,7 @@ format:
     execute:
       echo: false
       warning: false
+      cache: true
     fig-align: center
     fig-responsive: false
     fig-format: svg
@@ -34,16 +35,14 @@ format:
     show-notes: false
     background-interactive: true
     link-external-newwindow: true
-    theme: cours.scss
+    theme: custom.scss
     title-slide-attributes:
-      data-background-image: ./files/background-title.svg
+      data-background-image: ./files/background.jpg
 ---
 
-## https://t.ly/pR-4
+# {background-iframe="https://app.wooclap.com/events/DEBZMR/questions/65d6883da396c6f28d28e7a3"}
 
-# {background-iframe="https://app.wooclap.com/events/MHYAOX/questions/63ed5538777685cca85ac4e3"}
-
-# Préambule {background-image="./files/background.svg"}
+# Préambule
 
 ```{r}
 library(languageserver)
@@ -52,7 +51,7 @@ library(here)
 ```
 
 ## De qui parle-t-on ? 
-## {background-iframe="https://app.wooclap.com/events/MHYAOX/questions/63ed5654e8b2f562112dcb69"}
+## {background-iframe="https://app.wooclap.com/events/DEBZMR/questions/65d6883da396c6f28d28e7cd"}
 
 ### Sexes, genres et sexualités
 
@@ -110,12 +109,6 @@ mg_likert_ais_plot_2024
 mg_likert_int_plot_2024
 ```
 
-::: {.notes}
-* `r nrow(mg_survey_2024)` assistant·e·s ont participé à la petite enquête en ligne
-* Plus de 80% des assistant·e·s sondé·e·s ne sont pas à l'aise avec les thématiques de santé concernant les personnes transgenres
-* Pourtant, moins de la moitié des sondé·e·s sont intéréssé·e·s à l'idée de se former sur ces questions
-:::
-
 ### Résultats des questionnaires communautaires
 
 ```{r likert_plot_lgbt}
@@ -148,15 +141,36 @@ lgbt_likert_plot
 * Le traitement hormonal d'affirmation de genre (**THAG**) est le sujet qui est à la fois considéré comme prioritaire par plus de 80% des MSG et mal maîtrisé par plus de 80% des assistant·e·s 
 
 
-:::{.notes}
-- Points communs entre les attentes des personnes LGBT et les attentes des MG, mais divergences notables. Principalement, vis-à-vis des questions liées aux transidentités, il y a un gros manque de formation, mais pas d'envie de le combler. Mon hypothèse est qu'ils ne sont pas assez confrontés à leur ignorance que pour qu'elle soit gênante pour eux ou qu'ils la conscientisent comme un problème. Référer paraît alors plus facile que se former.
-- Cela traduit également une certaine forme d'altérisation des personnes transgenres
-- Globalement, les MG ne sont pas à l’aise avec ces thématiques, ce qui montre l’importance de cette journée 
-- L’accueil n’est pas fort priorisé par les MG ; surestimation de leurs compétences ?
-- Gap important entre la demande, le niveau de formation, et, de manière plus préoccupante, l'envie de se former. Du coup, stratégie : donner envie de se former
+::: {.notes}
+* `r nrow(mg_survey_2024)` assistant·e·s ont participé à la petite enquête en ligne
+* Plus de 80% des assistant·e·s sondé·e·s ne sont pas à l'aise avec les thématiques de santé concernant les personnes transgenres
+* Pourtant, moins de la moitié des sondé·e·s sont intéréssé·e·s à l'idée de se former sur ces questions
+* Points communs entre les attentes des personnes LGBT et les attentes des MG, mais divergences notables. Principalement, vis-à-vis des questions liées aux transidentités, il y a un gros manque de formation, mais pas d'envie de le combler. Mon hypothèse est qu'ils ne sont pas assez confrontés à leur ignorance que pour qu'elle soit gênante pour eux ou qu'ils la conscientisent comme un problème. Référer paraît alors plus facile que se former.
+* Gap important entre la demande, le niveau de formation, et, de manière plus préoccupante, l'envie de se former. Du coup, stratégie : donner envie de se former
 :::
 
-# L'enjeu de l'accès au soin des personnes transgenres {background-image="./files/background.svg"}
+# Quelques réflexions sur l'ignorance médicale
+## L'ignorance est plus qu'une absence de connaissance 
+- Selon Alcoff (2007, p.39), cité par Mikulak (202, p. 820), l'ignorance constitue "une pratique épistémique intrinsèquement substantielle" [@mikulak2021whom]
+- Cette pratique de l'ignorance est souvent liée à des pratiques d'exclusion et d'oppression 
+- Ne pas interroger l'ignorance, c'est oublier son rôle dans la perpétuation des inégalités de santé ainsi que son potentiel transformatif  
+
+## La taxonomie de l'ignorance de Tuana
+Tuana (2006, p.4-11) propose une taxonomie de l’ignorance, développée pour penser le mouvement de santé des femmes [@tuana2006speculum]. Elle distingue 4 modes d’ignorance liée à des pratiques d’exclusion et d’oppression : 
+
+1. Savoir que l’on ne sait pas mais ne pas se soucier de savoir (*“knowing that we do not know but not caring to know”*)
+2. Ne pas savoir que l’on ne sait pas(*“not knowing that we do not know"*)
+3. Ne pas savoir parce que des groupes socialement privilégiés refusent que l’on sache (*“not knowing because socially privileged groups do not want us to know"*)
+4. Ignorance volontaire (*“not knowing that we do not know and not wanting to know*)
+
+## L'ignorance cis
+- Le manque d'éducation et de connaissance en santé trans est sytémique
+- Poteat (2013, p.26), cité par Mikulak (2021, p. 820) va jusqu'à souligner que les patients trans anticipent que les professionnels de la santé *“ne seraient pas simplement non-préparés pour répondre à leurs besoins médicaux, mais pourraient aussi être non-préparés pour leur existence-même”*. [@mikulak2021whom]
+- En outre l'ignorance peut être entremêlée —et potentiellement renforcée— par des vues pathologisantes des personnes trans ainsi qu’à de la transphobie, ce qui produit une forme particulière d’ignorance que Mikulak nomme l’ignorance cis (*cis-ignorance*). [@mikulak2021whom]
+- Cette ignorance peut mener à un manque de compréhension et d’empathie envers les individus transgenres, pouvant ainsi entraîner des pratiques de soins déficientes et une obstruction à l’accès aux services médicaux.
+
+
+# L'enjeu de l'accès au soin des personnes transgenres
 ## Contexte 
 * Un passé de pathologisation encore présent
 * L'habitude d'être déçu·e
@@ -175,7 +189,7 @@ lgbt_likert_plot
 * Expérience de refus de soins, de violence verbale et physique (durant l’examen) [@ayhan2020]
 * Une tendance à prioriser les soins transspécifiques en négligeant les autres [@uhrig2019]
 * Des facteurs individuels et structurels (précarité, instabilité de logement, violence) [@uhrig2019]
-* Un manque de formation criant [@korpaisarn2018; @uhrig2019; @korpaisarn2018; @irwig2016]
+* Un manque de formation criant [@korpaisarn2018; @uhrig2019; @irwig2016; @burgwal2021impact; @dubin2018transgender]
 
 ::: {.notes}
 * 40% des personnes transgenres ont déjà subi des comportement discriminatoire de la part de leur médecin traitant
@@ -190,19 +204,20 @@ lgbt_likert_plot
 ## Une question d'organisation des soins
 * En Belgique, les soins trans-spécifiques sont officiellement centralisés au sein d'équipes pluridisciplinaires 
 * Il y en a **deux** sur tout le territoire
-- Cette faiblesse de l'offre entraîne des temps d’attente souvent excessifs, la nécessité de parcourir des distances parfois importantes pour accéder à un·e médecin, et une monopolisation de l’offre de soin [@koehler2021]
-* Cette hyperspécialisation des soins trans-spécifiques, relayés à la troisième ligne, renforce intrinsèquement une altérisation des personnes transgenres, les faisant passer pour des individus aux besoins exceptionnels ne pouvant être gérés que par des équipes ultra-spécialisées [@ker2021]
+- Cette faiblesse de l'offre entraîne des temps d’attente souvent excessifs, la nécessité de parcourir des distances parfois importantes pour accéder à un·e médecin, et une monopolisation de l’offre de soin [@koehler2021; @tsjoen2022integrating]
+* Cette hyperspécialisation des soins trans-spécifiques, relayés à la troisième ligne, renforce intrinsèquement une altérisation des personnes transgenres, les faisant passer pour des individus aux besoins exceptionnels ne pouvant être gérés que par des équipes ultra-spécialisées [@ker2021little]
 * Elle concourre aussi à dépossèder les deux premières lignes des capacités nécessaires pour soigner correctement les personnes transgenres
 
 :::{.notes}
-* Parler des listes d'attente 
+* Parler des listes d'attente  
+* *L’équipe de genre de Gand*, par exemple, a vu **487 patient·e·s en 2021** tandis que **863 autres** ont dû être mis sur liste d’attente
 * Parler de la difficulté géographique (mobiliser l'exemple de J.)
 * Insister sur les concepts d'altérisation et de dépossession des compétences
 :::
 
 ## L'envie et la nécessité d'une première ligne compétente
-* L'hôpital peut être perçu comme un endroit anxiogène, au sein duquel on est envoyé contre son gré, plutôt qu'un lieu de soin que l'on décide librement de fréquenter [@ker2021]
-* L'hôpital constitue également un lieu où les disparités de pouvoir sont renforcées [@ker2021]
+* L'hôpital peut être perçu comme un endroit anxiogène, au sein duquel on est envoyé contre son gré, plutôt qu'un lieu de soin que l'on décide librement de fréquenter [@ker2021little]
+* L'hôpital constitue également un lieu où les disparités de pouvoir sont renforcées [@ker2021little]
 * Les personnes transgenres sont désireuses d'avoir plus de service de soins **particulièrement en première ligne** [@lee2022]
 * Une prise en charge trans-spécifique décentralisée en première ligne permet de favoriser l'accès au soin, le libre choix des médecins et des traitements, ainsi qu'une meilleure implication des médecins au sein de la communauté [@koehler2021]
 
@@ -239,9 +254,13 @@ dmg_plot
 patients_map
 ```
 
-# Dépistage et prise en charge des ISTs {background-image="./files/background.svg"}
+## De l'ignorance maintenue à l'ignorance aimante
+- L'ignorance aimante (*loving ignorance*) est une une position d’humilité face à la différence qui consiste à reconnaître sa propre ignorance, les inégalités de pouvoir et les dégâts qu’ils produisent ainsi que sa propre position épistémique privilégiée. [@mikulak2021whom]
+- Commencez par reconnaître votre ignorance, interrogez ses origines et ses conséquences et cherchez à la surpasser de manière éthique, c'est-à-dire en apprenant de vos patient·e·s sans leur faire peser la charge de vous éduquer
 
-## {background-iframe="https://app.wooclap.com/events/MHYAOX/questions/63ed785e69ded651a50e89ea"}
+# Dépistage et prise en charge des ISTs
+
+## {background-iframe="https://app.wooclap.com/events/DEBZMR/questions/65d6883da396c6f28d28e7ce"}
 
 ## VIH
 +--------------------------------------------------------------------------+-------------------------------------------------------+----------------------------------------------------------------------------------+
@@ -269,17 +288,17 @@ patients_map
 | * Période fenêtre : **14 jours**                          |                                                       |                                                                                  |   
 +-----------------------------------------------------------+-------------------------------------------------------+----------------------------------------------------------------------------------+
 
-: Dépistage et prise en charge de la gonorrhée et de la chlamydia [@workowski2021] {#tbl-ngct}
+: Dépistage et prise en charge de la gonorrhée et de la chlamydia [@workowski2021sexually] {#tbl-ngct}
 
 
-* Jusqu'à 70% de cas manqués si échantillon uro-génital unique (HSH) [@workowski2021] 
-* La doxycycline a une efficacité supérieure à l'azithromycine, a fortiori pour les sites extragénitaux [@workowski2021]
+* Jusqu'à 70% de cas manqués si échantillon uro-génital unique (HSH) [@workowski2021sexually] 
+* La doxycycline a une efficacité supérieure à l'azithromycine, a fortiori pour les sites extragénitaux [@workowski2021sexually]
 
 ### À titre de réflexion
-* Certains éléments indiquent que la gonorrhée peut se transmettre par la salive (anulingus, baisers, fellation) [@Chow2019]
-- Des études (anciennes) ont montré que la salive avait un effet inhibiteur sur Chlamydia [@Chow2019]
-- Des doutes subsistent sur une migration de Chlamydia oropharyngé vers la zone anale par translocation le long du tractus gastro-intestinal [@Chow2019]
-- Le screening de gonorrhée chez les HSH asymptomatiques a probablement peu d'impact sur la prévalence tout en exposant à des risques majeurs d'antibiorésistance [@Buyze2018; @Tsoumanis2018]
+* Certains éléments indiquent que la gonorrhée peut se transmettre par la salive (anulingus, baisers, fellation) [@chow2019]
+- Des études (anciennes) ont montré que la salive avait un effet inhibiteur sur Chlamydia [@chow2019]
+- Des doutes subsistent sur une migration de Chlamydia oropharyngé vers la zone anale par translocation le long du tractus gastro-intestinal [@chow2019]
+- Le screening de gonorrhée chez les HSH asymptomatiques a probablement peu d'impact sur la prévalence tout en exposant à des risques majeurs d'antibiorésistance [@buyze2018; @tsoumanis2018]
 
 ::: {.notes}
 Parler du fait que certaines souches de NG deviennent résistantes à presque tous les ATB et que d'ici quelques années, elle risque de devenir intraitable
@@ -290,6 +309,29 @@ Parler du fait que certaines souches de NG deviennent résistantes à presque to
 ### Cas clinique
 
 ![Cas clinique](/files/vignette_clinique.png){#fig-vignette}
+
+::: {.notes}
+
+TPHA positif et VDRL négatif, ça signe soit une infection résolue soit une infection très précoce, soit une infection latente. 
+ 
+Ça soulève donc deux questions : 
+•	Est-ce que le patient est symptomatique ? Ce qui nous orienterait vers une infection très précoce (les VDRL sont généralement positifs au moment du chancre mais peuvent arriver plus tardivement) 
+•	Est-ce que le patient a une histoire de syphilis traitée ? Auquel cas, on n’aurait rien de plus à faire. 
+ 
+Dans ton cas, la difficulté est que la réponse aux deux questions est négative. Après, s’il vient de se séroconvertir sur fellation et que le chancre est dans sa gorge, il peut être difficile à voir, en plus d’être indolore. J’aurais donc tendance à recontrôler la sérologie dans tous les cas pour essayer de déterminer si (1) on n’a pas un faux positif TPHA et (2) si les VDRL ne se positivent pas. Un chancre prend 21 jours (médiane) pour se développer.  Mais ça peut aller jusqu’à 90 jours, dans de rares cas. Bref, un contrôle sérologique me semble nécessaire. 
+ 
+Si les VDRL restent négatifs et que le TPHA reste positif, on se retrouve dans le deuxième cas de figure : soit c’est une infection latente, soit c’est une infection précédemment traitée avec succès. 
+L’anamnèse exclue la deuxième option, ce qui ne laisserait que l’option syphilis latente. Ce qui soulève une ultime question, mais la plus cruciale à mon sens : latente précoce ou latente tardive ? 
+Si, sur base de l’anamnèse ou d’éventuels résultats de laboratoire tu peux avoir la certitude que le rapport contaminant a eu lieu dans les 12 mois, tu peux traiter pour une latente précoce, laquelle se traite comme une syphilis active débutante. 
+Par contre si tu ne parviens pas à acquérir la certitude qu’il s’est contaminé cette année (par exemple, s’il n’a plus été testé depuis plus d’un an, si tu n’as accès à aucun résultat et qu’il était sexuellement actif ces dernières années), il faut traiter comme une latente tardive, c’est-à-dire avec 2 ampoules, une fois par semaine, pendant 3 semaines. Il s’agit du maximum qui peut être remboursé sur une année (voir conditions ici, si besoin). 
+ 
+En résumé, face à cette situation délicate : 
+1.	Reteste et réexamine. S’il n’a toujours pas de chancre et que les résultats sont les mêmes, c’est une syphilis latente. 
+2.	S’il s’est fait tester dans les 12 derniers mois, essaye de retrouver ces résultats (réseau de santé wallon, coups de fil dans des laboratoires ou centres de dépistage où il serait allé). Si tu trouves un résultat négatif de syphilis dans les 12 derniers mois, bingo, c’est une latente précoce.  
+3.	Si tu n’as aucun résultat < 12 mois et que c’est une syphilis latente, il faut la traiter comme une latente tardive, dans le doute, parce que juste deux ampoules ne suffiraient pas sinon. C’est pénible pour le patient (mais au moins remboursé), mais c’est mieux que de laisser avec une syphilis qui pourrait évoluer sur plusieurs années et tourner en neurosyphilis ou autre forme de syphilis tertiaire. 
+:::
+
+### {background-iframe="https://app.wooclap.com/events/DEBZMR/questions/65d695888163107223f0a576"}
 
 ### Interprétation de la sérologie 
 
@@ -319,29 +361,37 @@ Parler du fait que certaines souches de NG deviennent résistantes à presque to
 Parler du remboursement
 :::
 
+## Doxy-PEP
+- Un essai randomisé ouvert de 2023 a cherché à évaluer l'efficacité de la prise d'un comprimé de Doxycycline 200mg dans les 24-72h après un rapport sexuel non protégé afin d'évaluer la réduction de l'incidence d'IST bactérienne chez les HSH et les femmes transgenres [@luetkemeyer2023postexposure]
+- Réduction de 62-66% du risque d'IST : 55% pour la gonorrhée, 88% pour Chlamydia et 87% pour la syphilis ! (57%, 74% et 77% pour les PVVIH)
+- Pas de recommandation officielle à l'heure actuelle
+- Répliquée chez les femmes cisgenres, cette technique n'a pas permis d'amélioration de l'incidence, mais doutes sur l'observance [@stewart2023doxycycline]
+
+
 ## Mycoplasma genitalium 
-* Préoccupant au vu de sa capacité majeure à développer des résistances [@Pinto-Sander2019]
-* Retrouvé dans **15-25%** des urétrites non-gonococciques et **10-13%** des PID [@Pinto-Sander2019]
-* **Généralement asymptomatique** [@Pinto-Sander2019]
-* Lorsque des symptômes sont présents, il donne généralement des urétrites ou des cervicites avec saignements post-coïtaux [@Pinto-Sander2019]
-* Impact sur la fertilité méconnu ; données préliminaires sur une association avec la prématurité et les fausses couches [@Pinto-Sander2019]
+* Préoccupant au vu de sa capacité majeure à développer des résistances [@pinto-sander2019]
+* Retrouvé dans **15-25%** des urétrites non-gonococciques et **10-13%** des PID [@pinto-sander2019]
+* **Généralement asymptomatique** [@pinto-sander2019]
+* Lorsque des symptômes sont présents, il donne généralement des urétrites ou des cervicites avec saignements post-coïtaux [@pinto-sander2019]
+* Impact sur la fertilité méconnu ; données préliminaires sur une association avec la prématurité et les fausses couches [@pinto-sander2019]
 * Vu la forte antibiorésistance et le peu d'expression clinique **il ne faut pas le rechercher, sauf si urétrite de cause inconnue**
-* Si besoin d'un traitement : Doxycycline 100mg 2x/J pendant 7 jours suivi par Azithromycine 1g en prise unique + 500mg par jour pendant 3 jours de plus [@workowski2021]
+* Si besoin d'un traitement : Doxycycline 100mg 2x/J pendant 7 jours suivi par Azithromycine 1g en prise unique + 500mg par jour pendant 3 jours de plus [@workowski2021sexually]
 * Si résistance aux macrolides : Doxycycline 100mg 2x/J pendant 7 jours suivi par Moxifloxacine 400mg 1x/J pendant 7 jours
 
 ::: {.notes}
 * Plus petite bactérie connue
 :::
-## Hépatites [@workowski2021]
+## Hépatites [@workowski2021sexually]
 - L'hépatite A peut se transmettre par anulingus 
 - L'hépatite B se transmet par les fluides sexuels et le sang
 - L'hépatite C peut se transmettre par voie sexuelle entre hommes
 - La vaccination est recommandée pour les HSH
 
 ## HPV
-* Pas de guidelines de dépistage pour les hommes cisgenres, même si les HSH sont à haut risque [@workowski2021]
+* Pas de guidelines de dépistage pour les hommes cisgenres, même si les HSH sont à haut risque [@workowski2021sexually]
 * Dépistage tous les trois ans dès 25 ans si col de l'utérus
-* Grosse sous-utilisation du dépistage chez les FSF [@Knight2017] et les hommes transgenres 
+* Grosse sous-utilisation du dépistage chez les FSF [@knight2017] et les hommes transgenres [@puechl2019care]
+* Si traitement masculinisant, attention au risque de frottis ininterprétable à cause de l'atrophie vaginale (x10) [@wilde2021transgender] ; informer et proposer estriol topique [@lam2019transgenderinclusive] 
 * Vaccination recommandée jusqu'à 26 ans pour les HSH, mais peu de données en situation réelle sur l'efficacité [@goodman2022]
 - La vaccination nonavalente a le potentiel de prévenir **90%** des cancers cervicaux, **79%** des cancers anaux, **61%** des cancers vaginaux, **25%** des cancers du pénis, **23%** des cancers vulvaires, et **21%** des cancers oropharyngés !
 
@@ -349,9 +399,7 @@ Parler du remboursement
 Dépistage recommandé en cas de PrEP par un proctologue, par anuscopie (Dr Van Kemseke) 
 :::
 
-## Vaginose bactérienne [@workowski2021]
-## {background-iframe="https://app.wooclap.com/events/MHYAOX/questions/63ed901e7bf35a80d157048a"}
-
+## Vaginose bactérienne [@workowski2021sexually]
 
 ### Définition et diagnostic
 * La vaginose bactérienne est une **dysbiose** résultant du remplacement des *Lactobacilles* par des bactéries anaérobiques telles que *G. Vaginalis*, *Prevotella*, et *Mobiluncus* 
@@ -375,7 +423,7 @@ Parler des mecs trans
   * Possibilité de traitement suppressif : application topique 2x/semaine pendant plus de trois mois ; bénéfices ne perdurant pas à l'arrêt du traitement 
 * Pas de preuve scientifique d'un intérêt de traiter les partenaires
 
-## Trichomonas vaginalis [@workowski2021]
+## Trichomonas vaginalis [@workowski2021sexually]
 * IST non virale la plus fréquente dans le monde 
 * Pas de dépistage asymptomatique ; rechercher en cas de perte vaginale anormale (malodorante, jaunâtre/verdâtre), accompagnée ou non d'irritation vulvaire 
 * Peut également donner des urétrites, épididymites, et prostatites 
@@ -386,16 +434,16 @@ Parler des mecs trans
 
 ## Quelques mots sur les FSF
 * Gros manque de recherche scientifique sur ce sujet [@obon-azuara2022] 
-* Sous-utilisation des services de prévention et de gynécologie et gros manque de connaissance sur la santé sexuelle [@Knight2017] 
-* Principalement exposées aux **vaginoses bactériennes**, aux **trichomonas**, au **HPV** et à l'**HSV**. [@workowski2021]
-* Transmission possible de Chlamydia et Gonorrhée [@workowski2021]
-* Case reports de transmission de VIH et de syphilis. [@workowski2021]
+* Sous-utilisation des services de prévention et de gynécologie et gros manque de connaissance sur la santé sexuelle [@knight2017] 
+* Principalement exposées aux **vaginoses bactériennes**, aux **trichomonas**, au **HPV** et à l'**HSV**. [@workowski2021sexually]
+* Transmission possible de Chlamydia et Gonorrhée [@workowski2021sexually]
+* Case reports de transmission de VIH et de syphilis. [@workowski2021sexually]
 * Digue dentaire, doigtiers et nettoyage des sex toys
 
 ## Quelques mots sur les personnes transgenres
-* Presque aucune étude sur le sujet ; extrapolation à partir des pratiques et de l'anatomie [@workowski2021]
+* Presque aucune étude sur le sujet ; extrapolation à partir des pratiques et de l'anatomie [@workowski2021sexually]
 * Attention à s'adapter au langage employé et à ne pas se montrer intrusif
-* Peu de données sur les néovagins ; HSV/HPV/Chlamydia/Gonorrhée décrites. [@workowski2021]
+* Peu de données sur les néovagins ; HSV/HPV/Chlamydia/Gonorrhée décrites. [@workowski2021sexually]
 * Si métaoïodioplastie avec élongation urétrale sans vaginectomie, un frottis cervical est nécessaire, car l'échantillon urinaire ne sera pas performant
 
 ::: {.notes}
@@ -404,7 +452,7 @@ Parler de Go To Gyneco
 Parler de l'infectio du TFE
 :::
 
-# La PrEP {background-image="./files/background.svg"}
+# La PrEP
 ## Intérêt et prescription
 * Bithérapie consistant en une association de **Tenofovir** et d'**Emtricitabine** visant à empêcher la contamination au VIH *avant* un rapport sexuel
 * Prescription via un centre de référence VIH
@@ -422,7 +470,7 @@ Parler de l'infectio du TFE
 * Précautions particulières si patient avec un HBV chronique (risque théorique de flambée mais pas de CI) 
 * Entraîne une diminution de la densité osseuse (non-pathologique) et une diminution de la clairance de créatinine (non-pathologique également) ; les deux sont réversibles à l'arrêt du traitement
 
-# Le TPE [@libois2018] {background-image="/files/background.svg"}
+# Le TPE [@libois2018]
 ## Indication
 * Recommandé si risque de transmission significatif du VIH (**> 1/1000**)
 * À discuter si risque intermédiaire (**entre 1/10 000 et 1/10 000**)
@@ -478,7 +526,7 @@ Calcul du risque de tranmission du VIH
 Parler du cas de figure du viol
 :::
 
-# Vieillir avec le VIH {background-image="./files/background.svg"}
+# Vieillir avec le VIH
 
 ## Contexte
 * Avec le développement de traitements antirétroviraux efficaces, la population de PVVIH [^Personnes vivant avec le VIH] s'est agrandie avec le temps
@@ -512,10 +560,11 @@ Le phénotype de fragilité évalue la vulnérabilité des personnes âgées à 
 * Risque accru de morbidité cardiovasculaire, a fortiori si d'autres facteurs de risque sont présents
 * Reconnu comme facteur de risque athérosclérotique dans les guidelines maéricaines sur la prise en charge du cholestérol 
 * Tous les PVVIH devraient être évalués pour leur risque cardio-vasculaire et ceux à risque élevé ou avec des LDL-C trop élevées devraient être pris en charge selon les recommandations en vigueur
-* Attention aux interactions sérieuses entre statines, inhibteurs de la protéase et inhibiteurs nucléosidiques de la transcriptase inverse
+* Attention aux interactions sérieuses entre statines, inhibteurs de la protéase et inhibiteurs nucléosidiques de la transcriptase inverse (voir @fig-statins)
 
-### Diabète
-* Impact des ARV sur l'HbA1c ; ne pas s'en servir pour diagnostiquer et se baser sur la glycémie à jeun
+---
+
+![Interactions entre statines et ARVs](/files/statins.png){#fig-statins}
 
 ### Santé osseuse
 * Ostéodensitométrie conseillée après 50 ans chez tout le monde
